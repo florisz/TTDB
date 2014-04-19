@@ -1,0 +1,52 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   Luminis.Its.Services.CaseFileSpecifications.Test/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.CaseFileSpecifications/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.CaseFiles.Test/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.CaseFiles/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Console/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Console/obj/Debug/Luminis.Its.Services.Console.csproj.FileListAbsolute.txt
+#	modified:   Luminis.Its.Services.Data.Manual.Test/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Data/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Impl/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Items/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.ObjectModels.Test/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.ObjectModels/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Repository/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Representations.Test/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Representations/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Resources.Impl/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Resources.Test/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Resources/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Rest.Extensions/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Rest.Test/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Rest/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Rules.FSharp.Manual.Test/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Rules.FSharp/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Rules.Test/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Rules/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services.Test/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.Services/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Its.v11.suo
+#	modified:   Luminis.Logging/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Logging/obj/Debug/Luminis.Logging.csprojResolveAssemblyReference.cache
+#	modified:   Luminis.Patterns.Range.Test/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Patterns.Range/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Unity.Impl/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Unity/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   Luminis.Xml/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	Luminis.Its.Services.Console/bin/Debug/Luminis.Its.Services.Console.exe.config
+#	Luminis.Its.Services.Data.Manual.Test/obj/Debug/Luminis.Its.Services.Data.Manual.Test.csprojResolveAssemblyReference.cache
+#	Luminis.Its.Services.Rest.Test/obj/Debug/Luminis.Its.Services.Rest.Test.csprojResolveAssemblyReference.cache
+#	Luminis.Its.Services.Rest/obj/Debug/Luminis.Its.Services.Rest.csprojResolveAssemblyReference.cache
+#	Luminis.Its.Services.Rules.FSharp/obj/Debug/Luminis.Its.Services.Rules.FSharp.csprojResolveAssemblyReference.cache
+
