@@ -1,0 +1,15 @@
+Z:\Develop\ITS\Luminis.Its.Services.Data\bin\Debug\Luminis.Its.Services.Data.dll.config
+Z:\Develop\ITS\Luminis.Its.Services.Data\bin\Debug\Luminis.Its.Services.Data.dll
+Z:\Develop\ITS\Luminis.Its.Services.Data\bin\Debug\Luminis.Its.Services.Data.pdb
+Z:\Develop\ITS\Luminis.Its.Services.Data\bin\Debug\Luminis.Its.Services.dll
+Z:\Develop\ITS\Luminis.Its.Services.Data\bin\Debug\Luminis.Logging.dll
+Z:\Develop\ITS\Luminis.Its.Services.Data\bin\Debug\Luminis.Patterns.Range.dll
+Z:\Develop\ITS\Luminis.Its.Services.Data\bin\Debug\Luminis.Unity.dll
+Z:\Develop\ITS\Luminis.Its.Services.Data\bin\Debug\log4net.dll
+Z:\Develop\ITS\Luminis.Its.Services.Data\bin\Debug\Luminis.Logging.pdb
+Z:\Develop\ITS\Luminis.Its.Services.Data\bin\Debug\Luminis.Unity.pdb
+Z:\Develop\ITS\Luminis.Its.Services.Data\bin\Debug\Luminis.Patterns.Range.pdb
+Z:\Develop\ITS\Luminis.Its.Services.Data\bin\Debug\Luminis.Its.Services.pdb
+Z:\Develop\ITS\Luminis.Its.Services.Data\obj\Debug\ResolveAssemblyReference.cache
+Z:\Develop\ITS\Luminis.Its.Services.Data\obj\Debug\Luminis.Its.Services.Data.dll
+Z:\Develop\ITS\Luminis.Its.Services.Data\obj\Debug\Luminis.Its.Services.Data.pdb

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns="http://luminis.net/its/schemas/rule.xsd">
+  <Link rel="casefilespecification" href="" />
+  <Link rel="self" href="" />
+  <Name>BerekenLeeftijd</Name>
+  <Script Type="fsharp" Method="SimpleModel.Persoon.BerekenLeeftijd.Execute">
+#light
+module SimpleModel.Persoon.BerekenLeeftijd
+
+open SimpleModel.Persoon
+open System
+
+let Execute(person: Persoon) =
+    let timeSpan = ((DateTime.Today) - (person.GeboorteDatum)) 
+    person.Leeftijd &lt;- (timeSpan.Days /365)
+
+    if person.Geslacht = "m" then
+        person.Geslacht &lt;- "man"
+    else
+        person.Geslacht &lt;- "vrouw"
+
+  </Script>
+</Rule>

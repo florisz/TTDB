@@ -1,0 +1,22 @@
+<CaseFileSpecification 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns="http://luminis.net/its/schemas/casefilespecification.xsd">
+  <Link rel="objectmodel" href="http://localhost:8080/its/specifications/objectmodels/ExtendedModel" />
+  <Link rel="self" href="" />
+  <Name>Persoon</Name>
+  <UriTemplate>{Persoon/BSN}</UriTemplate>
+  <Structure>
+    <Entity Name="Persoon" Type="Persoon">
+      <Relation Name="Huwelijk" Type="Huwelijk">
+        <Entity Name="Partner" Type="Persoon" />
+      </Relation>
+      <Relation Name="BezitAuto" Type="BezitAuto">
+        <Entity Name="Auto" Type="Auto" />
+      </Relation>
+      <Relation Name="BezitWoning" Type="BezitWoning">
+        <Entity Name="Woning" Type="Woning" />
+      </Relation>
+    </Entity>
+  </Structure>
+</CaseFileSpecification>

@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dsl", "Dsl\Dsl.csproj", "{3AC38ABC-8AC9-4DB6-8741-992AD03662D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DslPackage", "DslPackage\DslPackage.csproj", "{C7C6585C-5069-4535-9763-28CF8285CD5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminis.Its.Client", "Luminis.Its.Client\Luminis.Its.Client.csproj", "{4E96064E-70FE-400D-A0AE-93E972C0607C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminis.Its.Client.Test", "Luminis.Its.Client.Test\Luminis.Its.Client.Test.csproj", "{2C06BCF9-C877-4692-B19B-80BEB18CAEEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C14E683E-97D0-4C24-AEBE-99427BBE018E}"
+	ProjectSection(SolutionItems) = preProject
+		Its.Workbench.vsmdi = Its.Workbench.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DslDebugging", "DslDebugging\DslDebugging.csproj", "{A4ECD332-F364-434C-AEAF-7C20A1BC5ABB}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Its.Workbench.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AC38ABC-8AC9-4DB6-8741-992AD03662D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC38ABC-8AC9-4DB6-8741-992AD03662D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC38ABC-8AC9-4DB6-8741-992AD03662D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC38ABC-8AC9-4DB6-8741-992AD03662D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7C6585C-5069-4535-9763-28CF8285CD5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7C6585C-5069-4535-9763-28CF8285CD5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7C6585C-5069-4535-9763-28CF8285CD5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7C6585C-5069-4535-9763-28CF8285CD5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E96064E-70FE-400D-A0AE-93E972C0607C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E96064E-70FE-400D-A0AE-93E972C0607C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E96064E-70FE-400D-A0AE-93E972C0607C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E96064E-70FE-400D-A0AE-93E972C0607C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C06BCF9-C877-4692-B19B-80BEB18CAEEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C06BCF9-C877-4692-B19B-80BEB18CAEEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C06BCF9-C877-4692-B19B-80BEB18CAEEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C06BCF9-C877-4692-B19B-80BEB18CAEEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4ECD332-F364-434C-AEAF-7C20A1BC5ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4ECD332-F364-434C-AEAF-7C20A1BC5ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4ECD332-F364-434C-AEAF-7C20A1BC5ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4ECD332-F364-434C-AEAF-7C20A1BC5ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

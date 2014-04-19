@@ -1,0 +1,19 @@
+<CaseFileSpecification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://luminis.net/its/schemas/casefilespecification.xsd">
+  <Link rel="objectmodel" href="http://localhost:8080/its/specifications/objectmodels/Automobile" />
+  <Link rel="self" href="" />
+  <Name>Autohistorie</Name>
+  <UriTemplate>{Car/LicensePlate}</UriTemplate>
+  <Structure>
+    <Entity Name="Car" Type="Car">
+      <Relation Name="CarOwners" Type="CarOwners">
+        <Entity Name="CarOwner" Type="CarOwner" />
+      </Relation>
+      <Relation Name="CarIsOfType" Type="CarIsOfType">
+        <Entity Name="CarModelType" Type="CarModelType" />
+      </Relation>
+      <Relation Name="CarHistory" Type="CarHistory">
+        <Entity Name="ShopVisit" Type="ShopVisit" />
+      </Relation>
+    </Entity>
+  </Structure>
+</CaseFileSpecification>

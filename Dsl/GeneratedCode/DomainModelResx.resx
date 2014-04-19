@@ -1,0 +1,1238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Luminis.Its.Workbench.WorkbenchDomainModel.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.Workbench</value>
+    <comment>Description for DslLibrary &apos;Workbench&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.WorkbenchDomainModel.DisplayName" xml:space="preserve">
+    <value>Class Diagrams</value>
+    <comment>DisplayName for DslLibrary &apos;Workbench&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.NamedElement.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;NamedElement&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.NamedElement.DisplayName" xml:space="preserve">
+    <value>Named Element</value>
+    <comment>DisplayName for DomainClass &apos;NamedElement&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.NamedElement/Name.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;NamedElement&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.NamedElement/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;NamedElement&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelRoot.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelRoot.DisplayName" xml:space="preserve">
+    <value>Model Root</value>
+    <comment>DisplayName for DomainClass &apos;ModelRoot&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelAttribute.Description" xml:space="preserve">
+    <value>An attribute of a class.</value>
+    <comment>Description for DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelAttribute.DisplayName" xml:space="preserve">
+    <value>Model Attribute</value>
+    <comment>DisplayName for DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelAttribute/Type.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainProperty &apos;Type&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelAttribute/Type.DisplayName" xml:space="preserve">
+    <value>Type</value>
+    <comment>DisplayName for DomainProperty &apos;Type&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelAttribute/InitialValue.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainProperty &apos;InitialValue&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelAttribute/InitialValue.DisplayName" xml:space="preserve">
+    <value>Initial Value</value>
+    <comment>DisplayName for DomainProperty &apos;InitialValue&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelAttribute/Required.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ModelAttribute.Required</value>
+    <comment>Description for DomainProperty &apos;Required&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelAttribute/Required.DisplayName" xml:space="preserve">
+    <value>Required</value>
+    <comment>DisplayName for DomainProperty &apos;Required&apos; on DomainClass &apos;ModelAttribute&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.Comment.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;Comment&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainClass &apos;Comment&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.Comment/Text.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainProperty &apos;Text&apos; on DomainClass &apos;Comment&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.Comment/Text.DisplayName" xml:space="preserve">
+    <value>Text</value>
+    <comment>DisplayName for DomainProperty &apos;Text&apos; on DomainClass &apos;Comment&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelType.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;ModelType&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelType.DisplayName" xml:space="preserve">
+    <value>Model Type</value>
+    <comment>DisplayName for DomainClass &apos;ModelType&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelElement.Description" xml:space="preserve">
+    <value>Element with a Description</value>
+    <comment>Description for DomainClass &apos;ObjectModelElement&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelElement.DisplayName" xml:space="preserve">
+    <value>Object Model Element</value>
+    <comment>DisplayName for DomainClass &apos;ObjectModelElement&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelElement/Description.Description" xml:space="preserve">
+    <value>This is a Description.</value>
+    <comment>Description for DomainProperty &apos;Description&apos; on DomainClass &apos;ObjectModelElement&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelElement/Description.DisplayName" xml:space="preserve">
+    <value>Description</value>
+    <comment>DisplayName for DomainProperty &apos;Description&apos; on DomainClass &apos;ObjectModelElement&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelSpec.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ObjectModelSpec</value>
+    <comment>Description for DomainClass &apos;ObjectModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelSpec.DisplayName" xml:space="preserve">
+    <value>Object Model Spec</value>
+    <comment>DisplayName for DomainClass &apos;ObjectModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelSpec/Self.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ObjectModelSpec.Self</value>
+    <comment>Description for DomainProperty &apos;Self&apos; on DomainClass &apos;ObjectModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelSpec/Self.DisplayName" xml:space="preserve">
+    <value>Self</value>
+    <comment>DisplayName for DomainProperty &apos;Self&apos; on DomainClass &apos;ObjectModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileModelSpec.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileModelSpec</value>
+    <comment>Description for DomainClass &apos;CaseFileModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileModelSpec.DisplayName" xml:space="preserve">
+    <value>Case File Model Spec</value>
+    <comment>DisplayName for DomainClass &apos;CaseFileModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileModelSpec/UriTemplate.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileModelSpec.Uri Template</value>
+    <comment>Description for DomainProperty &apos;UriTemplate&apos; on DomainClass &apos;CaseFileModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileModelSpec/UriTemplate.DisplayName" xml:space="preserve">
+    <value>Uri Template</value>
+    <comment>DisplayName for DomainProperty &apos;UriTemplate&apos; on DomainClass &apos;CaseFileModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileModelSpec/Self.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileModelSpec.Self</value>
+    <comment>Description for DomainProperty &apos;Self&apos; on DomainClass &apos;CaseFileModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileModelSpec/Self.DisplayName" xml:space="preserve">
+    <value>Self</value>
+    <comment>DisplayName for DomainProperty &apos;Self&apos; on DomainClass &apos;CaseFileModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileModelSpec/ObjectModelSpec.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileModelSpec.Object Model Spec</value>
+    <comment>Description for DomainProperty &apos;ObjectModelSpec&apos; on DomainClass &apos;CaseFileModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileModelSpec/ObjectModelSpec.DisplayName" xml:space="preserve">
+    <value>Object Model Spec</value>
+    <comment>DisplayName for DomainProperty &apos;ObjectModelSpec&apos; on DomainClass &apos;CaseFileModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileType.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileType</value>
+    <comment>Description for DomainClass &apos;CaseFileType&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileType.DisplayName" xml:space="preserve">
+    <value>Case File Type</value>
+    <comment>DisplayName for DomainClass &apos;CaseFileType&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntity.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileEntity</value>
+    <comment>Description for DomainClass &apos;CaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntity.DisplayName" xml:space="preserve">
+    <value>Case File Entity</value>
+    <comment>DisplayName for DomainClass &apos;CaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelation.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileRelation</value>
+    <comment>Description for DomainClass &apos;CaseFileRelation&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelation.DisplayName" xml:space="preserve">
+    <value>Case File Relation</value>
+    <comment>DisplayName for DomainClass &apos;CaseFileRelation&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelRelation.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ModelRelation</value>
+    <comment>Description for DomainClass &apos;ModelRelation&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelRelation.DisplayName" xml:space="preserve">
+    <value>Model Relation</value>
+    <comment>DisplayName for DomainClass &apos;ModelRelation&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelComplexType.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ModelComplexType</value>
+    <comment>Description for DomainClass &apos;ModelComplexType&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelComplexType.DisplayName" xml:space="preserve">
+    <value>Model Complex Type</value>
+    <comment>DisplayName for DomainClass &apos;ModelComplexType&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelEntity.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ModelEntity</value>
+    <comment>Description for DomainClass &apos;ModelEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelEntity.DisplayName" xml:space="preserve">
+    <value>Model Entity</value>
+    <comment>DisplayName for DomainClass &apos;ModelEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelRootHasComments.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;ModelRootHasComments&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelRootHasComments.DisplayName" xml:space="preserve">
+    <value>Model Root Has Comments</value>
+    <comment>DisplayName for DomainClass &apos;ModelRootHasComments&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelRootHasComments/ModelRoot.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelRootHasComments/ModelRoot.DisplayName" xml:space="preserve">
+    <value>Model Root</value>
+    <comment>DisplayName for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelRootHasComments/ModelRoot.PropertyDisplayName" xml:space="preserve">
+    <value>Comments</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelRootHasComments/Comment.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelRootHasComments/Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelRootHasComments/Comment.PropertyDisplayName" xml:space="preserve">
+    <value>Model Root</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ModelRootHasComments&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CommentReferencesSubjects.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;CommentReferencesSubjects&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CommentReferencesSubjects.DisplayName" xml:space="preserve">
+    <value>Comment References Subjects</value>
+    <comment>DisplayName for DomainClass &apos;CommentReferencesSubjects&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CommentReferencesSubjects/Comment.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesSubjects&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CommentReferencesSubjects/Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesSubjects&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CommentReferencesSubjects/Comment.PropertyDisplayName" xml:space="preserve">
+    <value>Subjects</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesSubjects&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CommentReferencesSubjects/Subject.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainRole &apos;Subject&apos; on DomainRelationship &apos;CommentReferencesSubjects&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CommentReferencesSubjects/Subject.DisplayName" xml:space="preserve">
+    <value>Subject</value>
+    <comment>DisplayName for DomainRole &apos;Subject&apos; on DomainRelationship &apos;CommentReferencesSubjects&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CommentReferencesSubjects/Subject.PropertyDisplayName" xml:space="preserve">
+    <value>Comments</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Subject&apos; on DomainRelationship &apos;CommentReferencesSubjects&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.HasObjectModelSpec.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.HasObjectModelSpec</value>
+    <comment>Description for DomainClass &apos;HasObjectModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.HasObjectModelSpec.DisplayName" xml:space="preserve">
+    <value>Has Object Model Spec</value>
+    <comment>DisplayName for DomainClass &apos;HasObjectModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.HasObjectModelSpec/ModelRoot.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.HasObjectModelSpec.ModelRoot</value>
+    <comment>Description for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;HasObjectModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.HasObjectModelSpec/ModelRoot.DisplayName" xml:space="preserve">
+    <value>Model Root</value>
+    <comment>DisplayName for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;HasObjectModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.HasObjectModelSpec/ModelRoot.PropertyDisplayName" xml:space="preserve">
+    <value>Object Model Spec</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;HasObjectModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.HasObjectModelSpec/ObjectModelSpec.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.HasObjectModelSpec.ObjectModelSpec</value>
+    <comment>Description for DomainRole &apos;ObjectModelSpec&apos; on DomainRelationship &apos;HasObjectModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.HasObjectModelSpec/ObjectModelSpec.DisplayName" xml:space="preserve">
+    <value>Object Model Spec</value>
+    <comment>DisplayName for DomainRole &apos;ObjectModelSpec&apos; on DomainRelationship &apos;HasObjectModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.HasObjectModelSpec/ObjectModelSpec.PropertyDisplayName" xml:space="preserve">
+    <value>Model Root</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ObjectModelSpec&apos; on DomainRelationship &apos;HasObjectModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelSpecHasTypes.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ObjectModelSpecHasTypes</value>
+    <comment>Description for DomainClass &apos;ObjectModelSpecHasTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelSpecHasTypes.DisplayName" xml:space="preserve">
+    <value>Object Model Spec Has Types</value>
+    <comment>DisplayName for DomainClass &apos;ObjectModelSpecHasTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelSpecHasTypes/ObjectModelSpec.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ObjectModelSpecHasTypes.ObjectModelSpec</value>
+    <comment>Description for DomainRole &apos;ObjectModelSpec&apos; on DomainRelationship &apos;ObjectModelSpecHasTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelSpecHasTypes/ObjectModelSpec.DisplayName" xml:space="preserve">
+    <value>Object Model Spec</value>
+    <comment>DisplayName for DomainRole &apos;ObjectModelSpec&apos; on DomainRelationship &apos;ObjectModelSpecHasTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelSpecHasTypes/ObjectModelSpec.PropertyDisplayName" xml:space="preserve">
+    <value>Types</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ObjectModelSpec&apos; on DomainRelationship &apos;ObjectModelSpecHasTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelSpecHasTypes/ModelType.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ObjectModelSpecHasTypes.ModelType</value>
+    <comment>Description for DomainRole &apos;ModelType&apos; on DomainRelationship &apos;ObjectModelSpecHasTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelSpecHasTypes/ModelType.DisplayName" xml:space="preserve">
+    <value>Model Type</value>
+    <comment>DisplayName for DomainRole &apos;ModelType&apos; on DomainRelationship &apos;ObjectModelSpecHasTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelSpecHasTypes/ModelType.PropertyDisplayName" xml:space="preserve">
+    <value>Object Model Spec</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelType&apos; on DomainRelationship &apos;ObjectModelSpecHasTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.HasCaseFileModelSpec.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.HasCaseFileModelSpec</value>
+    <comment>Description for DomainClass &apos;HasCaseFileModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.HasCaseFileModelSpec.DisplayName" xml:space="preserve">
+    <value>Has Case File Model Spec</value>
+    <comment>DisplayName for DomainClass &apos;HasCaseFileModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.HasCaseFileModelSpec/ModelRoot.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.HasCaseFileModelSpec.ModelRoot</value>
+    <comment>Description for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;HasCaseFileModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.HasCaseFileModelSpec/ModelRoot.DisplayName" xml:space="preserve">
+    <value>Model Root</value>
+    <comment>DisplayName for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;HasCaseFileModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.HasCaseFileModelSpec/ModelRoot.PropertyDisplayName" xml:space="preserve">
+    <value>Case File Model Specs</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelRoot&apos; on DomainRelationship &apos;HasCaseFileModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.HasCaseFileModelSpec/CaseFileModelSpec.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.HasCaseFileModelSpec.CaseFileModelSpec</value>
+    <comment>Description for DomainRole &apos;CaseFileModelSpec&apos; on DomainRelationship &apos;HasCaseFileModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.HasCaseFileModelSpec/CaseFileModelSpec.DisplayName" xml:space="preserve">
+    <value>Case File Model Spec</value>
+    <comment>DisplayName for DomainRole &apos;CaseFileModelSpec&apos; on DomainRelationship &apos;HasCaseFileModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.HasCaseFileModelSpec/CaseFileModelSpec.PropertyDisplayName" xml:space="preserve">
+    <value>Model Root</value>
+    <comment>PropertyDisplayName for DomainRole &apos;CaseFileModelSpec&apos; on DomainRelationship &apos;HasCaseFileModelSpec&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileModelSpecHasCaseFileTypes.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileModelSpecHasCaseFileTypes</value>
+    <comment>Description for DomainClass &apos;CaseFileModelSpecHasCaseFileTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileModelSpecHasCaseFileTypes.DisplayName" xml:space="preserve">
+    <value>Case File Model Spec Has Case File Types</value>
+    <comment>DisplayName for DomainClass &apos;CaseFileModelSpecHasCaseFileTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileModelSpecHasCaseFileTypes/CaseFileModelSpec.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileModelSpecHasCaseFileTypes.CaseFileModelSpec</value>
+    <comment>Description for DomainRole &apos;CaseFileModelSpec&apos; on DomainRelationship &apos;CaseFileModelSpecHasCaseFileTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileModelSpecHasCaseFileTypes/CaseFileModelSpec.DisplayName" xml:space="preserve">
+    <value>Case File Model Spec</value>
+    <comment>DisplayName for DomainRole &apos;CaseFileModelSpec&apos; on DomainRelationship &apos;CaseFileModelSpecHasCaseFileTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileModelSpecHasCaseFileTypes/CaseFileModelSpec.PropertyDisplayName" xml:space="preserve">
+    <value>Case File Types</value>
+    <comment>PropertyDisplayName for DomainRole &apos;CaseFileModelSpec&apos; on DomainRelationship &apos;CaseFileModelSpecHasCaseFileTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileModelSpecHasCaseFileTypes/CaseFileType.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileModelSpecHasCaseFileTypes.CaseFileType</value>
+    <comment>Description for DomainRole &apos;CaseFileType&apos; on DomainRelationship &apos;CaseFileModelSpecHasCaseFileTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileModelSpecHasCaseFileTypes/CaseFileType.DisplayName" xml:space="preserve">
+    <value>Case File Type</value>
+    <comment>DisplayName for DomainRole &apos;CaseFileType&apos; on DomainRelationship &apos;CaseFileModelSpecHasCaseFileTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileModelSpecHasCaseFileTypes/CaseFileType.PropertyDisplayName" xml:space="preserve">
+    <value>Case File Model Spec</value>
+    <comment>PropertyDisplayName for DomainRole &apos;CaseFileType&apos; on DomainRelationship &apos;CaseFileModelSpecHasCaseFileTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeHasAttributes.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ModelTypeHasAttributes</value>
+    <comment>Description for DomainClass &apos;ModelTypeHasAttributes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeHasAttributes.DisplayName" xml:space="preserve">
+    <value>Model Type Has Attributes</value>
+    <comment>DisplayName for DomainClass &apos;ModelTypeHasAttributes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeHasAttributes/ModelType.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ModelTypeHasAttributes.ModelType</value>
+    <comment>Description for DomainRole &apos;ModelType&apos; on DomainRelationship &apos;ModelTypeHasAttributes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeHasAttributes/ModelType.DisplayName" xml:space="preserve">
+    <value>Model Type</value>
+    <comment>DisplayName for DomainRole &apos;ModelType&apos; on DomainRelationship &apos;ModelTypeHasAttributes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeHasAttributes/ModelType.PropertyDisplayName" xml:space="preserve">
+    <value>Attributes</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelType&apos; on DomainRelationship &apos;ModelTypeHasAttributes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeHasAttributes/ModelAttribute.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ModelTypeHasAttributes.ModelAttribute</value>
+    <comment>Description for DomainRole &apos;ModelAttribute&apos; on DomainRelationship &apos;ModelTypeHasAttributes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeHasAttributes/ModelAttribute.DisplayName" xml:space="preserve">
+    <value>Model Attribute</value>
+    <comment>DisplayName for DomainRole &apos;ModelAttribute&apos; on DomainRelationship &apos;ModelTypeHasAttributes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeHasAttributes/ModelAttribute.PropertyDisplayName" xml:space="preserve">
+    <value>Model Type</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelAttribute&apos; on DomainRelationship &apos;ModelTypeHasAttributes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.EntityHasRelations.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.EntityHasRelations</value>
+    <comment>Description for DomainClass &apos;EntityHasRelations&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.EntityHasRelations.DisplayName" xml:space="preserve">
+    <value>Entity Has Relations</value>
+    <comment>DisplayName for DomainClass &apos;EntityHasRelations&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.EntityHasRelations/ModelEntity.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.EntityHasRelations.ModelEntity</value>
+    <comment>Description for DomainRole &apos;ModelEntity&apos; on DomainRelationship &apos;EntityHasRelations&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.EntityHasRelations/ModelEntity.DisplayName" xml:space="preserve">
+    <value>Model Entity</value>
+    <comment>DisplayName for DomainRole &apos;ModelEntity&apos; on DomainRelationship &apos;EntityHasRelations&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.EntityHasRelations/ModelEntity.PropertyDisplayName" xml:space="preserve">
+    <value>To Relations</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelEntity&apos; on DomainRelationship &apos;EntityHasRelations&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.EntityHasRelations/ModelRelation.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.EntityHasRelations.ModelRelation</value>
+    <comment>Description for DomainRole &apos;ModelRelation&apos; on DomainRelationship &apos;EntityHasRelations&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.EntityHasRelations/ModelRelation.DisplayName" xml:space="preserve">
+    <value>Model Relation</value>
+    <comment>DisplayName for DomainRole &apos;ModelRelation&apos; on DomainRelationship &apos;EntityHasRelations&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.EntityHasRelations/ModelRelation.PropertyDisplayName" xml:space="preserve">
+    <value>Entity</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelRelation&apos; on DomainRelationship &apos;EntityHasRelations&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RelationHasEntity.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.RelationHasEntity</value>
+    <comment>Description for DomainClass &apos;RelationHasEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RelationHasEntity.DisplayName" xml:space="preserve">
+    <value>Relation Has Entity</value>
+    <comment>DisplayName for DomainClass &apos;RelationHasEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RelationHasEntity/ModelRelation.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.RelationHasEntity.ModelRelation</value>
+    <comment>Description for DomainRole &apos;ModelRelation&apos; on DomainRelationship &apos;RelationHasEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RelationHasEntity/ModelRelation.DisplayName" xml:space="preserve">
+    <value>Model Relation</value>
+    <comment>DisplayName for DomainRole &apos;ModelRelation&apos; on DomainRelationship &apos;RelationHasEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RelationHasEntity/ModelRelation.PropertyDisplayName" xml:space="preserve">
+    <value>Model Entity</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelRelation&apos; on DomainRelationship &apos;RelationHasEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RelationHasEntity/ModelEntity.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.RelationHasEntity.ModelEntity</value>
+    <comment>Description for DomainRole &apos;ModelEntity&apos; on DomainRelationship &apos;RelationHasEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RelationHasEntity/ModelEntity.DisplayName" xml:space="preserve">
+    <value>Model Entity</value>
+    <comment>DisplayName for DomainRole &apos;ModelEntity&apos; on DomainRelationship &apos;RelationHasEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RelationHasEntity/ModelEntity.PropertyDisplayName" xml:space="preserve">
+    <value>Relations</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelEntity&apos; on DomainRelationship &apos;RelationHasEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes</value>
+    <comment>Description for DomainClass &apos;ModelTypeReferencesModelComplexTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes.DisplayName" xml:space="preserve">
+    <value>Model Type References Model Complex Types</value>
+    <comment>DisplayName for DomainClass &apos;ModelTypeReferencesModelComplexTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes/ContainerName.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes.Container Name</value>
+    <comment>Description for DomainProperty &apos;ContainerName&apos; on DomainClass &apos;ModelTypeReferencesModelComplexTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes/ContainerName.DisplayName" xml:space="preserve">
+    <value>Container Name</value>
+    <comment>DisplayName for DomainProperty &apos;ContainerName&apos; on DomainClass &apos;ModelTypeReferencesModelComplexTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes/IsCollection.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes.Is Collection</value>
+    <comment>Description for DomainProperty &apos;IsCollection&apos; on DomainClass &apos;ModelTypeReferencesModelComplexTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes/IsCollection.DisplayName" xml:space="preserve">
+    <value>Is Collection</value>
+    <comment>DisplayName for DomainProperty &apos;IsCollection&apos; on DomainClass &apos;ModelTypeReferencesModelComplexTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes/ModelType.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes.ModelType</value>
+    <comment>Description for DomainRole &apos;ModelType&apos; on DomainRelationship &apos;ModelTypeReferencesModelComplexTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes/ModelType.DisplayName" xml:space="preserve">
+    <value>Model Type</value>
+    <comment>DisplayName for DomainRole &apos;ModelType&apos; on DomainRelationship &apos;ModelTypeReferencesModelComplexTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes/ModelType.PropertyDisplayName" xml:space="preserve">
+    <value>Model Complex Types</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelType&apos; on DomainRelationship &apos;ModelTypeReferencesModelComplexTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes/ModelComplexType.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes.ModelComplexType</value>
+    <comment>Description for DomainRole &apos;ModelComplexType&apos; on DomainRelationship &apos;ModelTypeReferencesModelComplexTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes/ModelComplexType.DisplayName" xml:space="preserve">
+    <value>Model Complex Type</value>
+    <comment>DisplayName for DomainRole &apos;ModelComplexType&apos; on DomainRelationship &apos;ModelTypeReferencesModelComplexTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelTypeReferencesModelComplexTypes/ModelComplexType.PropertyDisplayName" xml:space="preserve">
+    <value>Model Types</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelComplexType&apos; on DomainRelationship &apos;ModelTypeReferencesModelComplexTypes&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityReferencesChildCaseFileRelations.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileEntityReferencesChildCaseFileRelations</value>
+    <comment>Description for DomainClass &apos;CaseFileEntityReferencesChildCaseFileRelations&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityReferencesChildCaseFileRelations.DisplayName" xml:space="preserve">
+    <value>Case File Entity References Child Case File Relations</value>
+    <comment>DisplayName for DomainClass &apos;CaseFileEntityReferencesChildCaseFileRelations&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityReferencesChildCaseFileRelations/CaseFileEntity.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileEntityReferencesChildCaseFileRelations.CaseFileEntity</value>
+    <comment>Description for DomainRole &apos;CaseFileEntity&apos; on DomainRelationship &apos;CaseFileEntityReferencesChildCaseFileRelations&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityReferencesChildCaseFileRelations/CaseFileEntity.DisplayName" xml:space="preserve">
+    <value>Case File Entity</value>
+    <comment>DisplayName for DomainRole &apos;CaseFileEntity&apos; on DomainRelationship &apos;CaseFileEntityReferencesChildCaseFileRelations&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityReferencesChildCaseFileRelations/CaseFileEntity.PropertyDisplayName" xml:space="preserve">
+    <value>Child Case File Relations</value>
+    <comment>PropertyDisplayName for DomainRole &apos;CaseFileEntity&apos; on DomainRelationship &apos;CaseFileEntityReferencesChildCaseFileRelations&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityReferencesChildCaseFileRelations/CaseFileRelation.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileEntityReferencesChildCaseFileRelations.CaseFileRelation</value>
+    <comment>Description for DomainRole &apos;CaseFileRelation&apos; on DomainRelationship &apos;CaseFileEntityReferencesChildCaseFileRelations&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityReferencesChildCaseFileRelations/CaseFileRelation.DisplayName" xml:space="preserve">
+    <value>Case File Relation</value>
+    <comment>DisplayName for DomainRole &apos;CaseFileRelation&apos; on DomainRelationship &apos;CaseFileEntityReferencesChildCaseFileRelations&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityReferencesChildCaseFileRelations/CaseFileRelation.PropertyDisplayName" xml:space="preserve">
+    <value>Parent Case File Entity</value>
+    <comment>PropertyDisplayName for DomainRole &apos;CaseFileRelation&apos; on DomainRelationship &apos;CaseFileEntityReferencesChildCaseFileRelations&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationReferencesChildCaseFileEntity.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileRelationReferencesChildCaseFileEntity</value>
+    <comment>Description for DomainClass &apos;CaseFileRelationReferencesChildCaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationReferencesChildCaseFileEntity.DisplayName" xml:space="preserve">
+    <value>Case File Relation References Child Case File Entity</value>
+    <comment>DisplayName for DomainClass &apos;CaseFileRelationReferencesChildCaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationReferencesChildCaseFileEntity/CaseFileRelation.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileRelationReferencesChildCaseFileEntity.CaseFileRelation</value>
+    <comment>Description for DomainRole &apos;CaseFileRelation&apos; on DomainRelationship &apos;CaseFileRelationReferencesChildCaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationReferencesChildCaseFileEntity/CaseFileRelation.DisplayName" xml:space="preserve">
+    <value>Case File Relation</value>
+    <comment>DisplayName for DomainRole &apos;CaseFileRelation&apos; on DomainRelationship &apos;CaseFileRelationReferencesChildCaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationReferencesChildCaseFileEntity/CaseFileRelation.PropertyDisplayName" xml:space="preserve">
+    <value>Child Case File Entity</value>
+    <comment>PropertyDisplayName for DomainRole &apos;CaseFileRelation&apos; on DomainRelationship &apos;CaseFileRelationReferencesChildCaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationReferencesChildCaseFileEntity/CaseFileEntity.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileRelationReferencesChildCaseFileEntity.CaseFileEntity</value>
+    <comment>Description for DomainRole &apos;CaseFileEntity&apos; on DomainRelationship &apos;CaseFileRelationReferencesChildCaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationReferencesChildCaseFileEntity/CaseFileEntity.DisplayName" xml:space="preserve">
+    <value>Case File Entity</value>
+    <comment>DisplayName for DomainRole &apos;CaseFileEntity&apos; on DomainRelationship &apos;CaseFileRelationReferencesChildCaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationReferencesChildCaseFileEntity/CaseFileEntity.PropertyDisplayName" xml:space="preserve">
+    <value>Parent Case File Relation</value>
+    <comment>PropertyDisplayName for DomainRole &apos;CaseFileEntity&apos; on DomainRelationship &apos;CaseFileRelationReferencesChildCaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RootCaseFileEntity.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.RootCaseFileEntity</value>
+    <comment>Description for DomainClass &apos;RootCaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RootCaseFileEntity.DisplayName" xml:space="preserve">
+    <value>Root Case File Entity</value>
+    <comment>DisplayName for DomainClass &apos;RootCaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RootCaseFileEntity/CaseFileModelSpec.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.RootCaseFileEntity.CaseFileModelSpec</value>
+    <comment>Description for DomainRole &apos;CaseFileModelSpec&apos; on DomainRelationship &apos;RootCaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RootCaseFileEntity/CaseFileModelSpec.DisplayName" xml:space="preserve">
+    <value>Case File Model Spec</value>
+    <comment>DisplayName for DomainRole &apos;CaseFileModelSpec&apos; on DomainRelationship &apos;RootCaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RootCaseFileEntity/CaseFileModelSpec.PropertyDisplayName" xml:space="preserve">
+    <value>Case File Root Entity</value>
+    <comment>PropertyDisplayName for DomainRole &apos;CaseFileModelSpec&apos; on DomainRelationship &apos;RootCaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RootCaseFileEntity/CaseFileEntity.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.RootCaseFileEntity.CaseFileEntity</value>
+    <comment>Description for DomainRole &apos;CaseFileEntity&apos; on DomainRelationship &apos;RootCaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RootCaseFileEntity/CaseFileEntity.DisplayName" xml:space="preserve">
+    <value>Case File Entity</value>
+    <comment>DisplayName for DomainRole &apos;CaseFileEntity&apos; on DomainRelationship &apos;RootCaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RootCaseFileEntity/CaseFileEntity.PropertyDisplayName" xml:space="preserve">
+    <value>Case File Model Specs</value>
+    <comment>PropertyDisplayName for DomainRole &apos;CaseFileEntity&apos; on DomainRelationship &apos;RootCaseFileEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityReferencesModelEntity.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileEntityReferencesModelEntity</value>
+    <comment>Description for DomainClass &apos;CaseFileEntityReferencesModelEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityReferencesModelEntity.DisplayName" xml:space="preserve">
+    <value>Case File Entity References Model Entity</value>
+    <comment>DisplayName for DomainClass &apos;CaseFileEntityReferencesModelEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityReferencesModelEntity/CaseFileEntity.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileEntityReferencesModelEntity.CaseFileEntity</value>
+    <comment>Description for DomainRole &apos;CaseFileEntity&apos; on DomainRelationship &apos;CaseFileEntityReferencesModelEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityReferencesModelEntity/CaseFileEntity.DisplayName" xml:space="preserve">
+    <value>Case File Entity</value>
+    <comment>DisplayName for DomainRole &apos;CaseFileEntity&apos; on DomainRelationship &apos;CaseFileEntityReferencesModelEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityReferencesModelEntity/CaseFileEntity.PropertyDisplayName" xml:space="preserve">
+    <value>Model Entity</value>
+    <comment>PropertyDisplayName for DomainRole &apos;CaseFileEntity&apos; on DomainRelationship &apos;CaseFileEntityReferencesModelEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityReferencesModelEntity/ModelEntity.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileEntityReferencesModelEntity.ModelEntity</value>
+    <comment>Description for DomainRole &apos;ModelEntity&apos; on DomainRelationship &apos;CaseFileEntityReferencesModelEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityReferencesModelEntity/ModelEntity.DisplayName" xml:space="preserve">
+    <value>Model Entity</value>
+    <comment>DisplayName for DomainRole &apos;ModelEntity&apos; on DomainRelationship &apos;CaseFileEntityReferencesModelEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityReferencesModelEntity/ModelEntity.PropertyDisplayName" xml:space="preserve">
+    <value>Case File Entities</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelEntity&apos; on DomainRelationship &apos;CaseFileEntityReferencesModelEntity&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationReferencesModelRelation.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileRelationReferencesModelRelation</value>
+    <comment>Description for DomainClass &apos;CaseFileRelationReferencesModelRelation&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationReferencesModelRelation.DisplayName" xml:space="preserve">
+    <value>Case File Relation References Model Relation</value>
+    <comment>DisplayName for DomainClass &apos;CaseFileRelationReferencesModelRelation&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationReferencesModelRelation/CaseFileRelation.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileRelationReferencesModelRelation.CaseFileRelation</value>
+    <comment>Description for DomainRole &apos;CaseFileRelation&apos; on DomainRelationship &apos;CaseFileRelationReferencesModelRelation&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationReferencesModelRelation/CaseFileRelation.DisplayName" xml:space="preserve">
+    <value>Case File Relation</value>
+    <comment>DisplayName for DomainRole &apos;CaseFileRelation&apos; on DomainRelationship &apos;CaseFileRelationReferencesModelRelation&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationReferencesModelRelation/CaseFileRelation.PropertyDisplayName" xml:space="preserve">
+    <value>Model Relation</value>
+    <comment>PropertyDisplayName for DomainRole &apos;CaseFileRelation&apos; on DomainRelationship &apos;CaseFileRelationReferencesModelRelation&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationReferencesModelRelation/ModelRelation.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileRelationReferencesModelRelation.ModelRelation</value>
+    <comment>Description for DomainRole &apos;ModelRelation&apos; on DomainRelationship &apos;CaseFileRelationReferencesModelRelation&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationReferencesModelRelation/ModelRelation.DisplayName" xml:space="preserve">
+    <value>Model Relation</value>
+    <comment>DisplayName for DomainRole &apos;ModelRelation&apos; on DomainRelationship &apos;CaseFileRelationReferencesModelRelation&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationReferencesModelRelation/ModelRelation.PropertyDisplayName" xml:space="preserve">
+    <value>Case File Relations</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ModelRelation&apos; on DomainRelationship &apos;CaseFileRelationReferencesModelRelation&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelEntityShape.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;ModelEntityShape&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelEntityShape.DisplayName" xml:space="preserve">
+    <value>Model Entity Shape</value>
+    <comment>DisplayName for DomainClass &apos;ModelEntityShape&apos;</comment>
+  </data>
+  <data name="ModelEntityShapeAttributesCompartmentTitle" xml:space="preserve">
+    <value>Attributes</value>
+    <comment>Compartment title</comment>
+  </data>
+  <data name="ModelEntityShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CommentBoxShape.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CommentBoxShape.DisplayName" xml:space="preserve">
+    <value>Comment Box Shape</value>
+    <comment>DisplayName for DomainClass &apos;CommentBoxShape&apos;</comment>
+  </data>
+  <data name="CommentBoxShapeCommentDefaultText" xml:space="preserve">
+    <value>BusinessRulesShapeNameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelLane.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ObjectModelLane</value>
+    <comment>Description for DomainClass &apos;ObjectModelLane&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ObjectModelLane.DisplayName" xml:space="preserve">
+    <value>Object Model Lane</value>
+    <comment>DisplayName for DomainClass &apos;ObjectModelLane&apos;</comment>
+  </data>
+  <data name="ObjectModelLaneTitleDefaultText" xml:space="preserve">
+    <value>Title</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileSpecLane.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileSpecLane</value>
+    <comment>Description for DomainClass &apos;CaseFileSpecLane&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileSpecLane.DisplayName" xml:space="preserve">
+    <value>Case File Spec Lane</value>
+    <comment>DisplayName for DomainClass &apos;CaseFileSpecLane&apos;</comment>
+  </data>
+  <data name="CaseFileSpecLaneTitleDefaultText" xml:space="preserve">
+    <value>Title</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityShape.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileEntityShape</value>
+    <comment>Description for DomainClass &apos;CaseFileEntityShape&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileEntityShape.DisplayName" xml:space="preserve">
+    <value>Case File Entity Shape</value>
+    <comment>DisplayName for DomainClass &apos;CaseFileEntityShape&apos;</comment>
+  </data>
+  <data name="CaseFileEntityShapeTitleDefaultText" xml:space="preserve">
+    <value>Title</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationShape.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileRelationShape</value>
+    <comment>Description for DomainClass &apos;CaseFileRelationShape&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileRelationShape.DisplayName" xml:space="preserve">
+    <value>Case File Relation Shape</value>
+    <comment>DisplayName for DomainClass &apos;CaseFileRelationShape&apos;</comment>
+  </data>
+  <data name="CaseFileRelationShapeTitleDefaultText" xml:space="preserve">
+    <value>Title</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelRelationShape.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ModelRelationShape</value>
+    <comment>Description for DomainClass &apos;ModelRelationShape&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelRelationShape.DisplayName" xml:space="preserve">
+    <value>Model Relation Shape</value>
+    <comment>DisplayName for DomainClass &apos;ModelRelationShape&apos;</comment>
+  </data>
+  <data name="ModelRelationShapeAttributesCompartmentTitle" xml:space="preserve">
+    <value>Attributes</value>
+    <comment>Compartment title</comment>
+  </data>
+  <data name="ModelRelationShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelComplexTypeShape.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ModelComplexTypeShape</value>
+    <comment>Description for DomainClass &apos;ModelComplexTypeShape&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ModelComplexTypeShape.DisplayName" xml:space="preserve">
+    <value>Model Complex Type Shape</value>
+    <comment>DisplayName for DomainClass &apos;ModelComplexTypeShape&apos;</comment>
+  </data>
+  <data name="ModelComplexTypeShapeAttributesCompartmentTitle" xml:space="preserve">
+    <value>Attributes</value>
+    <comment>Compartment title</comment>
+  </data>
+  <data name="ModelComplexTypeShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.EntityConnector.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;EntityConnector&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.EntityConnector.DisplayName" xml:space="preserve">
+    <value>Entity Connector</value>
+    <comment>DisplayName for DomainClass &apos;EntityConnector&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CommentConnector.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;CommentConnector&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CommentConnector.DisplayName" xml:space="preserve">
+    <value>Comment Connector</value>
+    <comment>DisplayName for DomainClass &apos;CommentConnector&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileElementConnector.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileElementConnector</value>
+    <comment>Description for DomainClass &apos;CaseFileElementConnector&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileElementConnector.DisplayName" xml:space="preserve">
+    <value>Case File Element Connector</value>
+    <comment>DisplayName for DomainClass &apos;CaseFileElementConnector&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileToModelConnector.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.CaseFileToModelConnector</value>
+    <comment>Description for DomainClass &apos;CaseFileToModelConnector&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.CaseFileToModelConnector.DisplayName" xml:space="preserve">
+    <value>Case File To Model Connector</value>
+    <comment>DisplayName for DomainClass &apos;CaseFileToModelConnector&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RelationConnector.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.RelationConnector</value>
+    <comment>Description for DomainClass &apos;RelationConnector&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.RelationConnector.DisplayName" xml:space="preserve">
+    <value>Relation Connector</value>
+    <comment>DisplayName for DomainClass &apos;RelationConnector&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ComplexTypeConnector.Description" xml:space="preserve">
+    <value>Description for Luminis.Its.Workbench.ComplexTypeConnector</value>
+    <comment>Description for DomainClass &apos;ComplexTypeConnector&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ComplexTypeConnector.DisplayName" xml:space="preserve">
+    <value>Complex Type Connector</value>
+    <comment>DisplayName for DomainClass &apos;ComplexTypeConnector&apos;</comment>
+  </data>
+  <data name="ComplexTypeConnectorNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="FormatList" xml:space="preserve">
+    <value>Class Diagrams (*.its)|*.its</value>
+    <comment>A list of file format specifiers for the Save dialog box</comment>
+  </data>
+  <data name="ModelExplorerTitle" xml:space="preserve">
+    <value>Class Diagrams Explorer</value>
+    <comment>Model Explorer Toolwindow title</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ClassDiagram.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainClass &apos;ClassDiagram&apos;</comment>
+  </data>
+  <data name="Luminis.Its.Workbench.ClassDiagram.DisplayName" xml:space="preserve">
+    <value>Class Diagram</value>
+    <comment>DisplayName for DomainClass &apos;ClassDiagram&apos;</comment>
+  </data>
+  <data name="Class DiagramsToolboxTab" xml:space="preserve">
+    <value>Class Diagrams</value>
+    <comment>Toolbox item tab name</comment>
+  </data>
+  <data name="AttributeToolboxItem" xml:space="preserve">
+    <value>Attribute</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="AttributeToolboxTooltip" xml:space="preserve">
+    <value>Create an Attribute on a Class</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="CommentToolboxItem" xml:space="preserve">
+    <value>Comment</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="CommentToolboxTooltip" xml:space="preserve">
+    <value>Create a Comment</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="CommentsReferenceTypesToolboxItem" xml:space="preserve">
+    <value>Comment Link</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="CommentsReferenceTypesToolboxTooltip" xml:space="preserve">
+    <value>Link a comment to an element</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ModelRelationToolboxItem" xml:space="preserve">
+    <value>ModelRelation</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ModelRelationToolboxTooltip" xml:space="preserve">
+    <value>Model Relation</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ModelComplexTypeToolboxItem" xml:space="preserve">
+    <value>ModelComplexType</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ModelComplexTypeToolboxTooltip" xml:space="preserve">
+    <value>Model Complex Type</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ModelComplexTypeConnectorToolboxItem" xml:space="preserve">
+    <value>ModelComplexTypeConnector</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ModelComplexTypeConnectorToolboxTooltip" xml:space="preserve">
+    <value>Model Complex Type Connector</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ModelEntityToolToolboxItem" xml:space="preserve">
+    <value>ModelEntity</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ModelEntityToolToolboxTooltip" xml:space="preserve">
+    <value>Model Entity Tool</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EntityRelationConnectorToolboxItem" xml:space="preserve">
+    <value>EntityRelationConnector</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EntityRelationConnectorToolboxTooltip" xml:space="preserve">
+    <value>Entity Relation Connector</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="RelationEntityConnectorToolboxItem" xml:space="preserve">
+    <value>RelationEntityConnector</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="RelationEntityConnectorToolboxTooltip" xml:space="preserve">
+    <value>Relation Entity Connector</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="WorkbenchToolboxTab" xml:space="preserve">
+    <value>Workbench</value>
+    <comment>Toolbox item tab name</comment>
+  </data>
+  <data name="CaseFileEntityToolToolboxItem" xml:space="preserve">
+    <value>CaseFileEntity</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="CaseFileEntityToolToolboxTooltip" xml:space="preserve">
+    <value>Case File Entity Tool</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="CaseFileRelationToolToolboxItem" xml:space="preserve">
+    <value>CaseFileRelation</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="CaseFileRelationToolToolboxTooltip" xml:space="preserve">
+    <value>Case File Relation Tool</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="UnrecognizedElementType" xml:space="preserve">
+    <value>ElementType {0} is not recognized as a type of domain class which belongs to this domain model.</value>
+    <comment>Incorrect ElementType passed in to Model.CreateElement method</comment>
+  </data>
+  <data name="UnrecognizedElementLinkType" xml:space="preserve">
+    <value>ElementLinkType {0} is not recognized as a type of domain relationship which belongs to this domain model.</value>
+    <comment>Incorrect ElementLinkType passed in to Model.CreateElementLink method</comment>
+  </data>
+  <data name="AmbiguousSchema" xml:space="preserve">
+    <value>More than one schema found for target namespace &apos;{0}&apos;, use the first one at &apos;{1}&apos;.</value>
+    <comment>Serialization Warning: AmbiguousSchema</comment>
+  </data>
+  <data name="ExpectingFullFormRelationship" xml:space="preserve">
+    <value>Element &apos;{0}&apos; is treated as the target role-player of a relationship &apos;{1}&apos; instance, which should be serialized in full-form.</value>
+    <comment>Serialization Warning: ExpectingFullFormRelationship</comment>
+  </data>
+  <data name="ExpectingShortFormRelationship" xml:space="preserve">
+    <value>Instances of relationship &apos;{0}&apos; should be serialized in short-form.</value>
+    <comment>Serialization Warning: ExpectingShortFormRelationship</comment>
+  </data>
+  <data name="IgnoredPropertyValue" xml:space="preserve">
+    <value>Invalid property value &apos;{0}&apos; for property &apos;{1}&apos; with type &apos;{2}&apos;, ignored.</value>
+    <comment>Serialization Warning: IgnoredPropertyValue</comment>
+  </data>
+  <data name="MissingId" xml:space="preserve">
+    <value>Missing &apos;Id&apos; attribute, a new Guid &apos;{0}&apos; is auto-generated.</value>
+    <comment>Serialization Warning: MissingId</comment>
+  </data>
+  <data name="MonikerResolvedToDuplicateLink" xml:space="preserve">
+    <value>Resolving moniker &apos;{0}&apos; causes a duplicate link to be created, so the link and the moniker are ignored.</value>
+    <comment>Serialization Warning: MonikerResolvedToDuplicateLink</comment>
+  </data>
+  <data name="NoSchema" xml:space="preserve">
+    <value>Cannot find a schema that defines target namespace &apos;{0}&apos;, schema validation skipped.</value>
+    <comment>Serialization Warning: NoSchema</comment>
+  </data>
+  <data name="UnexpectedXmlElement" xml:space="preserve">
+    <value>Unexpected XML element &apos;{0}&apos;, ignored.</value>
+    <comment>Serialization Warning: UnexpectedXmlElement</comment>
+  </data>
+  <data name="AmbiguousMoniker" xml:space="preserve">
+    <value>Ambiguous moniker &apos;{0}&apos; encountered. It is used for both &apos;{1}&apos; and &apos;{2}&apos;.</value>
+    <comment>Serialization Error: AmbiguousMoniker</comment>
+  </data>
+  <data name="CannotMonikerizeElement" xml:space="preserve">
+    <value>Instances of DomainClass &apos;{0}&apos; cannot be serialized as a moniker.
+A DomainClass can be serialized as a moniker only if 
+1) it has a defined/inherited DomainProperty marked as IsMonikerKey=true, or 
+2) it is marked/inherited with SerializeId=true.</value>
+    <comment>Serialization Error: CannotMonikerizeElement</comment>
+  </data>
+  <data name="CannotOpenDocument" xml:space="preserve">
+    <value>Error encountered, check Error List window for details.</value>
+    <comment>Serialization Error: CannotOpenDocument</comment>
+  </data>
+  <data name="CannotSaveDocument" xml:space="preserve">
+    <value>Error encountered, check Error List window for details.</value>
+    <comment>Serialization Error: CannotSaveDocument</comment>
+  </data>
+  <data name="DanglingRelationship" xml:space="preserve">
+    <value>Relationship &apos;{0}&apos; instance is missing target role-player.</value>
+    <comment>Serialization Error: DanglingRelationship</comment>
+  </data>
+  <data name="InvalidPropertyValue" xml:space="preserve">
+    <value>Invalid property value &apos;{0}&apos; for property &apos;{1}&apos; with type &apos;{2}&apos;.</value>
+    <comment>Serialization Error: InvalidPropertyValue</comment>
+  </data>
+  <data name="MissingMoniker" xml:space="preserve">
+    <value>Missing moniker. A moniker is expected in attribute &apos;{0}&apos;.</value>
+    <comment>Serialization Error: MissingMoniker</comment>
+  </data>
+  <data name="MissingTransaction" xml:space="preserve">
+    <value>This must be called within the context of an active transaction.</value>
+    <comment>Serialization Error: MissingTransaction</comment>
+  </data>
+  <data name="UnresolvedMoniker" xml:space="preserve">
+    <value>Cannot resolve moniker &apos;{0}&apos;.</value>
+    <comment>Serialization Error: UnresolvedMoniker</comment>
+  </data>
+  <data name="VersionMismatch" xml:space="preserve">
+    <value>Unsupported version &apos;{0}&apos;, can only support &apos;{1}&apos;.</value>
+    <comment>Serialization Error: VersionMismatch</comment>
+  </data>
+  <data name="CannotCloseExistingDiagramDocument" xml:space="preserve">
+    <value>Diagram file &apos;{0}&apos; cannot be closed.</value>
+    <comment>User cancel closing diagram file. Hence, the DSL model file cannot be opened</comment>
+  </data>
+  <data name="MinimumMultiplicityMissingLink" xml:space="preserve">
+    <value>{0} {1} has no {2}.</value>
+    <comment>Multiplicity underflow validation.</comment>
+  </data>
+  <data name="SaveOperationCancelled" xml:space="preserve">
+    <value>Save operation cancelled.</value>
+    <comment>Message when save is cancelled on validation errors</comment>
+  </data>
+  <data name="SaveValidationFailed" xml:space="preserve">
+    <value>There were validation errors, continue save?</value>
+    <comment>Message when validation errors are found on save</comment>
+  </data>
+  <data name="UnloadableSaveValidationFailed" xml:space="preserve">
+    <value>There were validation errors. Continuing to save may cause the file to become unloadable, do you want to continue?</value>
+    <comment>Message when validation errors are found on save that will cause file to become unloadable</comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AttributeToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\resources\attributetool.bmp;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="CommentToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\resources\commenttool.bmp;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="CommentsReferenceTypesToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\resources\commentlinktool.bmp;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ModelRelationToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ClassTool.bmp;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ModelComplexTypeToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ClassTool.bmp;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ModelComplexTypeConnectorToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\AssociationTool.bmp;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ModelEntityToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ClassTool.bmp;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EntityRelationConnectorToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\UnidirectionTool.bmp;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="RelationEntityConnectorToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\UnidirectionTool.bmp;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="CaseFileEntityToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ClassTool.bmp;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="CaseFileRelationToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ClassTool.bmp;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+</root>
+
+

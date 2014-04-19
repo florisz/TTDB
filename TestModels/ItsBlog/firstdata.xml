@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<cs:CaseFile xmlns:cs="http://luminis.net/its/schemas/casefile.xsd">
+  <cs:Link rel="casefilespecification" href="http://localhost:8080/its/specifications/casefiles/BlogModel/Blogs/" />
+  <cs:Link rel="self" href="" />
+  <Blog RegistrationId="48fea9d4-2bd7-4cb5-bd92-ae211f5f5088" RegistrationStart="2009-01-01T22:09:27.00+01:00">
+	<Title>MyBlog</Title>
+	<Bloggers RegistrationId="d9b88a2d-ddf1-4944-a174-7312eeae0080" RegistrationStart="2009-01-01T22:09:27.00+01:00">
+		<User RegistrationId="b50a9734-52a6-46fb-aa59-28febf6af1bf" RegistrationStart="2009-01-01T22:09:27.00+01:00">
+			<Name>Albert Oudenampsen</Name>
+			<Email>albert.oudenampsen@luminis.nl</Email>
+		</User>
+	</Bloggers>
+	<BlogPosts RegistrationId="d8ee704f-83f2-46f3-9752-8473cf539df1" RegistrationStart="2009-01-01T22:09:27.00+01:00">
+		<BlogPost RegistrationId="4580b0ac-0225-41d0-9d69-cfd91581b4d5" RegistrationStart="2009-01-01T22:09:27.00+01:00">
+			<Message>My first post</Message>
+		</BlogPost>
+	</BlogPosts>
+  </Blog>
+</cs:CaseFile>

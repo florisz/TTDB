@@ -1,0 +1,55 @@
+<cs:CaseFile xmlns:cs="http://luminis.net/its/schemas/casefile.xsd">
+  <cs:Link rel="casefilespecification" href="http://localhost:8080/its/specifications/casefiles/ExtendedModel/Persoon" />
+  <cs:Link rel="self" href="" />
+  <Persoon RegistrationId="48fea9d4-2bd7-4cb5-bd92-ae211f5f0000" RegistrationStart="2009-09-09T11:20:59.0000000">
+    <Achternaam>Jansen</Achternaam>
+    <Beroep>Consultant</Beroep>
+    <BSN>BSN0001</BSN>
+    <GeboorteDatum>1967-10-02</GeboorteDatum>
+    <Voornaam>Jan</Voornaam>
+    <TelefoonNummers>
+	    <TelefoonNummer>
+			<NumberType>Vast</NumberType>
+			<Nummer>010-2345678</Nummer>
+		</TelefoonNummer>
+	    <TelefoonNummer>
+			<NumberType>Mobiel</NumberType>
+			<Nummer>06-23456789</Nummer>
+		</TelefoonNummer>
+	</TelefoonNummers>
+	<Huwelijk RegistrationId="48fea9d4-2bd7-4cb5-bd92-ae211f5f0001" RegistrationStart="2009-09-09T11:20:59.0000000">
+	  <Partner RegistrationId="48fea9d4-2bd7-4cb5-bd92-ae211f5f0005" RegistrationStart="2009-09-09T11:20:59.0000000">
+		<Achternaam>Gerritsen</Achternaam>
+		<Beroep>Directeur</Beroep>
+		<BSN>BSN0002</BSN>
+		<GeboorteDatum>1965-08-23</GeboorteDatum>
+		<Voornaam>Marie</Voornaam>
+		<TelefoonNummers>
+			<TelefoonNummer>
+				<NumberType>Mobiel</NumberType>
+				<Nummer>06-12345678</Nummer>
+			</TelefoonNummer>
+		</TelefoonNummers>
+	  </Partner>
+	</Huwelijk>
+	<BezitAuto RegistrationId="48fea9d4-2bd7-4cb5-bd92-ae211f5f0002" RegistrationStart="2009-09-09T11:20:59.0000000">
+		<DatumStart>2001-01-01</DatumStart>
+		<Auto RegistrationId="48fea9d4-2bd7-4cb5-bd92-ae211f5f0007" RegistrationStart="2009-09-09T11:20:59.0000000">
+			<Kenteken>XX-23-YY</Kenteken>
+		</Auto>
+	</BezitAuto>
+	<BezitWoning RegistrationId="48fea9d4-2bd7-4cb5-bd92-ae211f5f0003" RegistrationStart="2009-09-09T11:20:59.0000000">
+		<DatumStart>1990-10-15</DatumStart>
+		<Woning RegistrationId="48fea9d4-2bd7-4cb5-bd92-ae211f5f0004" RegistrationStart="2009-09-09T11:20:59.0000000">
+			<KadastraalNummer>KN000-1234-5678</KadastraalNummer>
+			<Adres>
+				<DatumStart>1934-06-25</DatumStart>
+				<HuisNummer>74</HuisNummer>
+				<PostCode>4545 AB</PostCode>
+				<Straat>Rembrandtlaan</Straat>
+				<Woonplaats>Rotterdam</Woonplaats>
+			</Adres>
+		</Woning>
+	</BezitWoning>
+  </Persoon>
+</cs:CaseFile>

@@ -1,0 +1,48 @@
+<cs:CaseFile xmlns:cs="http://luminis.net/its/schemas/casefile.xsd">
+  <cs:Link rel="casefilespecification" href="http://localhost:8080/its/specifications/casefiles/Automobile/Autohistorie" />
+  <cs:Link rel="self" href="" />
+  <Car RegistrationId="68FD1A57-9C78-45b3-A080-F61848461655" RegistrationStart="2009-06-17T09:09:00.0000000">
+    <LicensePlate>52-RV-XT</LicensePlate>
+    <Image>http://localhost:8080/its/resources/images/peugeot307.jpg</Image>
+    <CarOwners RegistrationId="21D797BC-61E4-49a3-BE85-40BC77345830" RegistrationStart="2009-06-17T09:09:00.0000000">
+      <CarOwner RegistrationId="2F8B8E50-2EFE-484b-9688-C0DA36872BCC" RegistrationStart="2009-06-17T09:09:00.0000000">
+        <Name>Harbers</Name>
+        <Address>Korianderstraat 41, Arnhem</Address>
+      </CarOwner>
+    </CarOwners>
+    <CarIsOfType RegistrationId="FAB46973-89C9-4a79-8D7D-F8B27DCBE477" RegistrationStart="2009-06-17T09:09:00.0000000">
+      <CarModelType RegistrationId="AC5898FB-B71B-470b-829B-053B40FA9186" RegistrationStart="2009-06-17T09:09:00.0000000">
+        <CarBrand>Peugeot</CarBrand>
+        <CarModel>307</CarModel>
+        <CarType>1.6HDI</CarType>
+        <EngineSize>1587</EngineSize>
+        <EngineType>Combustion</EngineType>
+        <NumberOfDoors>5</NumberOfDoors>
+        <TypeOfFuel>Diesel</TypeOfFuel>
+        <YearFrom>1998</YearFrom>
+        <YearTo></YearTo>
+        <EnergyLabel></EnergyLabel>
+      </CarModelType>
+    </CarIsOfType>
+    <CarHistory RegistrationId="A54241F4-6055-4008-952D-16370F4E4F5C" RegistrationStart="2009-06-17T09:09:00.0000000">
+      <ShopVisit RegistrationId="3D89C5A9-126A-4b1b-9F2B-8ADDDB397F19" RegistrationStart="2009-06-17T09:09:00.0000000">
+        <Date>2009-04-01</Date>
+        <Reason>Regular maintenance</Reason>
+      </ShopVisit>
+    </CarHistory>
+    <CarHistory RegistrationId="D330DE5D-3BCC-4ec8-A650-1745CEBD53E7" RegistrationStart="2009-06-17T09:09:00.0000000">
+      <ShopVisit RegistrationId="A53A1041-8B62-4f55-A6FC-EED6312A73DF" RegistrationStart="2009-06-17T09:09:00.0000000">
+        <Date>2008-10-15</Date>
+        <Reason>APK</Reason>
+        <Mileage>98000</Mileage>
+      </ShopVisit>
+    </CarHistory>
+    <CarHistory RegistrationId="14A71EC4-4294-4e12-8818-DA5D14096E75" RegistrationStart="2009-06-17T09:09:00.0000000">
+      <ShopVisit RegistrationId="8D8611D7-324E-46f8-9D65-B45367B174A7" RegistrationStart="2009-06-17T09:09:00.0000000">
+        <Date>2009-05-12</Date>
+        <Reason>Regular maintenance</Reason>
+        <Mileage>108000</Mileage>
+      </ShopVisit>
+    </CarHistory>
+  </Car>
+</cs:CaseFile>

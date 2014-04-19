@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<classDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="test">
+  <modelRootMoniker name="/" />
+  <nestedChildShapes>
+    <objectModelLane Id="848b6de3-d316-4543-ac15-aad172841703" absoluteBounds="0, 0, 11, 8.5">
+      <objectModelSpecMoniker name="//ObjectModelSpec1" />
+      <nestedChildShapes>
+        <modelEntityShape Id="0ca3bd0a-ca36-49e7-91de-e21309c05cfe" isExpanded="false" absoluteBounds="0.375, 1.875, 1.5, 0.3">
+          <modelEntityMoniker name="//ObjectModelSpec1/Persoon" />
+          <nestedChildShapes>
+            <elementListCompartment Id="6ca67547-5290-4ef8-b8a1-85f439121000" absoluteBounds="0.39, 2.185, 1.4700000000000002, 1.5954996744791665" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </modelEntityShape>
+        <modelComplexTypeShape Id="3a3ca81d-635d-4068-bc0b-5d5ef563f911" isExpanded="false" absoluteBounds="0.375, 1.375, 1.5, 0.3">
+          <modelComplexTypeMoniker name="//ObjectModelSpec1/aap" />
+          <nestedChildShapes>
+            <elementListCompartment Id="6c84134f-e563-43d0-9ec5-0fc823c804e6" absoluteBounds="0.39, 1.685, 1.4700000000000002, 0.24938964843750006" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </modelComplexTypeShape>
+        <modelComplexTypeShape Id="11aa5dd1-357c-44c1-b86c-1472bffb255f" isExpanded="false" absoluteBounds="0.375, 0.875, 1.5, 0.3">
+          <modelComplexTypeMoniker name="//ObjectModelSpec1/Adres" />
+          <nestedChildShapes>
+            <elementListCompartment Id="0629f3d6-2a79-48bb-8254-3a26cacab63b" absoluteBounds="0.39, 1.185, 1.4700000000000002, 0.24938964843750006" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </modelComplexTypeShape>
+        <complexTypeConnector edgePoints="[(1.125 : 1.875); (1.125 : 1.675)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="e2f683a2-6528-4d4d-8df7-1e6bffbcbc19">
+          <relativeChildShapes />
+          <nodes>
+            <modelEntityShapeMoniker Id="0ca3bd0a-ca36-49e7-91de-e21309c05cfe" />
+            <modelComplexTypeShapeMoniker Id="3a3ca81d-635d-4068-bc0b-5d5ef563f911" />
+          </nodes>
+        </complexTypeConnector>
+        <complexTypeConnector edgePoints="[(0.375 : 2.025); (0 : 2.025); (0 : 1.025); (0.375 : 1.025)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="e2f683a2-6528-4d4d-8df7-1e6bffbcbc19">
+          <relativeChildShapes />
+          <nodes>
+            <modelEntityShapeMoniker Id="0ca3bd0a-ca36-49e7-91de-e21309c05cfe" />
+            <modelComplexTypeShapeMoniker Id="11aa5dd1-357c-44c1-b86c-1472bffb255f" />
+          </nodes>
+        </complexTypeConnector>
+      </nestedChildShapes>
+    </objectModelLane>
+  </nestedChildShapes>
+</classDiagram>

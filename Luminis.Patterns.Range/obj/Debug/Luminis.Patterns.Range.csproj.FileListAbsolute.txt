@@ -1,0 +1,5 @@
+Z:\Develop\ITS\Luminis.Patterns.Range\bin\Debug\Luminis.Patterns.Range.dll
+Z:\Develop\ITS\Luminis.Patterns.Range\bin\Debug\Luminis.Patterns.Range.pdb
+Z:\Develop\ITS\Luminis.Patterns.Range\obj\Debug\ResolveAssemblyReference.cache
+Z:\Develop\ITS\Luminis.Patterns.Range\obj\Debug\Luminis.Patterns.Range.dll
+Z:\Develop\ITS\Luminis.Patterns.Range\obj\Debug\Luminis.Patterns.Range.pdb

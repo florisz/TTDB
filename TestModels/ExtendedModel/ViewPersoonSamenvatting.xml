@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Representation 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://luminis.net/its/schemas/representation.xsd"
+	>
+	<Link rel="casefilespecification" href="http://localhost:8080/its/specifications/casefiles/SimpleModel/Persoon" />
+	<Link rel="self" href="" />
+	<Name>PersoonKort</Name>
+	<Script Type="xslt" ContentType="html">
+	<xsl:stylesheet version="1.0"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:msxsl="urn:schemas-microsoft-com:xslt"
+                exclude-result-prefixes="msxsl">
+	<xsl:output method="html" indent="yes" />
+	<xsl:template name="DateTime">
+
+		<script type="text/javascript">
+			var d = new Date();
+			document.write(d.toLocaleDateString());
+			document.write(" ");
+			document.write(d.toLocaleTimeString());
+		</script>
+	</xsl:template>
+	<xsl:template match="/">
+		<html xmlns="">
+		<body>
+		<table width="100%">
+		  <thead>
+			<h1>
+			  Persoon Samenvatting (<xsl:call-template name="DateTime" />)
+			</h1>
+		  </thead>
+		  <thead>
+			<td>Label</td>
+			<td>Value</td>
+		  </thead>
+		  <xsl:apply-templates select="//Persoon" />
+		</table>
+		</body>
+		</html>
+	</xsl:template>
+
+	<xsl:template match="Persoon">
+		<tr>
+		  <td>BSN</td>
+		  <td>
+			<xsl:value-of select="BSN" />
+		  </td>
+		</tr>
+		<tr>
+		  <td>Voornaam</td>
+		  <td>
+			<xsl:value-of select="Voornaam" />
+		  </td>
+		</tr>
+		<tr>
+		  <td>Achternaam</td>
+		  <td>
+			<xsl:value-of select="Achternaam" />
+		  </td>
+		</tr>
+	</xsl:template>
+		
+	</xsl:stylesheet>
+	</Script>
+</Representation>

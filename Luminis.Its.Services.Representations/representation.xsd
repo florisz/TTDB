@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="representation"
+    targetNamespace="http://luminis.net/its/schemas/representation.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://luminis.net/its/schemas/representation.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <!-- NameSpace = Luminis.Its.Services.Representations -->
+  <xs:element name="Representation" type="Representation"/>
+
+  <xs:complexType name="Representation">
+    <xs:sequence>
+      <xs:element name="Link" type="RepresentationLink" minOccurs="2" maxOccurs="2"/>
+      <xs:element name="Name" type="NonEmptyString" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Script" type="RepresentationScript" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RepresentationLink">
+    <xs:attribute name="rel" type="RepresentationLinkRel" use="required"/>
+    <xs:attribute name="href" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="RepresentationScript">
+    <xs:sequence>
+      <xs:any minOccurs="1" maxOccurs="1" namespace="##any" processContents="skip"/>
+    </xs:sequence>
+    <xs:attribute name="ContentType" type="RepresentationScriptContentType" use="required"/>
+    <xs:attribute name="Type" type="NonEmptyString" use="required"/>
+  </xs:complexType>
+
+  <xs:simpleType name="RepresentationLinkRel">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="casefilespecification"/>
+      <xs:enumeration value="representation"/>
+      <xs:enumeration value="self"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="RepresentationScriptContentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="html"/>
+      <xs:enumeration value="text"/>
+      <xs:enumeration value="xml"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="NonEmptyString">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

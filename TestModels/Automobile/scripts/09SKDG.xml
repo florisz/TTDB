@@ -1,0 +1,35 @@
+<cs:CaseFile xmlns:cs="http://luminis.net/its/schemas/casefile.xsd">
+  <cs:Link rel="casefilespecification" href="http://localhost:8080/its/specifications/casefiles/Automobile/Autohistorie" />
+  <cs:Link rel="self" href="" />
+  <Car RegistrationId="48fea9d4-2bd7-4cb5-bd92-ae211f5f5088" RegistrationStart="2009-06-05T11:20:59.0000000">
+    <LicensePlate>09-SK-DG</LicensePlate>
+    <Image>http://localhost:8080/its/resources/images/vwpassat.jpg</Image>
+    <CarOwners RegistrationId="22fb99fe-7801-4395-9db1-1599c49a316c" RegistrationStart="2009-06-05T11:20:59.0000000">
+      <CarOwner RegistrationId="04bb0ea9-f5b1-45aa-9f42-fcea5fec6c08" RegistrationStart="2009-06-05T11:20:59.0000000">
+        <Name>Van Rooijen</Name>
+        <Address>Haverweg 5, Hengelo</Address>
+      </CarOwner>
+    </CarOwners>
+    <CarIsOfType RegistrationId="99eca24c-91df-4c27-bd9e-e8c3b19d7617" RegistrationStart="2009-06-05T11:20:59.0000000">
+      <CarModelType RegistrationId="d8ee704f-83f2-46f3-9752-8473cf539df1" RegistrationStart="2009-06-05T11:40:12.0000000">
+        <CarBrand>Volkswagen</CarBrand>
+        <CarModel>Passat</CarModel>
+        <CarType>1.9TDI</CarType>
+        <EngineSize>1898</EngineSize>
+        <EngineType>Combustion</EngineType>
+        <NumberOfDoors>4</NumberOfDoors>
+        <TypeOfFuel>Diesel</TypeOfFuel>
+        <YearFrom>1973</YearFrom>
+        <YearTo></YearTo>
+		<EnergyLabel></EnergyLabel>
+      </CarModelType>
+    </CarIsOfType>
+    <CarHistory RegistrationId="4580b0ac-0225-41d0-9d69-cfd91581b4d5" RegistrationStart="2009-06-05T12:12:22.0000000">
+      <ShopVisit RegistrationId="85de0674-e1c9-45aa-92f7-58cc87a84478" RegistrationStart="2009-06-05T12:12:22.0000000">
+        <Date>2009-06-06</Date>
+        <Reason>Maintenance</Reason>
+        <Mileage>140000</Mileage>
+      </ShopVisit>
+    </CarHistory>
+  </Car>
+</cs:CaseFile>

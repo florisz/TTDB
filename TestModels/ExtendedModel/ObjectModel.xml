@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ObjectModel 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns="http://luminis.net/its/schemas/objectmodel.xsd">
+  <Link rel="self" href="" />
+  <Name>ExtendedModel</Name>
+  <ObjectDefinitions>
+    <ObjectDefinition Name="Auto" ObjectType="entity">
+      <Properties>
+        <Property Name="Kenteken" Type="string" Required="true" />
+      </Properties>
+    </ObjectDefinition>
+    <ObjectDefinition Name="BepalingWOZWaarde" ObjectType="relation">
+      <Properties />
+    </ObjectDefinition>
+    <ObjectDefinition Name="BezitAuto" ObjectType="relation">
+      <Properties>
+        <Property Name="DatumEinde" Type="date" Required="false" />
+        <Property Name="DatumStart" Type="date" Required="true" />
+      </Properties>
+    </ObjectDefinition>
+    <ObjectDefinition Name="BezitWoning" ObjectType="relation">
+      <Properties>
+        <Property Name="DatumEinde" Type="date" Required="false" />
+        <Property Name="DatumStart" Type="date" Required="true" />
+      </Properties>
+    </ObjectDefinition>
+    <ObjectDefinition Name="Huwelijk" ObjectType="relation">
+      <Properties />
+    </ObjectDefinition>
+    <ObjectDefinition Name="Persoon" ObjectType="entity">
+      <Properties>
+        <Property Name="Achternaam" Type="string" Required="true" />
+        <Property Name="Beroep" Type="string" Required="true" />
+        <Property Name="BSN" Type="string" Required="true" />
+        <Property Name="GeboorteDatum" Type="date" Required="true" />
+        <Property Name="Voornaam" Type="string" Required="true" />
+      </Properties>
+      <ComplexProperties>
+        <ComplexProperty Name="TelefoonNummers" MinOccurs="0" MaxOccurs="1">
+          <Properties />
+          <ComplexProperties>
+            <ComplexProperty Name="TelefoonNummer" MinOccurs="0" MaxOccurs="unbounded">
+              <Properties>
+                <Property Name="NumberType" Type="string" Required="true" />
+                <Property Name="Nummer" Type="string" Required="true" />
+              </Properties>
+            </ComplexProperty>
+          </ComplexProperties>
+        </ComplexProperty>
+      </ComplexProperties>
+    </ObjectDefinition>
+    <ObjectDefinition Name="Woning" ObjectType="entity">
+      <Properties>
+        <Property Name="KadastraalNummer" Type="string" Required="true" />
+      </Properties>
+      <ComplexProperties>
+        <ComplexProperty Name="Adres" MinOccurs="0" MaxOccurs="unbounded">
+          <Properties>
+            <Property Name="DatumEinde" Type="date" Required="false" />
+            <Property Name="DatumStart" Type="date" Required="true" />
+            <Property Name="HuisNummer" Type="string" Required="true" />
+            <Property Name="PostCode" Type="string" Required="true" />
+            <Property Name="Straat" Type="string" Required="true" />
+            <Property Name="Woonplaats" Type="string" Required="true" />
+          </Properties>
+        </ComplexProperty>
+      </ComplexProperties>
+    </ObjectDefinition>
+    <ObjectDefinition Name="WOZWaarde" ObjectType="entity">
+      <Properties />
+    </ObjectDefinition>
+  </ObjectDefinitions>
+  <ObjectRelations>
+    <ObjectRelation Source="Persoon" Target="BezitWoning" MaxOccurs="1" />
+    <ObjectRelation Source="BezitWoning" Target="Woning" MaxOccurs="1" />
+    <ObjectRelation Source="Woning" Target="BepalingWOZWaarde" MaxOccurs="1" />
+    <ObjectRelation Source="BepalingWOZWaarde" Target="WOZWaarde" MaxOccurs="unbounded" />
+    <ObjectRelation Source="Persoon" Target="BezitAuto" MaxOccurs="1" />
+    <ObjectRelation Source="Huwelijk" Target="Persoon" MaxOccurs="unbounded" />
+    <ObjectRelation Source="Persoon" Target="Huwelijk" MaxOccurs="unbounded" />
+    <ObjectRelation Source="BezitAuto" Target="Auto" MaxOccurs="unbounded" />
+  </ObjectRelations>
+</ObjectModel>

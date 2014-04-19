@@ -1,0 +1,35 @@
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Its.Tools.Sparx.ObjectModelGen.exe.config
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Its.Tools.Sparx.ObjectModelGen.exe
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Its.Tools.Sparx.ObjectModelGen.pdb
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Interop.EA.dll
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Its.Services.CaseFileSpecifications.dll
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Its.Services.dll
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Its.Services.Impl.dll
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Its.Services.Items.dll
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Its.Services.ObjectModels.dll
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Xml.dll
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Logging.dll
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\log4net.dll
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Unity.dll
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Patterns.Range.dll
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Its.Services.Data.dll
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Its.Services.Impl.pdb
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Logging.pdb
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Xml.pdb
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Its.Services.pdb
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Its.Services.ObjectModels.pdb
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Its.Services.Items.pdb
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Unity.pdb
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Patterns.Range.pdb
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Its.Services.Data.pdb
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\bin\Debug\Luminis.Its.Services.CaseFileSpecifications.pdb
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\obj\Debug\ResolveAssemblyReference.cache
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\obj\Debug\Luminis.Its.Tools.Sparx.ObjectModelGen.RunGenerator.resources
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\obj\Debug\Luminis.Its.Tools.Sparx.ObjectModelGen.SelectModel.resources
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\obj\Debug\Luminis.Its.Tools.Sparx.ObjectModelGen.Properties.Resources.resources
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\obj\Debug\Luminis.Its.Tools.Sparx.ObjectModelGen.csproj.GenerateResource.Cache
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\obj\Debug\Luminis.Its.Tools.Sparx.ObjectModelGen.exe
+Z:\Develop\ITS\Luminis.Its.Tools.Sparx.ObjectModelGen\obj\Debug\Luminis.Its.Tools.Sparx.ObjectModelGen.pdb
+E:\src\ITS Project\Sources\Luminis.Its.Tools.Sparx.ObjectModelGen\obj\Debug\Luminis.Its.Tools.Sparx.ObjectModelGen.csprojResolveAssemblyReference.cache
+E:\src\ITS Project\Sources\Luminis.Its.Tools.Sparx.ObjectModelGen\obj\Debug\Luminis.Its.Tools.Sparx.ObjectModelGen.SelectModel.resources
+E:\src\ITS Project\Sources\Luminis.Its.Tools.Sparx.ObjectModelGen\obj\Debug\Luminis.Its.Tools.Sparx.ObjectModelGen.csproj.GenerateResource.Cache

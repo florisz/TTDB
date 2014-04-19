@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ObjectModel 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns="http://luminis.net/its/schemas/objectmodel.xsd">
+  <Link rel="self" href="" />
+  <Name>SimpleModel</Name>
+  <ObjectDefinitions>
+    <ObjectDefinition Name="Persoon" ObjectType="entity">
+      <Properties>
+        <Property Name="BSN" Type="string" Required="true" />
+        <Property Name="Voornaam" Type="string" Required="true" />
+        <Property Name="Achternaam" Type="string" Required="true" />
+        <Property Name="Beroep" Type="string" Required="false" />
+        <Property Name="Geslacht" Type="string" Required="false" />
+        <Property Name="GeboorteDatum" Type="date" Required="false" />
+        <Property Name="Leeftijd" Type="int" Required="true" />
+      </Properties>
+    </ObjectDefinition>
+  </ObjectDefinitions>
+  <ObjectRelations>
+  </ObjectRelations>
+</ObjectModel>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns="http://luminis.net/its/schemas/rule.xsd">
+  <Link rel="casefilespecification" href="" />
+  <Link rel="self" href="" />
+  <Name>EnergyLabel</Name>
+  <Script Type="fsharp" Method="Automobile.Autohistorie.EnergyLabel.Execute">#light
+module Automobile.Autohistorie.EnergyLabel
+
+open System
+open Automobile.Autohistorie
+
+//
+// Emission table:
+// EngineType | TypeOfFuel | EngineSizeMin | EngineSizeMax | EmissionCategory
+let EmissionTable =     [   ("Combustion", "Diesel", 0, 999, 190);
+                            ("Combustion", "Diesel", 1000, 1499, 200);
+                            ("Combustion", "Diesel", 1500, 1799, 220);
+                            ("Combustion", "Diesel", 1800, 9999, 240);
+                            ("Combustion", "Petrol", 0, 999, 180);
+                            ("Combustion", "Petrol", 1000, 1499, 190);
+                            ("Combustion", "Petrol", 1500, 1799, 210);
+                            ("Combustion", "Petrol", 1800, 9999, 240);
+                            ("Combustion", "LPG", 0, 999, 140);
+                            ("Combustion", "LPG", 1000, 1499, 150);
+                            ("Combustion", "LPG", 1500, 1799, 170);
+                            ("Combustion", "LPG", 1800, 9999, 190);
+                            ("Hybrid", "Petrol", 0, 999, 30);
+                            ("Hybrid", "Petrol", 1000, 1499, 40);
+                            ("Hybrid", "Petrol", 1500, 1799, 60);
+                            ("Hybrid", "Petrol", 1800, 9999, 80);
+                            ("Electrical", "", 0, 999, 10);
+                            ("Electrical", "", 1000, 1499, 20);
+                            ("Electrical", "", 1500, 1799, 40);
+                            ("Electrical", "", 1800, 9999, 60)
+                        ]
+//
+// Number of doors table:
+// NrOfDoors | WeighingFactor
+//
+let NrOfDoorsTable =    [   (2, 1.5);
+                            (4, 1.2);
+                            (5, 0.6)
+                        ] 
+
+
+let Execute(auto: Car) =
+    let model= auto.CarIsOfType.CarModelType
+    //
+    // Determine EmissionClass
+    // 	
+    let getEmissionClass=
+        EmissionTable
+        |&gt; Seq.filter(fun (t, f, i, a, c) -&gt; t.Equals(model.EngineType))
+        |&gt; Seq.filter(fun (t, f, i, a, c) -&gt; f.Equals(model.TypeOfFuel))
+        |&gt; Seq.filter(fun (t, f, i, a, c) -&gt; (i &lt;= Convert.ToInt32(model.EngineSize)))
+        |&gt; Seq.filter(fun (t, f, i, a, c) -&gt; (a &gt;= Convert.ToInt32(model.EngineSize)))
+        |&gt; Seq.map (fun (t, f, i, a, c) -&gt; c)
+        |&gt; Seq.hd
+        
+    //
+    // Determine Door class
+    //
+    let getDoorClass=
+        NrOfDoorsTable
+        |&gt; Seq.filter(fun (n, w) -&gt; n.Equals(model.NumberOfDoors))
+        |&gt; Seq.map (fun (n, w) -&gt; w)
+        |&gt; Seq.hd
+
+    let emissie = Convert.ToDouble(getEmissionClass.ToString())
+    let doors = Convert.ToDouble(getDoorClass.ToString())    
+    let EnergyLabel = emissie * doors
+
+    model.EnergyLabel &lt;- EnergyLabel.ToString()
+    
+  </Script>
+</Rule>

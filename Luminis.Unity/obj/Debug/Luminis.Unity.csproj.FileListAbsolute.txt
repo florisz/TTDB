@@ -1,0 +1,5 @@
+Z:\Develop\ITS\Luminis.Unity\bin\Debug\Luminis.Unity.dll
+Z:\Develop\ITS\Luminis.Unity\bin\Debug\Luminis.Unity.pdb
+Z:\Develop\ITS\Luminis.Unity\obj\Debug\ResolveAssemblyReference.cache
+Z:\Develop\ITS\Luminis.Unity\obj\Debug\Luminis.Unity.dll
+Z:\Develop\ITS\Luminis.Unity\obj\Debug\Luminis.Unity.pdb

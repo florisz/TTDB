@@ -1,0 +1,5 @@
+Z:\Develop\ITS\Luminis.Its.Services.Rest.Extensions\bin\Debug\Luminis.Its.Services.Rest.Extensions.dll
+Z:\Develop\ITS\Luminis.Its.Services.Rest.Extensions\bin\Debug\Luminis.Its.Services.Rest.Extensions.pdb
+Z:\Develop\ITS\Luminis.Its.Services.Rest.Extensions\obj\Debug\ResolveAssemblyReference.cache
+Z:\Develop\ITS\Luminis.Its.Services.Rest.Extensions\obj\Debug\Luminis.Its.Services.Rest.Extensions.dll
+Z:\Develop\ITS\Luminis.Its.Services.Rest.Extensions\obj\Debug\Luminis.Its.Services.Rest.Extensions.pdb

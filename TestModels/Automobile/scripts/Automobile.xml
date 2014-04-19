@@ -1,0 +1,56 @@
+<ObjectModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://luminis.net/its/schemas/objectmodel.xsd">
+  <Link rel="self" href="" />
+  <Name>Automobile</Name>
+  <ObjectDefinitions>
+    <ObjectDefinition Name="Car" ObjectType="entity">
+      <Properties>
+        <Property Name="LicensePlate" Type="string" Required="true" />
+        <Property Name="Image" Type="string" Required="false" />
+      </Properties>
+    </ObjectDefinition>
+    <ObjectDefinition Name="CarHistory" ObjectType="relation">
+      <Properties />
+    </ObjectDefinition>
+    <ObjectDefinition Name="CarIsOfType" ObjectType="relation">
+      <Properties />
+    </ObjectDefinition>
+    <ObjectDefinition Name="CarModelType" ObjectType="entity">
+      <Properties>
+        <Property Name="CarBrand" Type="string" Required="true" />
+        <Property Name="CarModel" Type="string" Required="true" />
+        <Property Name="CarType" Type="string" Required="true" />
+        <Property Name="EngineSize" Type="string" Required="false" />
+        <Property Name="EngineType" Type="string" Required="false" />
+        <Property Name="NumberOfDoors" Type="int" Required="false" />
+        <Property Name="TypeOfFuel" Type="string" Required="false" />
+        <Property Name="YearFrom" Type="string" Required="false" />
+        <Property Name="YearTo" Type="string" Required="false" />
+        <Property Name="EnergyLabel" Type="string" Required="false" />
+      </Properties>
+    </ObjectDefinition>
+    <ObjectDefinition Name="CarOwner" ObjectType="entity">
+      <Properties>
+        <Property Name="Name" Type="string" Required="true" />
+        <Property Name="Address" Type="string" Required="false" />
+      </Properties>
+    </ObjectDefinition>
+    <ObjectDefinition Name="CarOwners" ObjectType="relation">
+      <Properties />
+    </ObjectDefinition>
+    <ObjectDefinition Name="ShopVisit" ObjectType="entity">
+      <Properties>
+        <Property Name="Date" Type="date" Required="true" />
+        <Property Name="Reason" Type="string" Required="false" />
+        <Property Name="Mileage" Type="int" Required="false" />
+      </Properties>
+    </ObjectDefinition>
+  </ObjectDefinitions>
+  <ObjectRelations>
+    <ObjectRelation Source="Car" Target="CarIsOfType" MaxOccurs="1" />
+    <ObjectRelation Source="CarIsOfType" Target="CarModelType" MaxOccurs="1" />
+    <ObjectRelation Source="Car" Target="CarHistory" MaxOccurs="unbounded" />
+    <ObjectRelation Source="CarHistory" Target="ShopVisit" MaxOccurs="1" />
+    <ObjectRelation Source="Car" Target="CarOwners" MaxOccurs="unbounded" />
+    <ObjectRelation Source="CarOwners" Target="CarOwner" MaxOccurs="1" />
+  </ObjectRelations>
+</ObjectModel>

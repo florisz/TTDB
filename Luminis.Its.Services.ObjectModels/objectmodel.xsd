@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="objectmodel"
+    targetNamespace="http://luminis.net/its/schemas/objectmodel.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://luminis.net/its/schemas/objectmodel.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <!-- NameSpace = Luminis.Its.Services.ObjectModels -->
+  <xs:element name="ObjectModel" type="ObjectModel"/>
+
+  <xs:complexType name="ObjectModel">
+    <xs:sequence>
+      <xs:element name="Link" type="ObjectModelLink" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Name" type="NonEmptyString" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ObjectDefinitions" type="ObjectDefinitions" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ObjectRelations" type="ObjectRelations" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ObjectDefinition">
+    <xs:sequence>
+      <xs:element name="Properties" type="ObjectDefinitionProperties" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="ComplexProperties" type="ObjectDefinitionComplexProperties" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="xs:ID" use="required"/>
+    <xs:attribute name="ObjectType" type="ObjectType" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="ObjectDefinitions">
+    <xs:sequence>
+      <xs:element name="ObjectDefinition" type="ObjectDefinition" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ObjectDefinitionComplexProperty">
+    <xs:sequence>
+      <xs:element name="Properties" type="ObjectDefinitionProperties" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="ComplexProperties" type="ObjectDefinitionComplexProperties" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="NonEmptyString" use="required"/>
+    <xs:attribute name="MinOccurs" type="xs:int" use="required"/>
+    <xs:attribute name="MaxOccurs" type="NonEmptyString" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="ObjectDefinitionComplexProperties">
+    <xs:sequence>
+      <xs:element name="ComplexProperty" type="ObjectDefinitionComplexProperty" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ObjectDefinitionProperty">
+    <xs:attribute name="Name" type="NonEmptyString" use="required"/>
+    <xs:attribute name="Type" type="NonEmptyString" use="required"/>
+    <xs:attribute name="Required" type="xs:boolean"/>
+  </xs:complexType>
+
+  <xs:complexType name="ObjectDefinitionProperties">
+    <xs:sequence>
+      <xs:element name="Property" type="ObjectDefinitionProperty" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ObjectModelLink">
+    <xs:attribute name="rel" type="ObjectModelLinkRel" use="required"/>
+    <xs:attribute name="href" type="xs:string" use="required"/>
+  </xs:complexType>
+  
+  <xs:complexType name="ObjectRelation">
+    <xs:attribute name="Source" type="xs:IDREF" use="required"/>
+    <xs:attribute name="Target" type="xs:IDREF" use="required"/>
+    <xs:attribute name="MinOccurs" type="xs:int" use="optional"/>
+    <xs:attribute name="MaxOccurs" type="NonEmptyString" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="ObjectRelations">
+    <xs:sequence>
+      <xs:element name="ObjectRelation" type="ObjectRelation" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="NonEmptyString">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ObjectModelLinkRel">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="objectmodel"/>
+      <xs:enumeration value="self"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ObjectType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="entity"/>
+      <xs:enumeration value="relation"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

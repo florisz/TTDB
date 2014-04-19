@@ -1,0 +1,103 @@
+<project name="Nant build file" default="all">
+
+  <property name="base.dir" value="." overwrite="false"/>
+  <property name="solution.file" value="${project.name}.sln" overwrite="false"/>
+  <property name="solution.path" value="${base.dir}\${solution.file}" overwrite="false"/>
+  <property name="build.configuration" value="Release" overwrite="false"/>
+  <property name="msbuild.exe" value="${msbuild.home}\msbuild.exe"/>
+  <property name="msbuild.options" value="/p:Configuration=${build.configuration}"/>
+  <property name="msbuild.extra.options" value="" overwrite="false"/>
+  <property name="mstest.home" value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE" overwrite="false"/>
+  <property name="mstest.exe" value="${mstest.home}\mstest.exe"/>
+  <property name="mstest.result.dir" value="${base.dir}\TestResults"/>
+  <property name="mstest.result" value="${mstest.result.dir}\${project.name}.Test.Results.trx"/>
+  <property name="mstest.result.html" value="${mstest.result.dir}\${project.name}.Test.Results.html"/>
+  <property name="mstest.result.nunit" value="${mstest.result.dir}\${project.name}.Test.Results.xml"/>
+  <property name="mstest.options" value="/noisolation /resultsfile:${mstest.result}"/>
+  <property name="mstest.extra.options" value="" overwrite="false"/>
+  <property name="release.dir" value="${base.dir}\Release"/>
+  <property name="release.file" value="${release.dir}\${project.name}.zip"/>
+
+  <target name="all" depends="clean, build, test, release" />
+
+  <target name="validate.properties">
+    <fail if="${string::get-length(project.name)==0}" message="Property 'project.name' not set."/>
+    
+    <fail if="${string::get-length(solution.file)==0}" message="Property 'solution.file' not set."/>
+
+    <fail if="${not file::exists(solution.path)}" message="${solution.path} not found, correct the property 'base.dir'."/>
+
+    <fail if="${not file::exists(msbuild.exe)}" message="${msbuild.exe} not found, correct the property 'msbuild.home'."/>
+
+    <fail if="${not file::exists(mstest.exe)}" message="${mstest.exe} not found, correct the property 'mstest.home'."/>
+  </target>
+  
+  <target name="clean" depends="validate.properties">
+    <delete>
+      <fileset>
+        <include name="**/bin/${build.configuration}/**" />
+        <include name="**/obj/${build.configuration}/**" />
+        <include name="${mstest.result}"/>
+        <include name="${mstest.result.html}"/>
+        <include name="${mstest.result.nunit}"/>
+        <include name="${release.file}"/>
+      </fileset>
+    </delete>
+  </target>
+
+  <target name="build" depends="validate.properties">
+    <exec program="${msbuild.exe}" commandline="${solution.path} ${msbuild.options} ${msbuild.extra.options}" workingdir="${base.dir}" />
+  </target>
+
+  <target name="test" depends="validate.properties, build">
+    <mkdir dir="${mstest.result.dir}"/>
+    
+    <delete>
+      <fileset>
+        <include name="${mstest.result}"/>
+      </fileset>
+    </delete>
+
+    <property name="mstest.containers" value=""/>
+    <foreach item="File" property="filename">
+      <in>
+        <items>
+          <include name="**/bin/${build.configuration}/*.Test.dll"/>
+          <exclude name="**/bin/${build.configuration}/*.Manual.Test.dll"/>
+        </items>
+      </in>
+      <do>
+        <property name="mstest.containers" value="${mstest.containers} /testcontainer:${filename}"/>
+      </do>
+    </foreach>
+
+    <if test="${string::get-length(mstest.containers)>0}">
+      <exec program="${mstest.exe}" commandline="${mstest.containers} ${mstest.options} ${mstest.extra.options}" failonerror="false" resultproperty="mstest.result.property"/>
+      
+      <style style="MSTest2Html.xslt" in="${mstest.result}" out="${mstest.result.html}"/>
+
+      <style style="MSTest2NUnit.xslt" in="${mstest.result}" out="${mstest.result.nunit}"/>
+
+      <fail if="${mstest.result.property=='1'}" message="MSTEST FAILED, exit code=${mstest.result.property}"/>
+    </if>
+  </target>
+
+  <target name="release" depends="validate.properties, build">
+    <mkdir dir="${release.dir}"/>
+
+    <zip zipfile="${release.file}">
+      <fileset basedir="${base.dir}\Luminis.Its.Services.Console\bin\${build.configuration}">
+        <include name="*.*"/>
+      </fileset>
+      <fileset basedir="${base.dir}\Luminis.Its.Services.Data\Impl">
+        <include name="*.sql"/>
+      </fileset>
+    </zip>
+  </target>
+  
+  <target name="report">
+    <style style="MSTest2Html.xslt" in="${mstest.result}" out="${mstest.result.html}"/>
+    <style style="MSTest2NUnit.xslt" in="${mstest.result}" out="${mstest.result.nunit}"/>
+  </target>
+  
+</project>

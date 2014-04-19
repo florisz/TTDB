@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Representation 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://luminis.net/its/schemas/representation.xsd"
+	>
+	<Link rel="casefilespecification" href="http://localhost:8080/its/specifications/casefiles/SimpleModel/Persoon" />
+	<Link rel="self" href="" />
+	<Name>PersoonLang</Name>
+	<Script Type="xslt" ContentType="html">
+<xsl:stylesheet version="1.0"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:msxsl="urn:schemas-microsoft-com:xslt"
+                exclude-result-prefixes="msxsl">
+  <xsl:output method="html" indent="yes" />
+  <xsl:template name="DateTime">
+
+    <script type="text/javascript">
+      var d = new Date();
+      document.write(d.toLocaleDateString());
+      document.write(" ");
+      document.write(d.toLocaleTimeString());
+    </script>
+  </xsl:template>
+
+  <xsl:template match="/">
+    <html>
+      <body>
+		<table width="100%">
+		  <thead>
+			<h1>
+			  Extended Model View
+			</h1>
+		  </thead>
+		  <tr>
+			<td>Version</td>
+			<td>
+			  1.0
+			</td>
+		  </tr>
+		  <tr>
+			<td>Date</td>
+			<td>
+			  <xsl:call-template name="DateTime" />
+			</td>
+		  </tr>
+		  <tr>
+			<td>Copyright</td>
+			<td>
+			  <xsl:text>&#xA9;</xsl:text> Extended Technologies
+			</td>
+		  </tr>
+		</table>
+        <table>
+          <thead>
+            <td>Label</td>
+            <td>Value</td>
+          </thead>
+          <xsl:apply-templates select="//Persoon" />
+        </table>
+      </body>
+    </html>
+  </xsl:template>
+  <xsl:template match="Persoon">
+    <tr>
+      <td>BSN</td>
+      <td>
+        <xsl:value-of select="BSN" />
+      </td>
+    </tr>
+    <tr>
+      <td>Voornaam</td>
+      <td>
+        <xsl:value-of select="Voornaam" /><xsl:text></xsl:text><xsl:value-of select="Achternaam" />
+      </td>
+    </tr>
+    <tr>
+      <td>Beroep</td>
+      <td>
+        <xsl:value-of select="Beroep" />
+      </td>
+    </tr>
+    <tr>
+      <td>GeboorteDatum</td>
+      <td>
+        <xsl:value-of select="GeboorteDatum" />
+      </td>
+    </tr>
+  </xsl:template>
+
+</xsl:stylesheet>
+	</Script>
+</Representation>

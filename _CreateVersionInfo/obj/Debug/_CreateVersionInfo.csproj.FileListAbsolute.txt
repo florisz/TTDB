@@ -1,0 +1,7 @@
+Z:\Develop\ITS\_CreateVersionInfo\bin\Debug\_CreateVersionInfo.dll
+Z:\Develop\ITS\_CreateVersionInfo\bin\Debug\_CreateVersionInfo.pdb
+Z:\Develop\ITS\_CreateVersionInfo\bin\Debug\Fidit.MSBuild.Tasks.dll
+Z:\Develop\ITS\_CreateVersionInfo\bin\Debug\MSBuild.Community.Tasks.dll
+Z:\Develop\ITS\_CreateVersionInfo\obj\Debug\ResolveAssemblyReference.cache
+Z:\Develop\ITS\_CreateVersionInfo\obj\Debug\_CreateVersionInfo.dll
+Z:\Develop\ITS\_CreateVersionInfo\obj\Debug\_CreateVersionInfo.pdb

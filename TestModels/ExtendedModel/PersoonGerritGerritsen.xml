@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<cs:CaseFile xmlns:cs="http://luminis.net/its/schemas/casefile.xsd">
+  <cs:Link rel="casefilespecification" href="http://localhost:8080/its/specifications/casefiles/ExtendedModel/Persoon" />
+  <cs:Link rel="self" href="" />
+  <Persoon RegistrationId="48fea9d4-2bd7-4cb5-bd92-ae211f5f1111" RegistrationStart="2009-09-09T11:20:59.0000000">
+    <Achternaam>Gerritsen</Achternaam>
+    <Beroep>Bankwerker</Beroep>
+    <BSN>BSN0003</BSN>
+    <GeboorteDatum>1945-11-29</GeboorteDatum>
+    <Voornaam>Gerrit</Voornaam>
+    <TelefoonNummers>
+	    <TelefoonNummer>
+			<NumberType>Vast</NumberType>
+			<Nummer>020-8765432</Nummer>
+		</TelefoonNummer>
+	    <TelefoonNummer>
+			<NumberType>Mobiel</NumberType>
+			<Nummer>06-99887766</Nummer>
+		</TelefoonNummer>
+	</TelefoonNummers>
+	<BezitAuto RegistrationId="48fea9d4-2bd7-4cb5-bd92-ae211f5f1113" RegistrationStart="2009-09-09T11:20:59.0000000">
+		<DatumStart>1987-10-05</DatumStart>
+		<Auto RegistrationId="48fea9d4-2bd7-4cb5-bd92-ae211f5f1116" RegistrationStart="2009-09-09T11:20:59.0000000">
+			<Kenteken>59-23-AB</Kenteken>
+		</Auto>
+	</BezitAuto>
+	<BezitWoning RegistrationId="48fea9d4-2bd7-4cb5-bd92-ae211f5f1114" RegistrationStart="2009-09-09T11:20:59.0000000">
+		<DatumStart>1973-10-15</DatumStart>
+		<Woning RegistrationId="48fea9d4-2bd7-4cb5-bd92-ae211f5f1115" RegistrationStart="2009-09-09T11:20:59.0000000">
+			<KadastraalNummer>KN000-2200-4321</KadastraalNummer>
+			<Adres>
+				<DatumStart>1973-10-01</DatumStart>
+				<HuisNummer>1</HuisNummer>
+				<PostCode>1200 KK</PostCode>
+				<Straat>Verdilaan</Straat>
+				<Woonplaats>Amsterdam</Woonplaats>
+			</Adres>
+		</Woning>
+	</BezitWoning>
+  </Persoon>
+</cs:CaseFile>
