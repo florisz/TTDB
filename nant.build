@@ -86,10 +86,10 @@
     <mkdir dir="${release.dir}"/>
 
     <zip zipfile="${release.file}">
-      <fileset basedir="${base.dir}\Luminis.Its.Services.Console\bin\${build.configuration}">
+      <fileset basedir="${base.dir}\TimeTraveller.Services.Console\bin\${build.configuration}">
         <include name="*.*"/>
       </fileset>
-      <fileset basedir="${base.dir}\Luminis.Its.Services.Data\Impl">
+      <fileset basedir="${base.dir}\TimeTraveller.Services.Data\Impl">
         <include name="*.sql"/>
       </fileset>
     </zip>

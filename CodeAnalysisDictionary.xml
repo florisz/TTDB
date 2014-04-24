@@ -9,8 +9,6 @@
       <!-- Words to augment the existing dictionary -->
       <!-- If your company name or project name is an unusal word, you may want to include it. -->
       <!-- For compound words, include the individual words (if necessary) -->
-      <!--<Word>Luminis</Word>-->
-      <!--<Word>Its</Word>-->
       <Word>superclass</Word>
       <Word>implementor</Word>
       <Word>implementors</Word>
@@ -20,8 +18,6 @@
       <!-- Company, domain, or project specific acronyms -->
       <CasingExceptions>
         <!-- If your company or project name is an acroynm, you may want to include these here -->
-        <!--<Acronym>Luminis</Acronym>-->
-        <!--<Acronym>Its</Acronym>-->
       </CasingExceptions>
     </Acronyms>
   </Words>

@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16B82005-4EB7-4966-8E4A-06944624FBB8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TimeTraveller.Services.Manual.Test</RootNamespace>
+    <AssemblyName>TimeTraveller.Services.Manual.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\Administrator\Application Data\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;TEST</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Data|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Data\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Unity.2.0\lib\20\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\packages\Unity.2.0\lib\20\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.2.0\lib\20\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\packages\Unity.2.0\lib\20\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration">
+      <HintPath>..\packages\Unity.2.0\lib\20\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>..\packages\RhinoMocks.3.6.1\lib\net\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ManualIntegrationTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TimeTraveller.Services.CaseFileSpecifications\TimeTraveller.Services.CaseFileSpecifications.csproj">
+      <Project>{A19458A7-13D9-4C9A-8B62-A3F82AABCB71}</Project>
+      <Name>TimeTraveller.Services.CaseFileSpecifications</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.CaseFiles\TimeTraveller.Services.CaseFiles.csproj">
+      <Project>{49070EC1-9DDF-416E-B77D-4F8402F4933C}</Project>
+      <Name>TimeTraveller.Services.CaseFiles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Console\TimeTraveller.Services.Console.csproj">
+      <Project>{DBE1BF14-2631-4B18-8464-F3744CA4ED2B}</Project>
+      <Name>TimeTraveller.Services.Console</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Data\TimeTraveller.Services.Data.csproj">
+      <Project>{8F9324A9-1DA9-416C-85EA-4E5901A7E8F0}</Project>
+      <Name>TimeTraveller.Services.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Impl\TimeTraveller.Services.Impl.csproj">
+      <Project>{B850D242-E78E-4DA8-B6EF-E1A2567E03A2}</Project>
+      <Name>TimeTraveller.Services.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Items\TimeTraveller.Services.Items.csproj">
+      <Project>{95501194-8BEC-40C1-B427-94B9E47C7FFE}</Project>
+      <Name>TimeTraveller.Services.Items</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.ObjectModels\TimeTraveller.Services.ObjectModels.csproj">
+      <Project>{CA4A7D23-5BBB-4FF0-9E0B-EE3E765818B0}</Project>
+      <Name>TimeTraveller.Services.ObjectModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Repository\TimeTraveller.Services.Repository.csproj">
+      <Project>{41A716B5-BA6E-420F-8185-9814222421AF}</Project>
+      <Name>TimeTraveller.Services.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Representations\TimeTraveller.Services.Representations.csproj">
+      <Project>{B8114201-D894-42E9-A451-C4AC8CEC4403}</Project>
+      <Name>TimeTraveller.Services.Representations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Resources.Impl\TimeTraveller.Services.Resources.Impl.csproj">
+      <Project>{51C3247F-BF00-47DA-BC68-B95A3E14CF5C}</Project>
+      <Name>TimeTraveller.Services.Resources.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Resources\TimeTraveller.Services.Resources.csproj">
+      <Project>{00D61E34-4D04-4F31-A4D2-BADB13C06452}</Project>
+      <Name>TimeTraveller.Services.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Rest.Extensions\TimeTraveller.Services.Rest.Extensions.csproj">
+      <Project>{37FDDA07-FB26-4F79-8D71-5B2618F75931}</Project>
+      <Name>TimeTraveller.Services.Rest.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Rest\TimeTraveller.Services.Rest.csproj">
+      <Project>{415BFC66-B451-4377-840C-17DF2FC3FCF1}</Project>
+      <Name>TimeTraveller.Services.Rest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Rules.FSharp\TimeTraveller.Services.Rules.FSharp.csproj">
+      <Project>{CF5B2120-5627-4992-8AE3-6D944DE5BD36}</Project>
+      <Name>TimeTraveller.Services.Rules.FSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Rules\TimeTraveller.Services.Rules.csproj">
+      <Project>{0F6DAC5E-163B-436B-87DD-063B3717A748}</Project>
+      <Name>TimeTraveller.Services.Rules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services\TimeTraveller.Services.csproj">
+      <Project>{E72B0C48-B0C4-4AF4-8425-7D3B090181BE}</Project>
+      <Name>TimeTraveller.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Tools.Sparx.ObjectModelGen\TimeTraveller.Tools.Sparx.ObjectModelGen.csproj">
+      <Project>{4C095E24-2633-4B42-A70A-BDE21F911E63}</Project>
+      <Name>TimeTraveller.Tools.Sparx.ObjectModelGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.General.Logging\TimeTraveller.General.Logging.csproj">
+      <Project>{271AEB4C-E206-4501-B45E-A5B1E4399309}</Project>
+      <Name>TimeTraveller.General.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.General.Patterns.Range\TimeTraveller.General.Patterns.Range.csproj">
+      <Project>{73DFBD60-1715-4283-8C06-258A62BF90AE}</Project>
+      <Name>TimeTraveller.General.Patterns.Range</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.General.Unity.Impl\TimeTraveller.General.Unity.Impl.csproj">
+      <Project>{9CC55FDE-8189-4008-B427-0F9713C78F20}</Project>
+      <Name>TimeTraveller.General.Unity.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.General.Unity\TimeTraveller.General.Unity.csproj">
+      <Project>{33947812-12E7-44C7-9755-45B68ECF2104}</Project>
+      <Name>TimeTraveller.General.Unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.General.Xml\TimeTraveller.General.Xml.csproj">
+      <Project>{40F713F6-A20A-4411-B2F5-7C11DF19D79F}</Project>
+      <Name>TimeTraveller.General.Xml</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestModel.eap" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Coffee Bean.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TimeTraveller.Services.Console.exe.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Log4Net.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>copy "$(SolutionDir)TimeTraveller.Services.Console\App.config" "$(ProjectDir)TimeTraveller.Services.Console.exe.config" /y
+</PreBuildEvent>
+  </PropertyGroup>
+</Project>

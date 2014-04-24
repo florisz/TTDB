@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="rules"
+    targetNamespace="http://timetraveller.net/its/schemas/rule.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://timetraveller.net/its/schemas/rule.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <!-- NameSpace = TimeTraveller.Services.Rules -->
+  <xs:element name="Rule" type="Rule"/>
+
+  <xs:complexType name="Rule">
+    <xs:sequence>
+      <xs:element name="Link" type="RuleLink" minOccurs="2" maxOccurs="2"/>
+      <xs:element name="Name" type="NonEmptyString" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Script" type="RuleScript" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RuleLink">
+    <xs:attribute name="rel" type="RuleLinkRel" use="required"/>
+    <xs:attribute name="href" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="RuleScript">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="Method" type="NonEmptyString" use="required"/>
+        <xs:attribute name="Type" type="NonEmptyString" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="RuleLinkRel">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="casefilespecification"/>
+      <xs:enumeration value="rule"/>
+      <xs:enumeration value="self"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="NonEmptyString">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

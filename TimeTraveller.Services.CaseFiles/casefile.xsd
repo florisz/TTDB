@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="casefile"
+    targetNamespace="http://timetraveller.net/its/schemas/casefile.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://timetraveller.net/its/schemas/casefile.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <!-- NameSpace: TimeTraveller.Services.CaseFiles -->
+  <xs:element name="CaseFile" type="CaseFile"/>
+
+  <xs:complexType name="CaseFile">
+    <xs:sequence>
+      <xs:element name="Link" type="CaseFileLink" minOccurs="2" maxOccurs="2"/>
+      <xs:any minOccurs="1" maxOccurs="1" namespace="##any" processContents="skip"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="CaseFileLink">
+    <xs:attribute name="rel" type="CaseFileLinkRel" use="required"/>
+    <xs:attribute name="href" type="xs:string" use="required"/>
+  </xs:complexType>
+  
+  <xs:simpleType name="NonEmptyString">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CaseFileLinkRel">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="casefilespecification"/>
+      <xs:enumeration value="self"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0EB8D2A0-D8FF-437F-8110-928AECFC7061}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TimeTraveller.Services.Resources.Test</RootNamespace>
+    <AssemblyName>TimeTraveller.Services.Resources.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>..\packages\RhinoMocks.3.6.1\lib\net\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestResourceService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TimeTraveller.Services.Data\TimeTraveller.Services.Data.csproj">
+      <Project>{8F9324A9-1DA9-416C-85EA-4E5901A7E8F0}</Project>
+      <Name>TimeTraveller.Services.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Impl\TimeTraveller.Services.Impl.csproj">
+      <Project>{B850D242-E78E-4DA8-B6EF-E1A2567E03A2}</Project>
+      <Name>TimeTraveller.Services.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Items\TimeTraveller.Services.Items.csproj">
+      <Project>{95501194-8BEC-40C1-B427-94B9E47C7FFE}</Project>
+      <Name>TimeTraveller.Services.Items</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Representations\TimeTraveller.Services.Representations.csproj">
+      <Project>{B8114201-D894-42E9-A451-C4AC8CEC4403}</Project>
+      <Name>TimeTraveller.Services.Representations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Resources.Impl\TimeTraveller.Services.Resources.Impl.csproj">
+      <Project>{51C3247F-BF00-47DA-BC68-B95A3E14CF5C}</Project>
+      <Name>TimeTraveller.Services.Resources.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Resources\TimeTraveller.Services.Resources.csproj">
+      <Project>{00D61E34-4D04-4F31-A4D2-BADB13C06452}</Project>
+      <Name>TimeTraveller.Services.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services\TimeTraveller.Services.csproj">
+      <Project>{E72B0C48-B0C4-4AF4-8425-7D3B090181BE}</Project>
+      <Name>TimeTraveller.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.General.Logging\TimeTraveller.General.Logging.csproj">
+      <Project>{271AEB4C-E206-4501-B45E-A5B1E4399309}</Project>
+      <Name>TimeTraveller.General.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.General.Patterns.Range\TimeTraveller.General.Patterns.Range.csproj">
+      <Project>{73DFBD60-1715-4283-8C06-258A62BF90AE}</Project>
+      <Name>TimeTraveller.General.Patterns.Range</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.General.Unity\TimeTraveller.General.Unity.csproj">
+      <Project>{33947812-12E7-44C7-9755-45B68ECF2104}</Project>
+      <Name>TimeTraveller.General.Unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.General.Xml\TimeTraveller.General.Xml.csproj">
+      <Project>{40F713F6-A20A-4411-B2F5-7C11DF19D79F}</Project>
+      <Name>TimeTraveller.General.Xml</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
