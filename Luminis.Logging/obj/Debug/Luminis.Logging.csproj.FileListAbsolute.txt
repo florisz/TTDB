@@ -1,6 +1,0 @@
-Z:\Develop\ITS\Luminis.Logging\bin\Debug\Luminis.Logging.dll
-Z:\Develop\ITS\Luminis.Logging\bin\Debug\Luminis.Logging.pdb
-Z:\Develop\ITS\Luminis.Logging\bin\Debug\log4net.dll
-Z:\Develop\ITS\Luminis.Logging\obj\Debug\ResolveAssemblyReference.cache
-Z:\Develop\ITS\Luminis.Logging\obj\Debug\Luminis.Logging.dll
-Z:\Develop\ITS\Luminis.Logging\obj\Debug\Luminis.Logging.pdb

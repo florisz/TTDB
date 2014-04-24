@@ -1,9 +1,0 @@
-Z:\Develop\ITS\Luminis.Unity.Impl\bin\Debug\Luminis.Unity.Impl.dll
-Z:\Develop\ITS\Luminis.Unity.Impl\bin\Debug\Luminis.Unity.Impl.pdb
-Z:\Develop\ITS\Luminis.Unity.Impl\bin\Debug\Luminis.Unity.dll
-Z:\Develop\ITS\Luminis.Unity.Impl\bin\Debug\Microsoft.Practices.Unity.dll
-Z:\Develop\ITS\Luminis.Unity.Impl\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
-Z:\Develop\ITS\Luminis.Unity.Impl\bin\Debug\Luminis.Unity.pdb
-Z:\Develop\ITS\Luminis.Unity.Impl\obj\Debug\ResolveAssemblyReference.cache
-Z:\Develop\ITS\Luminis.Unity.Impl\obj\Debug\Luminis.Unity.Impl.dll
-Z:\Develop\ITS\Luminis.Unity.Impl\obj\Debug\Luminis.Unity.Impl.pdb
