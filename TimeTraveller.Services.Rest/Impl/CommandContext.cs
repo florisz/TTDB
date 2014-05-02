@@ -9,6 +9,8 @@ using System.ServiceModel.Web;
 using System.Text;
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Patterns.Range;
+using TimeTraveller.Services.Interface;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.Rest.Impl
 {
@@ -146,7 +148,7 @@ namespace TimeTraveller.Services.Rest.Impl
             }
         }
 
-        public WebHttpHeaderInfo JournalInfo
+        public IHeaderInfo JournalInfo
         {
             get
             {

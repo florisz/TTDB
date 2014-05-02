@@ -15,6 +15,8 @@ using TimeTraveller.General.Logging;
 using TimeTraveller.General.Patterns.Range;
 using TimeTraveller.General.Unity;
 using TimeTraveller.General.Xml;
+using TimeTraveller.Services.Data.Interfaces;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.CaseFiles.Impl
 {
@@ -37,7 +39,7 @@ namespace TimeTraveller.Services.CaseFiles.Impl
 
         #region Constructors
         public CaseFileService(ILogger logger, IUnity container, ICaseFileSpecificationService caseFileSpecificationService, IRepresentationService representationService, IDataService dataService)
-            : base(ItemType.CaseFile, logger, container, dataService)
+			: base(TimeTraveller.Services.Interfaces.ItemType.CaseFile, logger, container, dataService)
         {
             _caseFileSpecificationService = caseFileSpecificationService;
             _representationService = representationService;
@@ -256,7 +258,7 @@ namespace TimeTraveller.Services.CaseFiles.Impl
             }
         }
 
-        public bool Store(CaseFileSpecification specification, string caseFileId, CaseFile caseFile, Uri baseUri, WebHttpHeaderInfo info)
+        public bool Store(CaseFileSpecification specification, string caseFileId, CaseFile caseFile, Uri baseUri, IHeaderInfo info)
         {
             try
             {
@@ -472,7 +474,7 @@ namespace TimeTraveller.Services.CaseFiles.Impl
             // Create the objects that (later on) will contain the information read from the XmlReader
             CaseFileObject entityObject = new CaseFileObject();
             entityObject.ObjectName = entityDefinition.Name;
-            entityObject.ItemType = ItemType.Entity;
+			entityObject.ItemType = TimeTraveller.Services.Interfaces.ItemType.Entity;
 
             // Read the meta-registration attributes from the XmlReader
             ReadRegistrationAttribures(xmlReader, entityObject);
@@ -615,7 +617,7 @@ namespace TimeTraveller.Services.CaseFiles.Impl
         /// <param name="casefileSpecificationObjectValue"></param>
         /// <param name="journalInfo">The journalInfo</param>
         /// <returns>The CaseFile object value</returns>
-        private IBaseObjectValue StoreCaseFileObjectValues(string caseFileId, IEnumerable<CaseFileObject> caseFileObjectValues, TimePoint timePoint, IBaseObjectValue objectModelObjectValue, IBaseObjectValue casefileSpecificationObjectValue, WebHttpHeaderInfo journalInfo)
+        private IBaseObjectValue StoreCaseFileObjectValues(string caseFileId, IEnumerable<CaseFileObject> caseFileObjectValues, TimePoint timePoint, IBaseObjectValue objectModelObjectValue, IBaseObjectValue casefileSpecificationObjectValue, IHeaderInfo journalInfo)
         {
             List<IBaseObjectValue> objectValues = new List<IBaseObjectValue>();
             // Store the entities

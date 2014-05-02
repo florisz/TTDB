@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Luminis.Its.Tools.Sparx.ObjectModelGen.Properties {
+namespace TimeTraveller.Tools.Sparx.ObjectModelGen.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

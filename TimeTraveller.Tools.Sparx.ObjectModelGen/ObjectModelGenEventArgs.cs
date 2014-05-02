@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Luminis.Its.Tools.Sparx.ObjectModelGen
+namespace TimeTraveller.Tools.Sparx.ObjectModelGen
 {
     public class ObjectModelGenEventArgs : EventArgs
     {

@@ -1,6 +1,8 @@
-﻿namespace TimeTraveller.Services
+﻿using TimeTraveller.Services.Interfaces;
+
+namespace TimeTraveller.Services
 {
-    public class WebHttpHeaderInfo
+    public class WebHttpHeaderInfo : IHeaderInfo
     {
         public string Username { get; set; }
     }

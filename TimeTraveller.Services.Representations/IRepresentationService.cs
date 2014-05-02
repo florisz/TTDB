@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 using TimeTraveller.General.Patterns.Range;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.Representations
 {
@@ -121,7 +122,7 @@ namespace TimeTraveller.Services.Representations
         /// <param name="baseUri"></param>
         /// <param name="info"></param>
         /// <returns>true when the Representation is created, false when the Representation is updated</returns>
-        bool Store(string representationname, Representation representation, Uri baseUri, WebHttpHeaderInfo info);
+        bool Store(string representationname, Representation representation, Uri baseUri, IHeaderInfo info);
 
         /// <summary>
         /// Transform the xml using the given representation.

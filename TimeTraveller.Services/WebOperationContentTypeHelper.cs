@@ -1,16 +1,9 @@
 ﻿using System;
 using System.Text;
+using TimeTraveller.Services.Interface;
 
 namespace TimeTraveller.Services
 {
-    public enum WebOperationContentType
-    {
-        Assembly,
-        Html,
-        Other,
-        Text,
-        Xml
-    }
 
     public sealed class WebOperationContentTypeHelper
     {

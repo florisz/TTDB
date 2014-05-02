@@ -2,7 +2,7 @@ using System;
 using System.Collections.Specialized;
 using System.Text.RegularExpressions;
 
-namespace Luminis.Its.Tools.Sparx.ObjectModelGen
+namespace TimeTraveller.Tools.Sparx.ObjectModelGen
 {
     /// <summary>
     /// Arguments class

@@ -1,4 +1,4 @@
-﻿namespace Luminis.Its.Tools.Sparx.ObjectModelGen
+﻿namespace TimeTraveller.Tools.Sparx.ObjectModelGen
 {
     partial class RunGenerator
     {

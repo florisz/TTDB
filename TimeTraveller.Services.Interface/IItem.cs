@@ -1,8 +1,7 @@
 ﻿using System;
-
 using TimeTraveller.General.Patterns.Range;
 
-namespace TimeTraveller.Services
+namespace TimeTraveller.Services.Interfaces
 {
     public interface IItem
     {

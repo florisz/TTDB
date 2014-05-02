@@ -1,4 +1,4 @@
-﻿namespace TimeTraveller.Services
+﻿namespace TimeTraveller.Services.Interfaces
 {
     public interface IBaseObjectType
     {

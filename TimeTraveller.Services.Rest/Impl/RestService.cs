@@ -10,6 +10,7 @@ using TimeTraveller.Services.Resources;
 using TimeTraveller.Services.Rules;
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Unity;
+using TimeTraveller.Services.Interface;
 
 namespace TimeTraveller.Services.Rest.Impl
 {

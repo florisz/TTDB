@@ -2,14 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using System.Diagnostics;
+
 using System.Windows.Forms;
+using TimeTraveller.Services.ObjectModels;
 
-using Luminis.Its.Services.CaseFileSpecifications;
-using Luminis.Its.Services.ObjectModels;
-using Luminis.Xml;
-
-namespace Luminis.Its.Tools.Sparx.ObjectModelGen
+namespace TimeTraveller.Tools.Sparx.ObjectModelGen
 {
     public class ObjectModelGen
     {
@@ -49,7 +46,7 @@ namespace Luminis.Its.Tools.Sparx.ObjectModelGen
 
                     OnProgress(new ObjectModelGenEventArgs("Writing XML schemas for object model", _progressCount++, _progressTotal));
                     string filenameObjectModel = outputDirectory + @"\ObjectModel.xml";
-                    File.WriteAllText(filenameObjectModel, XmlHelper.ToXml<ObjectModel>(objectModel, Encoding.UTF8, true), Encoding.UTF8);
+					File.WriteAllText(filenameObjectModel, TimeTraveller.General.Xml.XmlHelper.ToXml<ObjectModel>(objectModel, Encoding.UTF8, true), Encoding.UTF8);
                     
                     _repository.CloseFile();
                 }

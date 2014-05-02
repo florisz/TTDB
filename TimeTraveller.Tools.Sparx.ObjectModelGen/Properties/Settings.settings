@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Luminis.Its.Tools.Sparx.ObjectModelGen.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TimeTraveller.Tools.Sparx.ObjectModelGen.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
     <Setting Name="RepositoryName" Type="System.String" Scope="User">

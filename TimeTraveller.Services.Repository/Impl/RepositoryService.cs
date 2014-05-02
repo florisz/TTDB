@@ -14,6 +14,7 @@ using TimeTraveller.Services.Rules;
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Patterns.Range;
 using TimeTraveller.General.Unity;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.Repository.Impl
 {

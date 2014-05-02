@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-using ProjectSettings = Luminis.Its.Tools.Sparx.ObjectModelGen.Properties.Settings;
+using ProjectSettings = TimeTraveller.Tools.Sparx.ObjectModelGen.Properties.Settings;
 
-namespace Luminis.Its.Tools.Sparx.ObjectModelGen
+namespace TimeTraveller.Tools.Sparx.ObjectModelGen
 {
     static class Program
     {

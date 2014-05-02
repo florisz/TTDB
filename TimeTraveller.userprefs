@@ -1,16 +1,63 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TimeTraveller.Services.Data/Properties/AssemblyInfo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TimeTraveller.Tools.Sparx.ObjectModelGen/ObjecModelGen.cs">
     <Files>
-      <File FileName="TimeTraveller.Services.Data/Impl/DataService.cs" Line="309" Column="3" />
-      <File FileName="_CreateVersionInfo/VersionInfo.cs" Line="1" Column="1" />
-      <File FileName="TimeTraveller.Services.Data/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="TimeTraveller.Services.Console/Program.cs" Line="128" Column="52" />
+      <File FileName="TimeTraveller.Tools.Sparx.ObjectModelGen/ObjecModelGen.cs" Line="49" Column="70" />
+      <File FileName="TimeTraveller.Services.Data.CouchDB/CouchDB.cs" Line="81" Column="100" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="TimeTraveller.General.Patterns.Range.Test" expanded="True" />
-          <Node name="TimeTraveller.Tools.Sparx.ObjectModelGen" selected="True" />
+          <Node name="TimeTraveller.General.Patterns.Range" expanded="True" />
+          <Node name="TimeTraveller.General.Xml" expanded="True" />
+          <Node name="TimeTraveller.Services" expanded="True" />
+          <Node name="TimeTraveller.Services.CaseFiles" expanded="True">
+            <Node name="Impl" expanded="True" />
+            <Node name="casefile.xsd" expanded="True" />
+          </Node>
+          <Node name="TimeTraveller.Services.CaseFileSpecifications" expanded="True">
+            <Node name="Impl" expanded="True" />
+            <Node name="casefilespecification.xsd" expanded="True" />
+          </Node>
+          <Node name="TimeTraveller.Services.Data.CouchDB" expanded="True" selected="True" />
+          <Node name="TimeTraveller.Services.Data.Interfaces" expanded="True">
+            <Node name="Properties" expanded="True" />
+          </Node>
+          <Node name="TimeTraveller.Services.Impl" expanded="True" />
+          <Node name="TimeTraveller.Services.Items" expanded="True" />
+          <Node name="TimeTraveller.Services.ObjectModels" expanded="True">
+            <Node name="Impl" expanded="True" />
+            <Node name="objectmodel.xsd" expanded="True" />
+          </Node>
+          <Node name="TimeTraveller.Services.Repository" expanded="True">
+            <Node name="Impl" expanded="True" />
+          </Node>
+          <Node name="TimeTraveller.Services.Representations" expanded="True">
+            <Node name="Impl" expanded="True" />
+            <Node name="representation.xsd" expanded="True" />
+          </Node>
+          <Node name="TimeTraveller.Services.Resources" expanded="True" />
+          <Node name="TimeTraveller.Services.Resources.Impl" expanded="True" />
+          <Node name="TimeTraveller.Services.Rest" expanded="True">
+            <Node name="Impl" expanded="True">
+              <Node name="Commands" expanded="True">
+                <Node name="CaseFileSpecifications" expanded="True" />
+                <Node name="Resources" expanded="True" />
+              </Node>
+              <Node name="Formatters" expanded="True">
+                <Node name="CaseFiles" expanded="True" />
+                <Node name="CaseFileSpecifications" expanded="True" />
+                <Node name="Resources" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+          <Node name="TimeTraveller.Services.Rules" expanded="True">
+            <Node name="Impl" expanded="True" />
+            <Node name="rule.xsd" expanded="True" />
+          </Node>
+          <Node name="TimeTraveller.Services.Rules.FSharp" expanded="True" />
+          <Node name="TimeTraveller.Tools.Sparx.ObjectModelGen" expanded="True" />
         </State>
       </Pad>
     </Pads>

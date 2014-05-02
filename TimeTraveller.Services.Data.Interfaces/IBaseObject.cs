@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 
 using TimeTraveller.General.Patterns.Range;
+using TimeTraveller.Services.Interfaces;
 
-namespace TimeTraveller.Services.Data
+namespace TimeTraveller.Services.Data.Interfaces
 {
     public interface IBaseObject
     {

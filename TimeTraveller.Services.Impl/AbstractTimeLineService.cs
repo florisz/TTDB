@@ -10,6 +10,8 @@ using TimeTraveller.General.Logging;
 using TimeTraveller.General.Patterns.Range;
 using TimeTraveller.General.Unity;
 using TimeTraveller.General.Xml;
+using TimeTraveller.Services.Interfaces;
+using TimeTraveller.Services.Data.Interfaces;
 
 namespace TimeTraveller.Services.Impl
 {
@@ -366,12 +368,12 @@ namespace TimeTraveller.Services.Impl
             return result;
         }
 
-        public virtual bool Store(string id, T item, Uri baseUri, WebHttpHeaderInfo info)
+        public virtual bool Store(string id, T item, Uri baseUri, IHeaderInfo info)
         {
             return Store(id, item, null, baseUri, info);
         }
 
-        public virtual bool Store(string id, T item, IBaseObjectValue referenceObjectValue, Uri baseUri, WebHttpHeaderInfo info)
+        public virtual bool Store(string id, T item, IBaseObjectValue referenceObjectValue, Uri baseUri, IHeaderInfo info)
         {
             try
             {

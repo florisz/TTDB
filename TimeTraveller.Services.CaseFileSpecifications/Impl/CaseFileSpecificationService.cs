@@ -20,6 +20,8 @@ using TimeTraveller.General.Logging;
 using TimeTraveller.General.Patterns.Range;
 using TimeTraveller.General.Unity;
 using TimeTraveller.General.Xml;
+using TimeTraveller.Services.Data.Interfaces;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.CaseFileSpecifications.Impl
 {
@@ -301,7 +303,7 @@ namespace TimeTraveller.Services.CaseFileSpecifications.Impl
             }
         }
 
-        public override bool Store(string specificationname, CaseFileSpecification specification, Uri baseUri, WebHttpHeaderInfo info)
+        public override bool Store(string specificationname, CaseFileSpecification specification, Uri baseUri, IHeaderInfo info)
         {
             try
             {

@@ -1,4 +1,4 @@
-namespace Luminis.Its.Tools.Sparx.ObjectModelGen
+namespace TimeTraveller.Tools.Sparx.ObjectModelGen
 {
     partial class SelectModel
     {
@@ -121,7 +121,7 @@ namespace Luminis.Its.Tools.Sparx.ObjectModelGen
             this.Controls.Add(this.txtRepositoryName);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "ITS Object Model Generator";
+            this.Text = "TimeTraveller Object Model Generator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.ResumeLayout(false);

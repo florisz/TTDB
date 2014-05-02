@@ -1,7 +1,7 @@
 ﻿using System;
-
-using TimeTraveller.Services.Data;
 using TimeTraveller.General.Patterns.Range;
+using TimeTraveller.Services.Data.Interfaces;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.CaseFiles.Impl
 {

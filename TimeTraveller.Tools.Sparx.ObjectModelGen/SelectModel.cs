@@ -1,15 +1,10 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
-using ProjectSettings = Luminis.Its.Tools.Sparx.ObjectModelGen.Properties.Settings;
+using ProjectSettings = TimeTraveller.Tools.Sparx.ObjectModelGen.Properties.Settings;
 using System.IO;
 
-namespace Luminis.Its.Tools.Sparx.ObjectModelGen
+namespace TimeTraveller.Tools.Sparx.ObjectModelGen
 {
     public partial class SelectModel : Form
     {

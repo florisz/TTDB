@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 using TimeTraveller.Services.CaseFiles;
 using TimeTraveller.Services.CaseFileSpecifications;
-using TimeTraveller.Services.Data;
 using TimeTraveller.Services.Impl;
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Patterns.Range;
 using TimeTraveller.General.Unity;
+using TimeTraveller.Services.Data.Interfaces;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.Rules.Impl
 {
@@ -83,7 +84,7 @@ namespace TimeTraveller.Services.Rules.Impl
             return base.GetEnumerable(ruleQueryString, baseUri);
         }
 
-        public override bool Store(string rulename, Rule rule, Uri baseUri, WebHttpHeaderInfo info)
+        public override bool Store(string rulename, Rule rule, Uri baseUri, IHeaderInfo info)
         {
             try
             {

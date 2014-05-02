@@ -4,9 +4,9 @@ using System.Threading;
 using System.Windows;
 using System.Windows.Threading;
 
-using ProjectSettings = Luminis.Its.Tools.Sparx.ObjectModelGen.Properties.Settings;
+using ProjectSettings = TimeTraveller.Tools.Sparx.ObjectModelGen.Properties.Settings;
 
-namespace Luminis.Its.Tools.Sparx.ObjectModelGen
+namespace TimeTraveller.Tools.Sparx.ObjectModelGen
 {
     public partial class RunGenerator : Form
     {

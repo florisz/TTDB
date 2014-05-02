@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 
-using TimeTraveller.Services.Data;
 using TimeTraveller.General.Patterns.Range;
+using TimeTraveller.Services.Data.Interfaces;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.CaseFileSpecifications
 {
@@ -162,7 +163,7 @@ namespace TimeTraveller.Services.CaseFileSpecifications
         /// <param name="baseUri"></param>
         /// <param name="info"></param>
         /// <returns>true when the CaseFileSpecification is created, false when the CaseFileSpecification is updated</returns>
-        bool Store(string specificationname, CaseFileSpecification specification, Uri baseUri, WebHttpHeaderInfo info);
+        bool Store(string specificationname, CaseFileSpecification specification, Uri baseUri, IHeaderInfo info);
 
         /// <summary>
         /// Validate that the caseFileId is correctly formatted according to the UriTemplate in the specification.
