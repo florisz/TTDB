@@ -303,7 +303,7 @@ namespace TimeTraveller.Services.CaseFileSpecifications.Impl
             }
         }
 
-        public override bool Store(string specificationname, CaseFileSpecification specification, Uri baseUri, IHeaderInfo info)
+        public override bool Store(string specificationname, CaseFileSpecification specification, Uri baseUri, IUserInfo info)
         {
             try
             {

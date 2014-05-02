@@ -122,7 +122,7 @@ namespace TimeTraveller.Services.Representations
         /// <param name="baseUri"></param>
         /// <param name="info"></param>
         /// <returns>true when the Representation is created, false when the Representation is updated</returns>
-        bool Store(string representationname, Representation representation, Uri baseUri, IHeaderInfo info);
+        bool Store(string representationname, Representation representation, Uri baseUri, IUserInfo info);
 
         /// <summary>
         /// Transform the xml using the given representation.

@@ -148,7 +148,7 @@ namespace TimeTraveller.Services.Rest.Impl
             }
         }
 
-        public IHeaderInfo JournalInfo
+        public IUserInfo JournalInfo
         {
             get
             {

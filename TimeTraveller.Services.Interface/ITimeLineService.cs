@@ -24,6 +24,6 @@ namespace TimeTraveller.Services.Interfaces
         string GetXmlSchemaAddress(Uri baseUri);
         string GetXmlSchemaName();
         string GetXmlSchemaText();
-        bool Store(string id, T item, Uri baseUri, IHeaderInfo info);
+        bool Store(string id, T item, Uri baseUri, IUserInfo info);
     }
 }

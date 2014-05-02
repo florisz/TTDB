@@ -258,7 +258,7 @@ namespace TimeTraveller.Services.CaseFiles.Impl
             }
         }
 
-        public bool Store(CaseFileSpecification specification, string caseFileId, CaseFile caseFile, Uri baseUri, IHeaderInfo info)
+        public bool Store(CaseFileSpecification specification, string caseFileId, CaseFile caseFile, Uri baseUri, IUserInfo info)
         {
             try
             {
@@ -617,7 +617,7 @@ namespace TimeTraveller.Services.CaseFiles.Impl
         /// <param name="casefileSpecificationObjectValue"></param>
         /// <param name="journalInfo">The journalInfo</param>
         /// <returns>The CaseFile object value</returns>
-        private IBaseObjectValue StoreCaseFileObjectValues(string caseFileId, IEnumerable<CaseFileObject> caseFileObjectValues, TimePoint timePoint, IBaseObjectValue objectModelObjectValue, IBaseObjectValue casefileSpecificationObjectValue, IHeaderInfo journalInfo)
+        private IBaseObjectValue StoreCaseFileObjectValues(string caseFileId, IEnumerable<CaseFileObject> caseFileObjectValues, TimePoint timePoint, IBaseObjectValue objectModelObjectValue, IBaseObjectValue casefileSpecificationObjectValue, IUserInfo journalInfo)
         {
             List<IBaseObjectValue> objectValues = new List<IBaseObjectValue>();
             // Store the entities

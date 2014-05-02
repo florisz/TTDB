@@ -127,6 +127,6 @@ namespace TimeTraveller.Services.CaseFiles
         /// <param name="baseUri"></param>
         /// <param name="info"></param>
         /// <returns>true when the CaseFile is created, false when the CaseFile is updated</returns>
-        bool Store(CaseFileSpecification specification, string caseFileId, CaseFile caseFile, Uri baseUri, IHeaderInfo info);
+        bool Store(CaseFileSpecification specification, string caseFileId, CaseFile caseFile, Uri baseUri, IUserInfo info);
     }
 }

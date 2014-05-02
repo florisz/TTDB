@@ -368,12 +368,12 @@ namespace TimeTraveller.Services.Impl
             return result;
         }
 
-        public virtual bool Store(string id, T item, Uri baseUri, IHeaderInfo info)
+        public virtual bool Store(string id, T item, Uri baseUri, IUserInfo info)
         {
             return Store(id, item, null, baseUri, info);
         }
 
-        public virtual bool Store(string id, T item, IBaseObjectValue referenceObjectValue, Uri baseUri, IHeaderInfo info)
+        public virtual bool Store(string id, T item, IBaseObjectValue referenceObjectValue, Uri baseUri, IUserInfo info)
         {
             try
             {

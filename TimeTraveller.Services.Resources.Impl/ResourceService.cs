@@ -109,7 +109,7 @@ namespace TimeTraveller.Services.Resources.Impl
             return result;
         }
 
-        public override bool Store(string id, Resource item, IBaseObjectValue referenceObjectValue, Uri baseUri, IHeaderInfo info)
+        public override bool Store(string id, Resource item, IBaseObjectValue referenceObjectValue, Uri baseUri, IUserInfo info)
         {
             try
             {

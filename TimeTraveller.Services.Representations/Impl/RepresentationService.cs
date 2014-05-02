@@ -65,7 +65,7 @@ namespace TimeTraveller.Services.Representations.Impl
             return GetEnumerable(representationQueryString, baseUri);
         }
 
-        public override bool Store(string representationname, Representation representation, Uri baseUri, IHeaderInfo info)
+        public override bool Store(string representationname, Representation representation, Uri baseUri, IUserInfo info)
         {
             try
             {

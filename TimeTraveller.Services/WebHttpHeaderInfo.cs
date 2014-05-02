@@ -2,7 +2,7 @@
 
 namespace TimeTraveller.Services
 {
-    public class WebHttpHeaderInfo : IHeaderInfo
+    public class WebHttpHeaderInfo : IUserInfo
     {
         public string Username { get; set; }
     }

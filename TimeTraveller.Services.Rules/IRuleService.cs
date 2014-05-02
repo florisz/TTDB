@@ -132,6 +132,6 @@ namespace TimeTraveller.Services.Rules
         /// <param name="baseUri"></param>
         /// <param name="info"></param>
         /// <returns>true when the Rule is created, false when the Rule is updated</returns>
-        bool Store(string rulename, Rule rule, Uri baseUri, IHeaderInfo info);
+        bool Store(string rulename, Rule rule, Uri baseUri, IUserInfo info);
     }
 }

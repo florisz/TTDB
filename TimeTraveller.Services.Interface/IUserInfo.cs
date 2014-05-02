@@ -1,6 +1,6 @@
 ﻿namespace TimeTraveller.Services.Interfaces
 {
-    public interface IHeaderInfo
+    public interface IUserInfo
     {
         string Username { get; set; }
     }

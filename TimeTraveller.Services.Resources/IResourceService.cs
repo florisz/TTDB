@@ -91,6 +91,6 @@ namespace TimeTraveller.Services.Resources
         /// <param name="baseUri"></param>
         /// <param name="info"></param>
         /// <returns>true when the Resource is created, false when updated</returns>
-        bool Store(string id, Resource resource, Uri baseUri, IHeaderInfo info);
+        bool Store(string id, Resource resource, Uri baseUri, IUserInfo info);
     }
 }

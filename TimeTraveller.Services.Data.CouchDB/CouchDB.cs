@@ -133,7 +133,7 @@ namespace TimeTraveller.Services.Data.CouchDB
 			throw new NotImplementedException ();
 		}
 
-		public IBaseObjectValue InsertValue (string content, TimePoint timePoint, IBaseObject baseObject, IHeaderInfo journalInfo)
+		public IBaseObjectValue InsertValue (string content, TimePoint timePoint, IBaseObject baseObject, IUserInfo journalInfo)
 		{
 			throw new NotImplementedException ();
 		}
@@ -143,7 +143,7 @@ namespace TimeTraveller.Services.Data.CouchDB
 			throw new NotImplementedException ();
 		}
 
-		public IBaseObjectValue InsertValue (byte[] content, string contentType, TimePoint timePoint, IBaseObject baseObject, IHeaderInfo journalInfo)
+		public IBaseObjectValue InsertValue (byte[] content, string contentType, TimePoint timePoint, IBaseObject baseObject, IUserInfo journalInfo)
 		{
 			throw new NotImplementedException ();
 		}
@@ -153,7 +153,7 @@ namespace TimeTraveller.Services.Data.CouchDB
 			throw new NotImplementedException ();
 		}
 
-		public IBaseObjectValue InsertValue (string content, TimePoint timePoint, IBaseObject baseObject, IBaseObjectValue referenceObjectValue, IHeaderInfo journalInfo)
+		public IBaseObjectValue InsertValue (string content, TimePoint timePoint, IBaseObject baseObject, IBaseObjectValue referenceObjectValue, IUserInfo journalInfo)
 		{
 			throw new NotImplementedException ();
 		}
@@ -163,7 +163,7 @@ namespace TimeTraveller.Services.Data.CouchDB
 			throw new NotImplementedException ();
 		}
 
-		public IBaseObjectValue InsertValue (byte[] content, string contentType, TimePoint timePoint, IBaseObject baseObject, IBaseObjectValue referenceObjectValue, IHeaderInfo journalInfo)
+		public IBaseObjectValue InsertValue (byte[] content, string contentType, TimePoint timePoint, IBaseObject baseObject, IBaseObjectValue referenceObjectValue, IUserInfo journalInfo)
 		{
 			throw new NotImplementedException ();
 		}
@@ -173,7 +173,7 @@ namespace TimeTraveller.Services.Data.CouchDB
 			throw new NotImplementedException ();
 		}
 
-		public IBaseObjectValue InsertValue (string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IHeaderInfo journalInfo)
+		public IBaseObjectValue InsertValue (string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IUserInfo journalInfo)
 		{
 			throw new NotImplementedException ();
 		}
@@ -183,7 +183,7 @@ namespace TimeTraveller.Services.Data.CouchDB
 			throw new NotImplementedException ();
 		}
 
-		public IBaseObjectValue InsertValue (byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IHeaderInfo journalInfo)
+		public IBaseObjectValue InsertValue (byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IUserInfo journalInfo)
 		{
 			throw new NotImplementedException ();
 		}
@@ -193,7 +193,7 @@ namespace TimeTraveller.Services.Data.CouchDB
 			throw new NotImplementedException ();
 		}
 
-		public IBaseObjectValue InsertValue (string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue, IHeaderInfo journalInfo)
+		public IBaseObjectValue InsertValue (string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue, IUserInfo journalInfo)
 		{
 			throw new NotImplementedException ();
 		}
@@ -203,7 +203,7 @@ namespace TimeTraveller.Services.Data.CouchDB
 			throw new NotImplementedException ();
 		}
 
-		public IBaseObjectValue InsertValue (byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue, IHeaderInfo journalInfo)
+		public IBaseObjectValue InsertValue (byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue, IUserInfo journalInfo)
 		{
 			throw new NotImplementedException ();
 		}
@@ -213,7 +213,7 @@ namespace TimeTraveller.Services.Data.CouchDB
 			throw new NotImplementedException ();
 		}
 
-		public IBaseObjectValue InsertValue (string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, string extReferenceId, IBaseObjectType referenceType, IHeaderInfo journalInfo)
+		public IBaseObjectValue InsertValue (string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, string extReferenceId, IBaseObjectType referenceType, IUserInfo journalInfo)
 		{
 			throw new NotImplementedException ();
 		}
@@ -223,7 +223,7 @@ namespace TimeTraveller.Services.Data.CouchDB
 			throw new NotImplementedException ();
 		}
 
-		public IBaseObjectValue InsertValue (byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, string extReferenceId, IBaseObjectType referenceType, IHeaderInfo journalInfo)
+		public IBaseObjectValue InsertValue (byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, string extReferenceId, IBaseObjectType referenceType, IUserInfo journalInfo)
 		{
 			throw new NotImplementedException ();
 		}

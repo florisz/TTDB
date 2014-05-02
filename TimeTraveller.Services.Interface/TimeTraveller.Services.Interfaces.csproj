@@ -44,7 +44,7 @@
     <Compile Include="ScriptType.cs" />
     <Compile Include="UriType.cs" />
     <Compile Include="WebOperationContentType.cs" />
-    <Compile Include="IHeaderInfo.cs" />
+    <Compile Include="IUserInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

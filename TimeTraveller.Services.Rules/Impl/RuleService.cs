@@ -84,7 +84,7 @@ namespace TimeTraveller.Services.Rules.Impl
             return base.GetEnumerable(ruleQueryString, baseUri);
         }
 
-        public override bool Store(string rulename, Rule rule, Uri baseUri, IHeaderInfo info)
+        public override bool Store(string rulename, Rule rule, Uri baseUri, IUserInfo info)
         {
             try
             {

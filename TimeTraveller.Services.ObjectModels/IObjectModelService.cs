@@ -145,6 +145,6 @@ namespace TimeTraveller.Services.ObjectModels
         /// <param name="baseUri"></param>
         /// <param name="info"></param>
         /// <returns>true when the objectModel is created, false when the objectModel is updated</returns>
-        bool Store(string objectmodelname, ObjectModel objectModel, Uri baseUri, IHeaderInfo info);
+        bool Store(string objectmodelname, ObjectModel objectModel, Uri baseUri, IUserInfo info);
     }
 }
