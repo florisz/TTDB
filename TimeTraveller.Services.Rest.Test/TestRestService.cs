@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Objects.DataClasses;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -14,8 +13,6 @@ using TimeTraveller.Services.CaseFiles;
 using TimeTraveller.Services.CaseFiles.Impl;
 using TimeTraveller.Services.CaseFileSpecifications;
 using TimeTraveller.Services.CaseFileSpecifications.Impl;
-using TimeTraveller.Services.Data;
-using TimeTraveller.Services.Data.Impl;
 using TimeTraveller.Services.ObjectModels;
 using TimeTraveller.Services.ObjectModels.Impl;
 using TimeTraveller.Services.Repository;
@@ -44,6 +41,7 @@ using TimeTraveller.General.Patterns.Range;
 using TimeTraveller.General.Unity;
 using NUnit.Framework;
 using Rhino.Mocks;
+using TimeTraveller.Services.Data.Interfaces;
 
 namespace TimeTraveller.Services.Rest.Test
 {

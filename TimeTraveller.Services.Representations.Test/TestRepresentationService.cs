@@ -8,13 +8,13 @@ using log4net.Config;
 using Rhino.Mocks;
 
 using TimeTraveller.Services.CaseFileSpecifications;
-using TimeTraveller.Services.Data;
-using TimeTraveller.Services.Data.Impl;
 using TimeTraveller.Services.Representations.Impl;
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Logging.Log4Net;
 using TimeTraveller.General.Patterns.Range;
 using TimeTraveller.General.Unity;
+using TimeTraveller.Services.Data.Interfaces;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.Representations.Test
 {
@@ -216,7 +216,7 @@ namespace TimeTraveller.Services.Representations.Test
             Assert.IsTrue(!string.IsNullOrEmpty(myrepresentation.Script.Text));
         }
 
-        private delegate IBaseObjectValue InsertValueDelegate(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue, WebHttpHeaderInfo journalInfo);
+        private delegate IBaseObjectValue InsertValueDelegate(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue, IUserInfo journalInfo);
 
         [Test]
         public void TestStoreRepresentation()

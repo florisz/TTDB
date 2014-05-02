@@ -5,12 +5,8 @@ using TimeTraveller.General.Patterns.Range;
 
 namespace TimeTraveller.Services.Data.CouchDB
 {
-	public class CouchDB : IDataService
+	public class DataService : IDataService
 	{
-		public CouchDB ()
-		{
-		}
-
 		#region IDataService implementation
 
 		public void Clean ()

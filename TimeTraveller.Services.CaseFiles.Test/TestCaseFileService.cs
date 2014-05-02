@@ -16,6 +16,7 @@ using TimeTraveller.General.Logging;
 using TimeTraveller.General.Unity;
 using TimeTraveller.Services.Representations;
 using TimeTraveller.Services.CaseFiles.Impl;
+using TimeTraveller.General.Logging.Log4Net;
 
 namespace TimeTraveller.Services.CaseFiles.Test
 {
