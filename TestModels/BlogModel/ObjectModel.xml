@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+			xmlns="http://timetraveller.net/its/schemas/objectmodel.xsd">
+  <Link rel="self" href="" />
+  <Name>BlogModel</Name>
+  <ObjectDefinitions>
+    <ObjectDefinition Name="Blog" ObjectType="entity">
+      <Properties>
+        <Property Name="Title" Type="string" Required="true" />
+      </Properties>
+    </ObjectDefinition>
+    <ObjectDefinition Name="Bloggers" ObjectType="relation">
+      <Properties />
+    </ObjectDefinition>
+    <ObjectDefinition Name="BlogPost" ObjectType="entity">
+      <Properties>
+        <Property Name="Message" Type="string" Required="true" />
+      </Properties>
+    </ObjectDefinition>
+    <ObjectDefinition Name="BlogPosts" ObjectType="relation">
+      <Properties />
+    </ObjectDefinition>
+    <ObjectDefinition Name="User" ObjectType="entity">
+      <Properties>
+        <Property Name="Name" Type="string" Required="true" />
+        <Property Name="Email" Type="string" Required="true" />
+      </Properties>
+    </ObjectDefinition>
+  </ObjectDefinitions>
+  <ObjectRelations>
+    <ObjectRelation Source="Blog" Target="BlogPosts" MaxOccurs="unbounded" />
+    <ObjectRelation Source="BlogPosts" Target="BlogPost" MaxOccurs="1" />
+    <ObjectRelation Source="Blog" Target="Bloggers" MaxOccurs="unbounded" />
+    <ObjectRelation Source="Bloggers" Target="User" MaxOccurs="1" />
+  </ObjectRelations>
+</ObjectModel>

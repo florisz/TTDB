@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InMemoryDataService.cs" />
+    <Compile Include="ManualIntegrationTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IntegrationTest.cs" />
   </ItemGroup>
@@ -83,6 +84,10 @@
     <ProjectReference Include="..\TimeTraveller.Services.CaseFiles\TimeTraveller.Services.CaseFiles.csproj">
       <Project>{49070EC1-9DDF-416E-B77D-4F8402F4933C}</Project>
       <Name>TimeTraveller.Services.CaseFiles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Console\TimeTraveller.Services.Console.csproj">
+      <Project>{dbe1bf14-2631-4b18-8464-f3744ca4ed2b}</Project>
+      <Name>TimeTraveller.Services.Console</Name>
     </ProjectReference>
     <ProjectReference Include="..\TimeTraveller.Services.Data\TimeTraveller.Services.Data.csproj">
       <Project>{8F9324A9-1DA9-416C-85EA-4E5901A7E8F0}</Project>
@@ -103,6 +108,14 @@
     <ProjectReference Include="..\TimeTraveller.Services.Representations\TimeTraveller.Services.Representations.csproj">
       <Project>{B8114201-D894-42E9-A451-C4AC8CEC4403}</Project>
       <Name>TimeTraveller.Services.Representations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Resources.Impl\TimeTraveller.Services.Resources.Impl.csproj">
+      <Project>{51c3247f-bf00-47da-bc68-b95a3e14cf5c}</Project>
+      <Name>TimeTraveller.Services.Resources.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Resources\TimeTraveller.Services.Resources.csproj">
+      <Project>{00d61e34-4d04-4f31-a4d2-badb13c06452}</Project>
+      <Name>TimeTraveller.Services.Resources</Name>
     </ProjectReference>
     <ProjectReference Include="..\TimeTraveller.Services.Rest\TimeTraveller.Services.Rest.csproj">
       <Project>{415BFC66-B451-4377-840C-17DF2FC3FCF1}</Project>

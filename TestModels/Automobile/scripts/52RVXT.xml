@@ -1,4 +1,4 @@
-<cs:CaseFile xmlns:cs="http://luminis.net/its/schemas/casefile.xsd">
+<cs:CaseFile xmlns:cs="http://timetraveller.net/its/schemas/casefile.xsd">
   <cs:Link rel="casefilespecification" href="http://localhost:8080/its/specifications/casefiles/Automobile/Autohistorie" />
   <cs:Link rel="self" href="" />
   <Car RegistrationId="68FD1A57-9C78-45b3-A080-F61848461655" RegistrationStart="2009-06-17T09:09:00.0000000">

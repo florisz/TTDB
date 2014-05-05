@@ -1,4 +1,4 @@
-<cs:CaseFile xmlns:cs="http://luminis.net/its/schemas/casefile.xsd">
+<cs:CaseFile xmlns:cs="http://timetraveller.net/its/schemas/casefile.xsd">
   <cs:Link rel="casefilespecification" href="http://localhost:8080/its/specifications/casefiles/SimpleModel/Persoon" />
   <cs:Link rel="self" href="" />
   <Persoon RegistrationId="48fea9d4-2bd7-4cb5-bd92-ae211f5f2223" RegistrationStart="2009-09-09T11:20:59.0000000">

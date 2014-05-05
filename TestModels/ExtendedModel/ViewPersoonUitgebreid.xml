@@ -2,7 +2,7 @@
 <Representation 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-	xmlns="http://luminis.net/its/schemas/representation.xsd"
+	xmlns="http://timetraveller.net/its/schemas/representation.xsd"
 	>
 	<Link rel="casefilespecification" href="http://localhost:8080/its/specifications/casefiles/SimpleModel/Persoon" />
 	<Link rel="self" href="" />

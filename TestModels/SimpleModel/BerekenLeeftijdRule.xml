@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
 <Rule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-	xmlns="http://luminis.net/its/schemas/rule.xsd">
-  <Link rel="casefilespecification" href="" />
+	xmlns="http://timetraveller.net/its/schemas/rule.xsd">
+  <Link rel="casefilespecification" href="http://timetraveller.net/its/specifications/casefiles/SimpleModel/Persoon" />
   <Link rel="self" href="" />
   <Name>BerekenLeeftijd</Name>
   <Script Type="fsharp" Method="SimpleModel.Persoon.BerekenLeeftijd.Execute">

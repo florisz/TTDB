@@ -8,6 +8,7 @@ using TimeTraveller.Services.CaseFiles;
 using TimeTraveller.Services.CaseFiles.Impl;
 using TimeTraveller.Services.CaseFileSpecifications;
 using TimeTraveller.Services.CaseFileSpecifications.Impl;
+using TimeTraveller.Services.Console;
 using TimeTraveller.Services.Data.Impl;
 using TimeTraveller.Services.ObjectModels;
 using TimeTraveller.Services.ObjectModels.Impl;
@@ -132,8 +133,8 @@ namespace TimeTraveller.Services.Console
                 .RegisterType<IResourceService, ResourceService>()
                 .RegisterType<IRestService, RestService>()
                 .RegisterType<IRuleService, RuleService>()
-                .RegisterType<IRepresentationTransformer, XsltTransformer>()
-                .RegisterType<IRuleEngine, FSharpRuleEngine>()
+                .RegisterType<IRepresentationTransformer, XsltTransformer>("xslt")
+                .RegisterType<IRuleEngine, FSharpRuleEngine>("fsharp")
                 .RegisterType<IFormatter, HtmlFormatter>("HistoryHtmlFormatter", new InjectionConstructor("scripts/itsbrowserhistory.xslt"))
                 .RegisterType<IFormatter, HtmlFormatter>("ListHtmlFormatter", new InjectionConstructor("scripts/itsbrowserlist.xslt"))
                 .RegisterType<IFormatter, HtmlFormatter>("SummaryHtmlFormatter", new InjectionConstructor("scripts/itsbrowsersummary.xslt"))

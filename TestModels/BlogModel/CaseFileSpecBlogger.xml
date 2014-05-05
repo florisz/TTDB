@@ -1,0 +1,19 @@
+<CaseFileSpecification 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns="http://timetraveller.net/its/schemas/casefilespecification.xsd">
+  <Link rel="objectmodel" href="http://localhost:8080/its/specifications/objectmodels/BlogModel" />
+  <Link rel="self" href="" />
+  <Name>Blogs</Name>
+  <UriTemplate>{Blog/Title}</UriTemplate>
+  <Structure>
+    <Entity Name="Blog" Type="Blog">
+      <Relation Name="Bloggers" Type="Bloggers">
+        <Entity Name="User" Type="User" />
+      </Relation>
+      <Relation Name="BlogPosts" Type="BlogPosts">
+        <Entity Name="BlogPost" Type="BlogPost" />
+      </Relation>
+    </Entity>
+  </Structure>
+</CaseFileSpecification>

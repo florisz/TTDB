@@ -20,30 +20,30 @@ using log4net.Config;
 
 using Rhino.Mocks;
 
-using Luminis.Its.Services.CaseFiles;
-using Luminis.Its.Services.CaseFiles.Impl;
-using Luminis.Its.Services.CaseFileSpecifications;
-using Luminis.Its.Services.CaseFileSpecifications.Impl;
-using Luminis.Its.Services.Console;
-using Luminis.Its.Services.Data;
-using Luminis.Its.Services.Data.Impl;
-using Luminis.Its.Services.ObjectModels;
-using Luminis.Its.Services.ObjectModels.Impl;
-using Luminis.Its.Services.Resources;
-using Luminis.Its.Services.Resources.Impl;
-using Luminis.Its.Services.Rest;
-using Luminis.Its.Services.Rest.Impl;
-using Luminis.Its.Services.Representations;
-using Luminis.Its.Services.Representations.Impl;
-using Luminis.Its.Services.Rules;
-using Luminis.Its.Services.Rules.Impl;
-using Luminis.Its.Services.Rules.FSharp;
-using Luminis.Its.Tools.Sparx.ObjectModelGen;
-using Luminis.Logging;
-using Luminis.Logging.Log4Net;
-using Luminis.Unity;
+using TimeTraveller.Services.CaseFiles;
+using TimeTraveller.Services.CaseFiles.Impl;
+using TimeTraveller.Services.CaseFileSpecifications;
+using TimeTraveller.Services.CaseFileSpecifications.Impl;
+using TimeTraveller.Services.Console;
+using TimeTraveller.Services.Data;
+using TimeTraveller.Services.Data.Impl;
+using TimeTraveller.Services.ObjectModels;
+using TimeTraveller.Services.ObjectModels.Impl;
+using TimeTraveller.Services.Resources;
+using TimeTraveller.Services.Resources.Impl;
+using TimeTraveller.Services.Rest;
+using TimeTraveller.Services.Rest.Impl;
+using TimeTraveller.Services.Representations;
+using TimeTraveller.Services.Representations.Impl;
+using TimeTraveller.Services.Rules;
+using TimeTraveller.Services.Rules.Impl;
+using TimeTraveller.Services.Rules.FSharp;
+//using TimeTraveller.Tools.Sparx.ObjectModelGen;
+using TimeTraveller.General.Logging;
+using TimeTraveller.General.Logging.Log4Net;
+using TimeTraveller.General.Unity;
 
-namespace Luminis.Its.Services.Manual.Test
+namespace TimeTraveller.Services.Manual.Test
 {
     /// <summary>
     /// Summary description for ManualIntegrationTest
@@ -86,7 +86,7 @@ namespace Luminis.Its.Services.Manual.Test
             // this test project contains the app.config of the service app as an embedded resource
             // to ensure the tests are run properly the embedded resource is saved in the cuurent directory
             // as the configuration file for the service application.
-            string itsServerFileName = "Luminis.Its.Services.Console.exe";
+            string itsServerFileName = "TimeTraveller.Services.Console.exe";
             CreateConfigFiles(Environment.CurrentDirectory, itsServerFileName, "Log4Net.config");
 
             // start the ITSServer in a separate process
@@ -177,7 +177,7 @@ namespace Luminis.Its.Services.Manual.Test
             byte[] requestBuffer = buffer.ToArray();
             WebClient webClient = new WebClient();
             webClient.Headers.Add(HttpRequestHeader.ContentType, "image/bmp");
-            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@luminis.nl");
+            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@gmail.com");
             byte[] resultBuffer = webClient.UploadData("http://localhost:8080/its/resources/images/Coffee%20Bean.bmp", "PUT", requestBuffer);
 
             webClient.Headers.Add(HttpRequestHeader.ContentType, "image/bmp");
@@ -191,7 +191,7 @@ namespace Luminis.Its.Services.Manual.Test
             string getCaseFileRequest = "http://localhost:8080/its/casefiles/MyObjectmodel/MySpecification/Alex.MiddleName.Harbers";
             WebClient webClient = new WebClient();
             webClient.Headers.Add(HttpRequestHeader.ContentType, "application/xml; charset=utf-16");
-            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@luminis.nl");
+            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@gmail.com");
             byte[] resultBuffer = webClient.DownloadData(getCaseFileRequest);
             string result = Encoding.Unicode.GetString(resultBuffer);
 
@@ -217,7 +217,7 @@ namespace Luminis.Its.Services.Manual.Test
 
         private void TestStoreModifiedObjectModel()
         {
-            string objectModelXml = @"<ObjectModel xmlns=""http://luminis.net/its/schemas/objectmodel.xsd"">
+            string objectModelXml = @"<ObjectModel xmlns=""http://timetraveller.net/its/schemas/objectmodel.xsd"">
                                                    <Link rel=""self"" href=""http://localhost:8080/its/specifications/objectmodels/MyObjectmodel""/>
                                                    <Name>MyObjectmodel</Name>
                                                    <ObjectDefinitions>
@@ -264,7 +264,7 @@ namespace Luminis.Its.Services.Manual.Test
             WebClient webClient = new WebClient();
 
             webClient.Headers.Add(HttpRequestHeader.ContentType, "application/xml; charset=utf-16");
-            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@luminis.nl");
+            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@gmail.com");
             byte[] requestBuffer = Encoding.Unicode.GetBytes(objectModelXml);
             byte[] resultBuffer = webClient.UploadData("http://localhost:8080/its/specifications/objectmodels/MyObjectmodel", "PUT", requestBuffer);
             string result = Encoding.Unicode.GetString(resultBuffer);
@@ -298,7 +298,7 @@ namespace Luminis.Its.Services.Manual.Test
         private void TestStoreRule()
         {
             string ruleXml = @"<?xml version=""1.0"" encoding=""utf-16""?>
-                            <Rule xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns=""http://luminis.net/its/schemas/rule.xsd"">
+                            <Rule xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns=""http://timetraveller.net/its/schemas/rule.xsd"">
                               <Link rel=""casefilespecification"" href=""http://localhost:8080/its/specifications/casefiles/MyObjectmodel/MySpecification""/>
                               <Link rel=""self"" href=""http://localhost:8080/its/rules/MyObjectmodel/MySpecification/MyRule"" />
                               <Name>MyRule</Name>
@@ -317,7 +317,7 @@ let Execute(p: Person) =
             byte[] requestBuffer = Encoding.Unicode.GetBytes(ruleXml);
             WebClient webClient = new WebClient();
             webClient.Headers.Add(HttpRequestHeader.ContentType, "application/xml; charset=utf-16");
-            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@luminis.nl");
+            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@gmail.com");
             byte[] resultBuffer = webClient.UploadData("http://localhost:8080/its/rules/MyObjectmodel/MySpecification/MyRule", "PUT", requestBuffer);
             string result = Encoding.Unicode.GetString(resultBuffer);
 
@@ -357,7 +357,7 @@ let Execute(p: Person) =
 
             byte[] requestBuffer = Encoding.Unicode.GetBytes(newCaseFileXml);
             webClient.Headers.Add(HttpRequestHeader.ContentType, "application/xml; charset=utf-16");
-            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@luminis.nl");
+            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@gmail.com");
             resultBuffer = webClient.UploadData("http://localhost:8080/its/casefiles/MyObjectmodel/MySpecification/Alex.MiddleName.Harbers", "PUT", requestBuffer);
             result = Encoding.Unicode.GetString(resultBuffer);
 
@@ -371,7 +371,7 @@ let Execute(p: Person) =
         public void TestStoreCaseFile()
         {
             DateTime now = DateTime.Now;
-            string caseFileXml = string.Format(@"<cs:CaseFile xmlns:cs=""http://luminis.net/its/schemas/casefile.xsd"">
+            string caseFileXml = string.Format(@"<cs:CaseFile xmlns:cs=""http://timetraveller.net/its/schemas/casefile.xsd"">
                                                 <cs:Link rel=""self"" href=""http://localhost:8080/its/casefiles/MyObjectmodel/MySpecification/Alex.MiddleName.Harbers""/>
                                                 <cs:Link rel=""casefilespecification"" href=""http://localhost:8080/its/specifications/casefiles/MyObjectmodel/MySpecification""/>
                                                 <Person RegistrationId=""{0}"" RegistrationStart=""{1}"">
@@ -415,7 +415,7 @@ let Execute(p: Person) =
             byte[] requestBuffer = Encoding.Unicode.GetBytes(caseFileXml);
             WebClient webClient = new WebClient();
             webClient.Headers.Add(HttpRequestHeader.ContentType, "application/xml; charset=utf-16");
-            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@luminis.nl");
+            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@gmail.com");
             byte[] resultBuffer = webClient.UploadData("http://localhost:8080/its/casefiles/MyObjectmodel/MySpecification/Alex.MiddleName.Harbers", "PUT", requestBuffer);
             string result = Encoding.Unicode.GetString(resultBuffer);
 
@@ -429,7 +429,7 @@ let Execute(p: Person) =
         public void TestStoreSimpleCaseFile()
         {
             DateTime now = DateTime.Now;
-            string caseFileXml = string.Format(@"<cs:CaseFile xmlns:cs=""http://luminis.net/its/schemas/casefile.xsd"">
+            string caseFileXml = string.Format(@"<cs:CaseFile xmlns:cs=""http://timetraveller.net/its/schemas/casefile.xsd"">
                                                 <cs:Link rel=""self"" href=""http://localhost:8080/its/casefiles/MyObjectmodel/MySpecification/Alex.MiddleName.Harbers""/>
                                                 <cs:Link rel=""casefilespecification"" href=""http://localhost:8080/its/specifications/casefiles/MyObjectmodel/MySpecification""/>
                                                 <Person RegistrationId=""{0}"" RegistrationStart=""{1}"">
@@ -442,7 +442,7 @@ let Execute(p: Person) =
             byte[] requestBuffer = Encoding.Unicode.GetBytes(caseFileXml);
             WebClient webClient = new WebClient();
             webClient.Headers.Add(HttpRequestHeader.ContentType, "application/xml; charset=utf-16");
-            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@luminis.nl");
+            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@gmail.com");
             byte[] resultBuffer = webClient.UploadData("http://localhost:8080/its/casefiles/MyObjectmodel/MySpecification/Floris.MiddleName.Zwarteveen", "PUT", requestBuffer);
             string result = Encoding.Unicode.GetString(resultBuffer);
 
@@ -455,7 +455,7 @@ let Execute(p: Person) =
 
         public void TestStoreRepresentation()
         {
-            string representationXml = @"<r:Representation xmlns:r=""http://luminis.net/its/schemas/representation.xsd"">
+            string representationXml = @"<r:Representation xmlns:r=""http://timetraveller.net/its/schemas/representation.xsd"">
                                                     <r:Link rel=""casefilespecification"" href=""http://localhost:8080/its/specifications/casefiles/MyObjectmodel/MySpecification""/>
                                                     <r:Link rel=""self"" href=""http://localhost:8080/its/representations/MyObjectmodel/MySpecification/MyRepresentation""/>
                                                     <r:Name>MyRepresentation</r:Name>
@@ -504,7 +504,7 @@ let Execute(p: Person) =
             byte[] requestBuffer = Encoding.Unicode.GetBytes(representationXml);
             WebClient webClient = new WebClient();
             webClient.Headers.Add(HttpRequestHeader.ContentType, "application/xml; charset=utf-16");
-            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@luminis.nl");
+            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@gmail.com");
             byte[] resultBuffer = webClient.UploadData("http://localhost:8080/its/representations/MyObjectmodel/MySpecification/MyRepresentation", "PUT", requestBuffer);
             string result = Encoding.Unicode.GetString(resultBuffer);
 
@@ -515,7 +515,7 @@ let Execute(p: Person) =
 
         public void TestStoreCaseFileSpecification()
         {
-            string specificationXml = @"<CaseFileSpecification xmlns=""http://luminis.net/its/schemas/casefilespecification.xsd"">
+            string specificationXml = @"<CaseFileSpecification xmlns=""http://timetraveller.net/its/schemas/casefilespecification.xsd"">
                                                   <Link rel=""objectmodel"" href=""http://localhost:8080/its/specifications/objectmodels/MyObjectmodel""/>
                                                   <Link rel=""self"" href=""http://localhost:8080/its/specifications/casefiles/myobjectmodel/MySpecification""/>
                                                   <Name>MySpecification</Name>
@@ -531,7 +531,7 @@ let Execute(p: Person) =
             WebClient webClient = new WebClient();
             byte[] requestBuffer = Encoding.Unicode.GetBytes(specificationXml);
             webClient.Headers.Add(HttpRequestHeader.ContentType, "application/xml; charset=utf-16");
-            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@luminis.nl");
+            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@gmail.com");
             byte[] resultBuffer = webClient.UploadData("http://localhost:8080/its/specifications/casefiles/MyObjectmodel/MySpecification", "PUT", requestBuffer);
             string result = Encoding.Unicode.GetString(resultBuffer);
 
@@ -542,7 +542,7 @@ let Execute(p: Person) =
 
         public void TestStoreObjectModel()
         {
-            string objectModelXml = @"<ObjectModel xmlns=""http://luminis.net/its/schemas/objectmodel.xsd"">
+            string objectModelXml = @"<ObjectModel xmlns=""http://timetraveller.net/its/schemas/objectmodel.xsd"">
                                        <Link rel=""self"" href=""http://localhost:8080/its/specifications/objectmodels/MyObjectmodel""/>
                                        <Name>MyObjectmodel</Name>
                                        <ObjectDefinitions>
@@ -588,7 +588,7 @@ let Execute(p: Person) =
             WebClient webClient = new WebClient();
 
             webClient.Headers.Add(HttpRequestHeader.ContentType, "application/xml; charset=utf-16");
-            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@luminis.nl");
+            webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@gmail.com");
             byte[] requestBuffer = Encoding.Unicode.GetBytes(objectModelXml);
             byte[] resultBuffer = webClient.UploadData("http://localhost:8080/its/specifications/objectmodels/MyObjectmodel", "PUT", requestBuffer);
             string result = Encoding.Unicode.GetString(resultBuffer);
@@ -620,62 +620,62 @@ let Execute(p: Person) =
             }
         }
 
-        public void TestGenerateAndStoreObjectModelFromEA2DataService()
-        {
-            try
-            {
-                StartITSServer();
+        //public void TestGenerateAndStoreObjectModelFromEA2DataService()
+        //{
+        //    try
+        //    {
+        //        StartITSServer();
 
-                Stream manifestResourceStream = this.GetType().Assembly.GetManifestResourceStream("Luminis.Its.Services.Manual.Test.TestModel.eap");
-                FileStream fileStream = new FileStream(@".\TestModel.eap", FileMode.Create);
+        //        Stream manifestResourceStream = this.GetType().Assembly.GetManifestResourceStream("TimeTraveller.Services.Manual.Test.TestModel.eap");
+        //        FileStream fileStream = new FileStream(@".\TestModel.eap", FileMode.Create);
 
-                int byteValue = manifestResourceStream.ReadByte();
-                while (byteValue != -1)
-                {
-                    fileStream.WriteByte((byte)byteValue);
-                    byteValue = manifestResourceStream.ReadByte();
-                }
-                fileStream.Close();
-                manifestResourceStream.Close();
+        //        int byteValue = manifestResourceStream.ReadByte();
+        //        while (byteValue != -1)
+        //        {
+        //            fileStream.WriteByte((byte)byteValue);
+        //            byteValue = manifestResourceStream.ReadByte();
+        //        }
+        //        fileStream.Close();
+        //        manifestResourceStream.Close();
 
-                ObjectModelGen generator = new ObjectModelGen();
-                generator.Progress += new EventHandler<ObjectModelGenEventArgs>(ObjectModelGen_OnProgress);
-                generator.Generate(@".\TestModel.eap", @".");
+        //        ObjectModelGen generator = new ObjectModelGen();
+        //        generator.Progress += new EventHandler<ObjectModelGenEventArgs>(ObjectModelGen_OnProgress);
+        //        generator.Generate(@".\TestModel.eap", @".");
 
-                Assert.IsTrue(File.Exists(@".\ObjectModel.xml"));
+        //        Assert.IsTrue(File.Exists(@".\ObjectModel.xml"));
 
-                string objectModelXml = File.ReadAllText(@".\ObjectModel.xml");
+        //        string objectModelXml = File.ReadAllText(@".\ObjectModel.xml");
 
-                _logger.DebugFormat("ObjectModel.xml=\r\n{0}", objectModelXml);
+        //        _logger.DebugFormat("ObjectModel.xml=\r\n{0}", objectModelXml);
 
-                WebClient webClient = new WebClient();
+        //        WebClient webClient = new WebClient();
 
-                byte[] requestBuffer = Encoding.Unicode.GetBytes(objectModelXml);
-                webClient.Headers.Add(HttpRequestHeader.ContentType, "application/xml; charset=utf-16");
-                webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@luminis.nl");
-                byte[] resultBuffer = webClient.UploadData("http://localhost:8080/its/specifications/objectmodels/myobjectmodel", "PUT", requestBuffer);
-                string result = Encoding.Unicode.GetString(resultBuffer);
-                _logger.DebugFormat("StoreObjectModel()={0}", result);
+        //        byte[] requestBuffer = Encoding.Unicode.GetBytes(objectModelXml);
+        //        webClient.Headers.Add(HttpRequestHeader.ContentType, "application/xml; charset=utf-16");
+        //        webClient.Headers.Add(HttpRequestHeader.From, "alex.harbers@gmail.com");
+        //        byte[] resultBuffer = webClient.UploadData("http://localhost:8080/its/specifications/objectmodels/myobjectmodel", "PUT", requestBuffer);
+        //        string result = Encoding.Unicode.GetString(resultBuffer);
+        //        _logger.DebugFormat("StoreObjectModel()={0}", result);
 
-                Assert.IsTrue(!string.IsNullOrEmpty(result));
+        //        Assert.IsTrue(!string.IsNullOrEmpty(result));
 
-                resultBuffer = webClient.DownloadData("http://localhost:8080/its/specifications/objectmodels/myobjectmodel.xsd");
-                result = Encoding.Unicode.GetString(resultBuffer);
-                _logger.DebugFormat("GetObjectModel()={0}", result);
+        //        resultBuffer = webClient.DownloadData("http://localhost:8080/its/specifications/objectmodels/myobjectmodel.xsd");
+        //        result = Encoding.Unicode.GetString(resultBuffer);
+        //        _logger.DebugFormat("GetObjectModel()={0}", result);
 
-                Assert.IsTrue(!string.IsNullOrEmpty(result));
-            }
-            catch (Exception exception)
-            {
-                _logger.Error("", exception);
-                throw;
-            }
-        }
+        //        Assert.IsTrue(!string.IsNullOrEmpty(result));
+        //    }
+        //    catch (Exception exception)
+        //    {
+        //        _logger.Error("", exception);
+        //        throw;
+        //    }
+        //}
 
-        private void ObjectModelGen_OnProgress(object sender, ObjectModelGenEventArgs e)
-        {
-            _logger.Debug(e.Message);
-        }
+        //private void ObjectModelGen_OnProgress(object sender, ObjectModelGenEventArgs e)
+        //{
+        //    _logger.Debug(e.Message);
+        //}
         
         //public void TestGetResourcesAsHtml()
         //{
