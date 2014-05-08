@@ -8,11 +8,8 @@ using TimeTraveller.Services.CaseFiles;
 using TimeTraveller.Services.CaseFiles.Impl;
 using TimeTraveller.Services.CaseFileSpecifications;
 using TimeTraveller.Services.CaseFileSpecifications.Impl;
-<<<<<<< HEAD
 using TimeTraveller.Services.Console;
 using TimeTraveller.Services.Data.Impl;
-=======
->>>>>>> 553a58cd090c78769c01e1111d448a0f14171233
 using TimeTraveller.Services.ObjectModels;
 using TimeTraveller.Services.ObjectModels.Impl;
 using TimeTraveller.Services.Repository;
