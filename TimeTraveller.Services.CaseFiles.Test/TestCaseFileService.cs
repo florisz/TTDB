@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Objects.DataClasses;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
@@ -9,17 +8,15 @@ using log4net;
 using log4net.Config;
 
 using Rhino.Mocks;
-using TimeTraveller.Services.CaseFiles.Impl;
 using TimeTraveller.Services.CaseFileSpecifications;
-using TimeTraveller.Services.CaseFileSpecifications.Impl;
-using TimeTraveller.Services.Data;
-using TimeTraveller.Services.Data.Impl;
-using TimeTraveller.Services.ObjectModels;
-using TimeTraveller.Services.Representations;
-using TimeTraveller.General.Logging;
-using TimeTraveller.General.Logging.Log4Net;
 using TimeTraveller.General.Patterns.Range;
+using TimeTraveller.Services.Data.Interfaces;
+using TimeTraveller.Services.Interfaces;
+using TimeTraveller.General.Logging;
 using TimeTraveller.General.Unity;
+using TimeTraveller.Services.Representations;
+using TimeTraveller.Services.CaseFiles.Impl;
+using TimeTraveller.General.Logging.Log4Net;
 
 namespace TimeTraveller.Services.CaseFiles.Test
 {

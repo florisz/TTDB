@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using TimeTraveller.Services.Data;
-using TimeTraveller.Services.Data.Impl;
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Patterns.Range;
+using TimeTraveller.Services.Data.Interfaces;
 
 namespace TimeTraveller.Services.Test
 {

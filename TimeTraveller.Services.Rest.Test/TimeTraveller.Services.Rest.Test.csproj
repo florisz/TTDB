@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -10,14 +10,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TimeTraveller.Services.Rest.Test</RootNamespace>
     <AssemblyName>TimeTraveller.Services.Rest.Test</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-    <OldToolsVersion>3.5</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -67,14 +61,12 @@
     <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
     <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
     <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Unity.2.0\lib\20\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Unity">
       <HintPath>..\packages\Unity.2.0\lib\20\Microsoft.Practices.Unity.dll</HintPath>
@@ -112,6 +104,9 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Unity.2.0\lib\20\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -125,10 +120,6 @@
     <ProjectReference Include="..\TimeTraveller.Services.CaseFiles\TimeTraveller.Services.CaseFiles.csproj">
       <Project>{49070EC1-9DDF-416E-B77D-4F8402F4933C}</Project>
       <Name>TimeTraveller.Services.CaseFiles</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TimeTraveller.Services.Data\TimeTraveller.Services.Data.csproj">
-      <Project>{8F9324A9-1DA9-416C-85EA-4E5901A7E8F0}</Project>
-      <Name>TimeTraveller.Services.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\TimeTraveller.Services.Impl\TimeTraveller.Services.Impl.csproj">
       <Project>{B850D242-E78E-4DA8-B6EF-E1A2567E03A2}</Project>
@@ -185,6 +176,14 @@
     <ProjectReference Include="..\TimeTraveller.General.Xml\TimeTraveller.General.Xml.csproj">
       <Project>{40F713F6-A20A-4411-B2F5-7C11DF19D79F}</Project>
       <Name>TimeTraveller.General.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Data.Interfaces\TimeTraveller.Services.Data.Interfaces.csproj">
+      <Project>{CB1ED1B2-CB05-4F4B-825A-384834D361AA}</Project>
+      <Name>TimeTraveller.Services.Data.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Interface\TimeTraveller.Services.Interfaces.csproj">
+      <Project>{02D73CCC-38EE-436E-8E70-B1CFCA51AE0C}</Project>
+      <Name>TimeTraveller.Services.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

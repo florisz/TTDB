@@ -1,8 +1,7 @@
 ﻿using System;
-
 using TimeTraveller.General.Patterns.Range;
 
-namespace TimeTraveller.Services.Data
+namespace TimeTraveller.Services.Data.Interfaces
 {
     public interface IBaseObjectValue
     {

@@ -1,8 +1,9 @@
 ﻿using System;
 using NUnit.Framework;
-using TimeTraveller.Services.Data.Impl;
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Patterns.Range;
+using TimeTraveller.Services.Interfaces;
+using TimeTraveller.Services.Data.Interfaces;
 
 namespace TimeTraveller.Services.Data.Manual.Test
 {

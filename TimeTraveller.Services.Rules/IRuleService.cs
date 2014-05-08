@@ -4,6 +4,7 @@ using System.Text;
 
 using TimeTraveller.Services.CaseFiles;
 using TimeTraveller.General.Patterns.Range;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.Rules
 {
@@ -131,6 +132,6 @@ namespace TimeTraveller.Services.Rules
         /// <param name="baseUri"></param>
         /// <param name="info"></param>
         /// <returns>true when the Rule is created, false when the Rule is updated</returns>
-        bool Store(string rulename, Rule rule, Uri baseUri, WebHttpHeaderInfo info);
+        bool Store(string rulename, Rule rule, Uri baseUri, IUserInfo info);
     }
 }

@@ -16,7 +16,7 @@ let Execute(person: Persoon) =
     let timeSpan = ((DateTime.Today) - (person.GeboorteDatum)) 
     person.Leeftijd &lt;- (timeSpan.Days /365)
 
-    if person.Geslacht = "m" then
+    if person.Geslacht = "Tuinman" then
         person.Geslacht &lt;- "man"
     else
         person.Geslacht &lt;- "vrouw"

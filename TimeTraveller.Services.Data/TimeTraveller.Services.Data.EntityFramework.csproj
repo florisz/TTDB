@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Luminis.Its.Services.Data</RootNamespace>
     <AssemblyName>Luminis.Its.Services.Data</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\TimeTraveller.snk</AssemblyOriginatorKeyFile>
@@ -46,6 +46,8 @@
     <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
     <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
     <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -72,35 +74,27 @@
     <Compile Include="..\_CreateVersionInfo\VersionInfo.cs">
       <Link>VersionInfo.cs</Link>
     </Compile>
-    <Compile Include="IBaseObjectJournal.cs" />
-    <Compile Include="IDataService.cs" />
-    <Compile Include="IEntityObject.cs" />
-    <Compile Include="Impl\BaseObjectJournal.Partial.cs" />
-    <Compile Include="Impl\BaseObjectType.Partial.cs" />
-    <Compile Include="Impl\DataService.cs" />
-    <Compile Include="Impl\ItsModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BaseObjectJournal.Partial.cs" />
+    <Compile Include="BaseObject.Partial.cs" />
+    <Compile Include="BaseObjectType.Partial.cs" />
+    <Compile Include="BaseObjectValue.Partial.cs" />
+    <Compile Include="DataService.cs" />
+    <Compile Include="ItsModel.Designer.cs">
       <DependentUpon>ItsModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Impl\BaseObject.Partial.cs" />
-    <Compile Include="Impl\BaseObjectValue.Partial.cs" />
-    <Compile Include="IBaseObject.cs" />
-    <Compile Include="IBaseObjectValue.cs" />
-    <Compile Include="IRelationObject.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config">
+    </None>
     <None Include="..\TimeTraveller.snk">
       <Link>TimeTraveller.snk</Link>
     </None>
-    <None Include="App.Config">
-    </None>
-    <EntityDeploy Include="Impl\ItsModel.edmx">
+    <None Include="ITSData.sql" />
+    <EntityDeploy Include="ItsModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ItsModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Impl\ITSData.sql" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TimeTraveller.Services\TimeTraveller.Services.csproj">

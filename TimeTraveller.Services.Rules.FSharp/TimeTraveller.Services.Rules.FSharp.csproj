@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TimeTraveller.Services.Rules.FSharp</RootNamespace>
     <AssemblyName>TimeTraveller.Services.Rules.FSharp</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -42,10 +42,6 @@
     <AssemblyOriginatorKeyFile>..\TimeTraveller.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FSharp.Compiler.CodeDom, Version=1.9.6.2, Culture=neutral, PublicKeyToken=a19089b1c74d0809, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\FSPowerPack.Community.2.0.0.0\Tools\FSharp.Compiler.CodeDom.dll</HintPath>
-    </Reference>
     <Reference Include="FSharp.Core, Version=1.9.6.2, Culture=neutral, PublicKeyToken=a19089b1c74d0809, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Components\FSharp.Core.dll</HintPath>
@@ -62,6 +58,9 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="FSharp.Compiler.CodeDom">
+      <HintPath>..\packages\FSPowerPack.Community.2.0.0.0\Tools\FSharp.Compiler.CodeDom.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FSharpRuleEngine.cs" />
@@ -105,6 +104,10 @@
     <ProjectReference Include="..\TimeTraveller.General.Xml\TimeTraveller.General.Xml.csproj">
       <Project>{40F713F6-A20A-4411-B2F5-7C11DF19D79F}</Project>
       <Name>TimeTraveller.General.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Interface\TimeTraveller.Services.Interfaces.csproj">
+      <Project>{02D73CCC-38EE-436E-8E70-B1CFCA51AE0C}</Project>
+      <Name>TimeTraveller.Services.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

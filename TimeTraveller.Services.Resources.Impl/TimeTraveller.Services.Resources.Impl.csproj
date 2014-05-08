@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TimeTraveller.Services.Resources.Impl</RootNamespace>
     <AssemblyName>TimeTraveller.Services.Resources.Impl</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\TimeTraveller.snk</AssemblyOriginatorKeyFile>
@@ -62,10 +62,6 @@
     <Compile Include="ResourceService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TimeTraveller.Services.Data\TimeTraveller.Services.Data.csproj">
-      <Project>{8F9324A9-1DA9-416C-85EA-4E5901A7E8F0}</Project>
-      <Name>TimeTraveller.Services.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TimeTraveller.Services.Impl\TimeTraveller.Services.Impl.csproj">
       <Project>{B850D242-E78E-4DA8-B6EF-E1A2567E03A2}</Project>
       <Name>TimeTraveller.Services.Impl</Name>
@@ -97,6 +93,14 @@
     <ProjectReference Include="..\TimeTraveller.General.Xml\TimeTraveller.General.Xml.csproj">
       <Project>{40F713F6-A20A-4411-B2F5-7C11DF19D79F}</Project>
       <Name>TimeTraveller.General.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Data.Interfaces\TimeTraveller.Services.Data.Interfaces.csproj">
+      <Project>{CB1ED1B2-CB05-4F4B-825A-384834D361AA}</Project>
+      <Name>TimeTraveller.Services.Data.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Interface\TimeTraveller.Services.Interfaces.csproj">
+      <Project>{02D73CCC-38EE-436E-8E70-B1CFCA51AE0C}</Project>
+      <Name>TimeTraveller.Services.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -3,6 +3,7 @@ using System.Linq;
 using System.Xml.Serialization;
 using TimeTraveller.Services.CaseFileSpecifications;
 using TimeTraveller.Services.Items;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.Rules
 {

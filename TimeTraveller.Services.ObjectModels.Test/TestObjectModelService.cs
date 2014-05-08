@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Objects.DataClasses;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -14,13 +13,13 @@ using log4net.Config;
 
 using Rhino.Mocks;
 
-using TimeTraveller.Services.Data;
-using TimeTraveller.Services.Data.Impl;
 using TimeTraveller.Services.ObjectModels.Impl;
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Logging.Log4Net;
 using TimeTraveller.General.Patterns.Range;
 using TimeTraveller.General.Unity;
+using TimeTraveller.Services.Data.Interfaces;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.ObjectModels.Test
 {
@@ -388,7 +387,7 @@ namespace TimeTraveller.Services.ObjectModels.Test
             Assert.AreEqual("http://localhost:8080//specifications/objectmodels/myobjectmodel?version=0", objectModel.SelfUri);
         }
 
-        private delegate IBaseObjectValue InsertValueDelegate(string content, TimePoint timeStamp, Guid id, string extId, IBaseObjectType type, WebHttpHeaderInfo journalInfo);
+        private delegate IBaseObjectValue InsertValueDelegate(string content, TimePoint timeStamp, Guid id, string extId, IBaseObjectType type, IUserInfo journalInfo);
         private delegate void SaveChangesDelegate();
 
         [Test]

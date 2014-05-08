@@ -4,10 +4,11 @@ using System.Text;
 using System.Xml;
 using System.Xml.Schema;
 
-using TimeTraveller.Services.Data;
 using TimeTraveller.Services.Impl;
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Unity;
+using TimeTraveller.Services.Data.Interfaces;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.ObjectModels.Impl
 {

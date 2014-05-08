@@ -4,6 +4,7 @@ using System.Text;
 
 using TimeTraveller.Services.CaseFileSpecifications;
 using TimeTraveller.General.Patterns.Range;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.CaseFiles
 {
@@ -126,6 +127,6 @@ namespace TimeTraveller.Services.CaseFiles
         /// <param name="baseUri"></param>
         /// <param name="info"></param>
         /// <returns>true when the CaseFile is created, false when the CaseFile is updated</returns>
-        bool Store(CaseFileSpecification specification, string caseFileId, CaseFile caseFile, Uri baseUri, WebHttpHeaderInfo info);
+        bool Store(CaseFileSpecification specification, string caseFileId, CaseFile caseFile, Uri baseUri, IUserInfo info);
     }
 }

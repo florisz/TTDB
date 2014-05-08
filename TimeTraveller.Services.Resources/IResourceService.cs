@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using TimeTraveller.General.Patterns.Range;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.Resources
 {
@@ -90,6 +91,6 @@ namespace TimeTraveller.Services.Resources
         /// <param name="baseUri"></param>
         /// <param name="info"></param>
         /// <returns>true when the Resource is created, false when updated</returns>
-        bool Store(string id, Resource resource, Uri baseUri, WebHttpHeaderInfo info);
+        bool Store(string id, Resource resource, Uri baseUri, IUserInfo info);
     }
 }

@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using TimeTraveller.General.Patterns.Range;
+using TimeTraveller.Services.Interfaces;
 
-namespace TimeTraveller.Services.Data
+namespace TimeTraveller.Services.Data.Interfaces
 {
     public interface IDataService
     {
@@ -30,25 +31,25 @@ namespace TimeTraveller.Services.Data
         IEnumerable<IBaseObjectValue> GetValues(string extIdFilter, IBaseObjectType type);
         IEnumerable<IBaseObjectValue> GetValues(IBaseObjectValue referenceObjectValue, string extId, IBaseObjectType type);
         IBaseObjectValue InsertValue(string content, TimePoint timePoint, IBaseObject baseObject);
-        IBaseObjectValue InsertValue(string content, TimePoint timePoint, IBaseObject baseObject, WebHttpHeaderInfo journalInfo);
+        IBaseObjectValue InsertValue(string content, TimePoint timePoint, IBaseObject baseObject, IUserInfo journalInfo);
         IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, IBaseObject baseObject);
-        IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, IBaseObject baseObject, WebHttpHeaderInfo journalInfo);
+        IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, IBaseObject baseObject, IUserInfo journalInfo);
         IBaseObjectValue InsertValue(string content, TimePoint timePoint, IBaseObject baseObject, IBaseObjectValue referenceObjectValue);
-        IBaseObjectValue InsertValue(string content, TimePoint timePoint, IBaseObject baseObject, IBaseObjectValue referenceObjectValue, WebHttpHeaderInfo journalInfo);
+        IBaseObjectValue InsertValue(string content, TimePoint timePoint, IBaseObject baseObject, IBaseObjectValue referenceObjectValue, IUserInfo journalInfo);
         IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, IBaseObject baseObject, IBaseObjectValue referenceObjectValue);
-        IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, IBaseObject baseObject, IBaseObjectValue referenceObjectValue, WebHttpHeaderInfo journalInfo);
+        IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, IBaseObject baseObject, IBaseObjectValue referenceObjectValue, IUserInfo journalInfo);
         IBaseObjectValue InsertValue(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type);
-        IBaseObjectValue InsertValue(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, WebHttpHeaderInfo journalInfo);
+        IBaseObjectValue InsertValue(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IUserInfo journalInfo);
         IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type);
-        IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, WebHttpHeaderInfo journalInfo);
+        IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IUserInfo journalInfo);
         IBaseObjectValue InsertValue(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue);
-        IBaseObjectValue InsertValue(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue, WebHttpHeaderInfo journalInfo);
+        IBaseObjectValue InsertValue(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue, IUserInfo journalInfo);
         IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue);
-        IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue, WebHttpHeaderInfo journalInfo);
+        IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue, IUserInfo journalInfo);
         IBaseObjectValue InsertValue(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, string extReferenceId, IBaseObjectType referenceType);
-        IBaseObjectValue InsertValue(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, string extReferenceId, IBaseObjectType referenceType, WebHttpHeaderInfo journalInfo);
+        IBaseObjectValue InsertValue(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, string extReferenceId, IBaseObjectType referenceType, IUserInfo journalInfo);
         IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, string extReferenceId, IBaseObjectType referenceType);
-        IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, string extReferenceId, IBaseObjectType referenceType, WebHttpHeaderInfo journalInfo);
+        IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, string extReferenceId, IBaseObjectType referenceType, IUserInfo journalInfo);
         void SaveChanges();
     }
 }

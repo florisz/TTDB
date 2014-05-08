@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using TimeTraveller.Services.Interface;
 
 namespace TimeTraveller.Services.Rest.Impl.Formatters
 {

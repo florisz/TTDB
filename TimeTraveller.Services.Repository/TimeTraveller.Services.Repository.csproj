@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TimeTraveller.Services.Repository</RootNamespace>
     <AssemblyName>TimeTraveller.Services.Repository</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\TimeTraveller.snk</AssemblyOriginatorKeyFile>
@@ -107,6 +107,10 @@
     <ProjectReference Include="..\TimeTraveller.General.Xml\TimeTraveller.General.Xml.csproj">
       <Project>{40F713F6-A20A-4411-B2F5-7C11DF19D79F}</Project>
       <Name>TimeTraveller.General.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Interface\TimeTraveller.Services.Interfaces.csproj">
+      <Project>{02D73CCC-38EE-436E-8E70-B1CFCA51AE0C}</Project>
+      <Name>TimeTraveller.Services.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

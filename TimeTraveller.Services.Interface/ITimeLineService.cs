@@ -6,7 +6,7 @@ using TimeTraveller.General.Logging;
 using TimeTraveller.General.Patterns.Range;
 using TimeTraveller.General.Unity;
 
-namespace TimeTraveller.Services
+namespace TimeTraveller.Services.Interfaces
 {
     public interface ITimeLineService<T> where T: IItem
     {
@@ -24,6 +24,6 @@ namespace TimeTraveller.Services
         string GetXmlSchemaAddress(Uri baseUri);
         string GetXmlSchemaName();
         string GetXmlSchemaText();
-        bool Store(string id, T item, Uri baseUri, WebHttpHeaderInfo info);
+        bool Store(string id, T item, Uri baseUri, IUserInfo info);
     }
 }

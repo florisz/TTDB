@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -10,14 +10,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TimeTraveller.Services.Rules.FSharp.Manual.Test</RootNamespace>
     <AssemblyName>TimeTraveller.Services.Rules.FSharp.Manual.Test</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-    <OldToolsVersion>3.5</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -93,6 +87,10 @@
     <ProjectReference Include="..\TimeTraveller.General.Logging\TimeTraveller.General.Logging.csproj">
       <Project>{271AEB4C-E206-4501-B45E-A5B1E4399309}</Project>
       <Name>TimeTraveller.General.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Interface\TimeTraveller.Services.Interfaces.csproj">
+      <Project>{02D73CCC-38EE-436E-8E70-B1CFCA51AE0C}</Project>
+      <Name>TimeTraveller.Services.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

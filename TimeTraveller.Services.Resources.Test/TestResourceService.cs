@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Objects.DataClasses;
 using System.Linq;
 using System.Text;
 
@@ -11,13 +10,13 @@ using log4net.Config;
 
 using Rhino.Mocks;
 
-using TimeTraveller.Services.Data;
-using TimeTraveller.Services.Data.Impl;
 using TimeTraveller.Services.Representations.Impl;
 using TimeTraveller.Services.Resources.Impl;
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Patterns.Range;
 using TimeTraveller.General.Unity;
+using TimeTraveller.Services.Data.Interfaces;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.Resources.Test
 {

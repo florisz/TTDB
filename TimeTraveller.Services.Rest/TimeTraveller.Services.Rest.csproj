@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TimeTraveller.Services.Rest</RootNamespace>
     <AssemblyName>TimeTraveller.Services.Rest</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\TimeTraveller.snk</AssemblyOriginatorKeyFile>
@@ -46,12 +46,10 @@
     <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
     <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
     <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Unity.2.0\lib\20\Microsoft.Practices.ServiceLocation.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Practices.Unity">
       <HintPath>..\packages\Unity.2.0\lib\20\Microsoft.Practices.Unity.dll</HintPath>
     </Reference>
@@ -75,6 +73,9 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Unity.2.0\lib\20\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\_CreateVersionInfo\VersionInfo.cs">
@@ -186,10 +187,6 @@
       <Project>{49070EC1-9DDF-416E-B77D-4F8402F4933C}</Project>
       <Name>TimeTraveller.Services.CaseFiles</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TimeTraveller.Services.Data\TimeTraveller.Services.Data.csproj">
-      <Project>{8F9324A9-1DA9-416C-85EA-4E5901A7E8F0}</Project>
-      <Name>TimeTraveller.Services.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TimeTraveller.Services.Items\TimeTraveller.Services.Items.csproj">
       <Project>{95501194-8BEC-40C1-B427-94B9E47C7FFE}</Project>
       <Name>TimeTraveller.Services.Items</Name>
@@ -233,6 +230,14 @@
     <ProjectReference Include="..\TimeTraveller.General.Xml\TimeTraveller.General.Xml.csproj">
       <Project>{40F713F6-A20A-4411-B2F5-7C11DF19D79F}</Project>
       <Name>TimeTraveller.General.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Interface\TimeTraveller.Services.Interfaces.csproj">
+      <Project>{02D73CCC-38EE-436E-8E70-B1CFCA51AE0C}</Project>
+      <Name>TimeTraveller.Services.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Data.Interfaces\TimeTraveller.Services.Data.Interfaces.csproj">
+      <Project>{CB1ED1B2-CB05-4F4B-825A-384834D361AA}</Project>
+      <Name>TimeTraveller.Services.Data.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

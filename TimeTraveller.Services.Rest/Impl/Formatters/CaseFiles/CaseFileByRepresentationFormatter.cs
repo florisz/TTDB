@@ -3,6 +3,7 @@ using System.IO;
 
 using TimeTraveller.Services.CaseFiles;
 using TimeTraveller.Services.Representations;
+using TimeTraveller.Services.Interface;
 
 namespace TimeTraveller.Services.Rest.Impl.Formatters.CaseFiles
 {

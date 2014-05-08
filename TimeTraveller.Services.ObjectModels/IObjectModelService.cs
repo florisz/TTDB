@@ -4,6 +4,8 @@ using System.Text;
 
 using TimeTraveller.Services.Data;
 using TimeTraveller.General.Patterns.Range;
+using TimeTraveller.Services.Interfaces;
+using TimeTraveller.Services.Data.Interfaces;
 
 namespace TimeTraveller.Services.ObjectModels
 {
@@ -143,6 +145,6 @@ namespace TimeTraveller.Services.ObjectModels
         /// <param name="baseUri"></param>
         /// <param name="info"></param>
         /// <returns>true when the objectModel is created, false when the objectModel is updated</returns>
-        bool Store(string objectmodelname, ObjectModel objectModel, Uri baseUri, WebHttpHeaderInfo info);
+        bool Store(string objectmodelname, ObjectModel objectModel, Uri baseUri, IUserInfo info);
     }
 }

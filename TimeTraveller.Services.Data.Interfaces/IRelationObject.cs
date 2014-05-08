@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TimeTraveller.Services.Data
+namespace TimeTraveller.Services.Data.Interfaces
 {
     public interface IRelationObject : IBaseObject
     {

@@ -22,7 +22,7 @@ namespace TimeTraveller.Services.Rest.Impl.Commands.CaseFileSpecifications
         public override Stream Execute(CommandContext context, IFormatter formatter)
         {
             string caseFileSpecificationXml = context.RequestBody;
-            CaseFileSpecification caseFileSpecification = _specificationService.Convert(caseFileSpecificationXml, context.Encoding);
+            var caseFileSpecification = _specificationService.Convert(caseFileSpecificationXml, context.Encoding);
 
             caseFileSpecification.ObjectModel = _objectModelService.Get((string)context.Arguments[0], context.BaseUri);
 

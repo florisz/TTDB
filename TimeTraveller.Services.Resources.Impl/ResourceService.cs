@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using TimeTraveller.Services.Impl;
-using TimeTraveller.Services.Data;
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Patterns.Range;
 using TimeTraveller.General.Unity;
+using TimeTraveller.Services.Data.Interfaces;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.Resources.Impl
 {
@@ -108,7 +109,7 @@ namespace TimeTraveller.Services.Resources.Impl
             return result;
         }
 
-        public override bool Store(string id, Resource item, IBaseObjectValue referenceObjectValue, Uri baseUri, WebHttpHeaderInfo info)
+        public override bool Store(string id, Resource item, IBaseObjectValue referenceObjectValue, Uri baseUri, IUserInfo info)
         {
             try
             {

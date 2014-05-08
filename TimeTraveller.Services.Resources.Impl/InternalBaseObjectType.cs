@@ -1,4 +1,6 @@
-﻿namespace TimeTraveller.Services.Resources.Impl
+﻿using TimeTraveller.Services.Interfaces;
+
+namespace TimeTraveller.Services.Resources.Impl
 {
     public class InternalBaseObjectType : IBaseObjectType
     {

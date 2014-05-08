@@ -1,0 +1,80 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TimeTraveller.Services.CaseFiles.Test/TestCaseFileService.cs">
+    <Files>
+      <File FileName="TimeTraveller.Tools.Sparx.ObjectModelGen/SelectModel.Designer.cs" Line="141" Column="58" />
+      <File FileName="TimeTraveller.Services.Interface/IUserInfo.cs" Line="3" Column="31" />
+      <File FileName="TimeTraveller.General.Patterns.Range.Test/UnitTestDateRange.cs" Line="23" Column="56" />
+      <File FileName="TimeTraveller.Services.CaseFiles.Test/TestCaseFileService.cs" Line="11" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="TimeTraveller.General.Patterns.Range" expanded="True" />
+          <Node name="TimeTraveller.General.Patterns.Range.Test" expanded="True" />
+          <Node name="TimeTraveller.General.Xml" expanded="True" />
+          <Node name="TimeTraveller.Services" expanded="True" />
+          <Node name="TimeTraveller.Services.CaseFiles" expanded="True">
+            <Node name="Impl" expanded="True" />
+            <Node name="casefile.xsd" expanded="True" />
+          </Node>
+          <Node name="TimeTraveller.Services.CaseFiles.Test" expanded="True" selected="True" />
+          <Node name="TimeTraveller.Services.CaseFileSpecifications" expanded="True">
+            <Node name="Impl" expanded="True" />
+            <Node name="casefilespecification.xsd" expanded="True" />
+          </Node>
+          <Node name="TimeTraveller.Services.Data.CouchDB" expanded="True" />
+          <Node name="TimeTraveller.Services.Data.Interfaces" expanded="True">
+            <Node name="Properties" expanded="True" />
+          </Node>
+          <Node name="TimeTraveller.Services.Impl" expanded="True" />
+          <Node name="TimeTraveller.Services.Interfaces" expanded="True" />
+          <Node name="TimeTraveller.Services.Items" expanded="True" />
+          <Node name="TimeTraveller.Services.ObjectModels" expanded="True">
+            <Node name="Impl" expanded="True" />
+            <Node name="objectmodel.xsd" expanded="True" />
+          </Node>
+          <Node name="TimeTraveller.Services.Repository" expanded="True">
+            <Node name="Impl" expanded="True" />
+          </Node>
+          <Node name="TimeTraveller.Services.Representations" expanded="True">
+            <Node name="Impl" expanded="True" />
+            <Node name="representation.xsd" expanded="True" />
+          </Node>
+          <Node name="TimeTraveller.Services.Resources" expanded="True" />
+          <Node name="TimeTraveller.Services.Resources.Impl" expanded="True" />
+          <Node name="TimeTraveller.Services.Rest" expanded="True">
+            <Node name="Impl" expanded="True">
+              <Node name="Commands" expanded="True">
+                <Node name="CaseFileSpecifications" expanded="True" />
+                <Node name="Resources" expanded="True" />
+              </Node>
+              <Node name="Formatters" expanded="True">
+                <Node name="CaseFiles" expanded="True" />
+                <Node name="CaseFileSpecifications" expanded="True" />
+                <Node name="Resources" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+          <Node name="TimeTraveller.Services.Rules" expanded="True">
+            <Node name="Impl" expanded="True" />
+            <Node name="rule.xsd" expanded="True" />
+          </Node>
+          <Node name="TimeTraveller.Services.Rules.FSharp" expanded="True" />
+          <Node name="TimeTraveller.Tools.Sparx.ObjectModelGen" expanded="True">
+            <Node name="Properties" expanded="True">
+              <Node name="Resources.resx" expanded="True" />
+              <Node name="Settings.settings" expanded="True" />
+            </Node>
+            <Node name="RunGenerator.cs" expanded="True" />
+            <Node name="SelectModel.cs" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -8,8 +8,11 @@ using TimeTraveller.Services.CaseFiles;
 using TimeTraveller.Services.CaseFiles.Impl;
 using TimeTraveller.Services.CaseFileSpecifications;
 using TimeTraveller.Services.CaseFileSpecifications.Impl;
+<<<<<<< HEAD
 using TimeTraveller.Services.Console;
 using TimeTraveller.Services.Data.Impl;
+=======
+>>>>>>> 553a58cd090c78769c01e1111d448a0f14171233
 using TimeTraveller.Services.ObjectModels;
 using TimeTraveller.Services.ObjectModels.Impl;
 using TimeTraveller.Services.Repository;
@@ -39,11 +42,12 @@ using TimeTraveller.General.Logging.Log4Net;
 using TimeTraveller.General.Unity;
 using TimeTraveller.General.Unity.Impl;
 using Microsoft.Practices.Unity;
-using TimeTraveller.Services.Data;
 using TimeTraveller.Services.Rest;
 using TimeTraveller.Services.Rest.Impl;
 using TimeTraveller.General.Logging;
 using ILogger = TimeTraveller.General.Logging.ILogger;
+using TimeTraveller.Services.Data.Interfaces;
+using TimeTraveller.Services.Data.CouchDB;
 
 namespace TimeTraveller.Services.Console
 {
@@ -126,7 +130,7 @@ namespace TimeTraveller.Services.Console
             var container = new UnityContainer()
                 .RegisterType<ICaseFileService, CaseFileService>()
                 .RegisterType<ICaseFileSpecificationService, CaseFileSpecificationService>()
-                .RegisterType<IDataService, DataService>()
+                .RegisterType<IDataService, CouchDB>()
                 .RegisterType<IObjectModelService, ObjectModelService>()
                 .RegisterType<IRepositoryService, RepositoryService>()
                 .RegisterType<IRepresentationService, RepresentationService>()
