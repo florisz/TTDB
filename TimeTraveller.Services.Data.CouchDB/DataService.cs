@@ -1,4 +1,5 @@
 using System;
+using TimeTraveller.General.Logging;
 using TimeTraveller.Services.Data.Interfaces;
 using TimeTraveller.Services.Interfaces;
 using TimeTraveller.General.Patterns.Range;
@@ -6,20 +7,32 @@ using TimeTraveller.General.Patterns.Range;
 namespace TimeTraveller.Services.Data.CouchDB
 {
 	public class DataService : IDataService
-	{
-		#region IDataService implementation
+    {
+        #region Constructors
 
-		public void Clean ()
+	    public DataService(ILogger logger)
+	    {
+	        
+	    }
+        #endregion
+        #region IDataService implementation
+
+        public void Clean ()
 		{
 			throw new NotImplementedException ();
 		}
 
-		public IBaseObject CreateBaseObject (IBaseObjectType type)
-		{
-			throw new NotImplementedException ();
-		}
+        public void InsertBaseObject(IBaseObject obj)
+        {
+            throw new NotImplementedException();
+        }
 
-		public IBaseObjectJournal CreateBaseObjectJournal ()
+        public IBaseObject CreateBaseObject(IBaseObjectType type)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IBaseObjectJournal CreateBaseObjectJournal()
 		{
 			throw new NotImplementedException ();
 		}

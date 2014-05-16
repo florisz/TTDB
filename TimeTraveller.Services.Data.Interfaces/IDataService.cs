@@ -8,6 +8,7 @@ namespace TimeTraveller.Services.Data.Interfaces
     public interface IDataService
     {
         void Clean();
+        void InsertBaseObject(IBaseObject obj);
         IBaseObject CreateBaseObject(IBaseObjectType type);
         IBaseObjectJournal CreateBaseObjectJournal();
         IBaseObjectValue CreateBaseObjectValue();

@@ -43,6 +43,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -57,6 +58,10 @@
     <ProjectReference Include="..\TimeTraveller.Services.CaseFiles\TimeTraveller.Services.CaseFiles.csproj">
       <Project>{49070EC1-9DDF-416E-B77D-4F8402F4933C}</Project>
       <Name>TimeTraveller.Services.CaseFiles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Data\TimeTraveller.Services.Data.EntityFramework.csproj">
+      <Project>{8F9324A9-1DA9-416C-85EA-4E5901A7E8F0}</Project>
+      <Name>TimeTraveller.Services.Data.EntityFramework</Name>
     </ProjectReference>
     <ProjectReference Include="..\TimeTraveller.Services.Impl\TimeTraveller.Services.Impl.csproj">
       <Project>{B850D242-E78E-4DA8-B6EF-E1A2567E03A2}</Project>

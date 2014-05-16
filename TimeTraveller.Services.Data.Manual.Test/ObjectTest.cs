@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Patterns.Range;
+using TimeTraveller.Services.Data.CouchDB;
 using TimeTraveller.Services.Interfaces;
 using TimeTraveller.Services.Data.Interfaces;
 
@@ -16,7 +17,7 @@ namespace TimeTraveller.Services.Data.Manual.Test
         [Test]
         public void TestClean()
         {
-            DataService ds = new DataService(ConsoleLogger.Instance);
+            var ds = new DataService(ConsoleLogger.Instance);
             ds.Clean();
         }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Objects.DataClasses;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,7 @@ using log4net;
 using log4net.Config;
 
 using Rhino.Mocks;
-
+using TimeTraveller.Services.Data.Impl;
 using TimeTraveller.Services.ObjectModels.Impl;
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Logging.Log4Net;
@@ -411,7 +412,7 @@ namespace TimeTraveller.Services.ObjectModels.Test
             BaseObject insertedObject = null;
             Expect.On(dataService).Call(dataService.InsertValue(string.Empty, TimePoint.Past, Guid.Empty, string.Empty, null as IBaseObjectType, null as WebHttpHeaderInfo)).IgnoreArguments().Do(
                 new InsertValueDelegate(
-                    delegate(string content, TimePoint timeStamp, Guid id, string extId, IBaseObjectType type, WebHttpHeaderInfo journalInfo)
+                    delegate(string content, TimePoint timeStamp, Guid id, string extId, IBaseObjectType type, IUserInfo userInfo)
                     {
                         insertedObject = new BaseObject()
                         {

@@ -1,5 +1,6 @@
 ﻿using System;
 using TimeTraveller.General.Patterns.Range;
+using TimeTraveller.Services.Data.Interfaces;
 
 namespace TimeTraveller.Services.Data.Impl
 {

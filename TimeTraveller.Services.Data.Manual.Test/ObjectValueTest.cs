@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Linq;
-using TimeTraveller.Services.Data.Impl;
+using TimeTraveller.Services.Data.CouchDB;
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Patterns.Range;
 
 using NUnit.Framework;
+using TimeTraveller.Services.Data.Interfaces;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.Data.Manual.Test
 {

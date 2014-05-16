@@ -19,6 +19,8 @@ using TimeTraveller.General.Xml;
 using TimeTraveller.Services.CaseFileSpecifications.Impl;
 using TimeTraveller.Services.Data;
 using TimeTraveller.Services.Data.Impl;
+using TimeTraveller.Services.Data.Interfaces;
+using TimeTraveller.Services.Interfaces;
 using TimeTraveller.Services.ObjectModels;
 using TimeTraveller.Services.ObjectModels.Impl;
 

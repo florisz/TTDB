@@ -8,6 +8,8 @@ using System.Text;
 
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Patterns.Range;
+using TimeTraveller.Services.Data.Interfaces;
+using TimeTraveller.Services.Interfaces;
 
 namespace TimeTraveller.Services.Data.Impl
 {
@@ -511,6 +513,56 @@ namespace TimeTraveller.Services.Data.Impl
             return newValue;
         }
 
+        public IBaseObjectValue InsertValue(string content, TimePoint timePoint, IBaseObject baseObject, IUserInfo journalInfo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, IBaseObject baseObject, IUserInfo journalInfo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IBaseObjectValue InsertValue(string content, TimePoint timePoint, IBaseObject baseObject, IBaseObjectValue referenceObjectValue, IUserInfo journalInfo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, IBaseObject baseObject, IBaseObjectValue referenceObjectValue, IUserInfo journalInfo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IBaseObjectValue InsertValue(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IUserInfo journalInfo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IUserInfo journalInfo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IBaseObjectValue InsertValue(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue, IUserInfo journalInfo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue, IUserInfo journalInfo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IBaseObjectValue InsertValue(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, string extReferenceId, IBaseObjectType referenceType, IUserInfo journalInfo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IBaseObjectValue InsertValue(byte[] content, string contentType, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, string extReferenceId, IBaseObjectType referenceType, IUserInfo journalInfo)
+        {
+            throw new NotImplementedException();
+        }
+
         public void SaveChanges()
         {
             _dbContext.SaveChanges();
@@ -532,5 +584,7 @@ namespace TimeTraveller.Services.Data.Impl
             return result.Cast<IBaseObject>();
         }
         #endregion
+
+
     }
 }

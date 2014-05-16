@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -40,6 +40,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\TimeTraveller.General.Logging\TimeTraveller.General.Logging.csproj">
+      <Project>{271AEB4C-E206-4501-B45E-A5B1E4399309}</Project>
+      <Name>TimeTraveller.General.Logging</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TimeTraveller.Services.Data.Interfaces\TimeTraveller.Services.Data.Interfaces.csproj">
       <Project>{CB1ED1B2-CB05-4F4B-825A-384834D361AA}</Project>
       <Name>TimeTraveller.Services.Data.Interfaces</Name>

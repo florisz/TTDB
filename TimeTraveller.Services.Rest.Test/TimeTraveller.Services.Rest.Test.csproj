@@ -121,6 +121,10 @@
       <Project>{49070EC1-9DDF-416E-B77D-4F8402F4933C}</Project>
       <Name>TimeTraveller.Services.CaseFiles</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Data\TimeTraveller.Services.Data.EntityFramework.csproj">
+      <Project>{8f9324a9-1da9-416c-85ea-4e5901a7e8f0}</Project>
+      <Name>TimeTraveller.Services.Data.EntityFramework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TimeTraveller.Services.Impl\TimeTraveller.Services.Impl.csproj">
       <Project>{B850D242-E78E-4DA8-B6EF-E1A2567E03A2}</Project>
       <Name>TimeTraveller.Services.Impl</Name>

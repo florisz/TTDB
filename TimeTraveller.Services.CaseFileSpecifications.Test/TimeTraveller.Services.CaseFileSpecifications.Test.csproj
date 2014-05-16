@@ -58,13 +58,21 @@
       <Project>{A19458A7-13D9-4C9A-8B62-A3F82AABCB71}</Project>
       <Name>TimeTraveller.Services.CaseFileSpecifications</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TimeTraveller.Services.Data\TimeTraveller.Services.Data.csproj">
+    <ProjectReference Include="..\TimeTraveller.Services.Data.Interfaces\TimeTraveller.Services.Data.Interfaces.csproj">
+      <Project>{cb1ed1b2-cb05-4f4b-825a-384834d361aa}</Project>
+      <Name>TimeTraveller.Services.Data.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Data\TimeTraveller.Services.Data.EntityFramework.csproj">
       <Project>{8F9324A9-1DA9-416C-85EA-4E5901A7E8F0}</Project>
-      <Name>TimeTraveller.Services.Data</Name>
+      <Name>TimeTraveller.Services.Data.EntityFramework</Name>
     </ProjectReference>
     <ProjectReference Include="..\TimeTraveller.Services.Impl\TimeTraveller.Services.Impl.csproj">
       <Project>{B850D242-E78E-4DA8-B6EF-E1A2567E03A2}</Project>
       <Name>TimeTraveller.Services.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeTraveller.Services.Interface\TimeTraveller.Services.Interfaces.csproj">
+      <Project>{02D73CCC-38EE-436E-8E70-B1CFCA51AE0C}</Project>
+      <Name>TimeTraveller.Services.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\TimeTraveller.Services.Items\TimeTraveller.Services.Items.csproj">
       <Project>{95501194-8BEC-40C1-B427-94B9E47C7FFE}</Project>

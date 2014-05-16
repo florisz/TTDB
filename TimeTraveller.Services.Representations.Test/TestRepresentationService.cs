@@ -8,6 +8,7 @@ using log4net.Config;
 using Rhino.Mocks;
 
 using TimeTraveller.Services.CaseFileSpecifications;
+using TimeTraveller.Services.Data.Impl;
 using TimeTraveller.Services.Representations.Impl;
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Logging.Log4Net;
@@ -257,7 +258,7 @@ namespace TimeTraveller.Services.Representations.Test
 
             Expect.On(dataService).Call(dataService.InsertValue(string.Empty, null, Guid.Empty, "myobjectmodel/myspecification/myrepresentation", representationType, null as IBaseObjectValue, null as WebHttpHeaderInfo)).IgnoreArguments().Do(
                 new InsertValueDelegate(
-                    delegate(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue, WebHttpHeaderInfo journalInfo)
+                    delegate(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue, IUserInfo userInfo)
                     {
                         BaseObjectValue value = new BaseObjectValue()
                         {

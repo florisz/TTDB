@@ -9,6 +9,7 @@ using log4net.Config;
 using Rhino.Mocks;
 
 using TimeTraveller.Services.CaseFileSpecifications;
+using TimeTraveller.Services.Data.Impl;
 using TimeTraveller.Services.Rules.Impl;
 using TimeTraveller.General.Logging;
 using TimeTraveller.General.Logging.Log4Net;
@@ -281,7 +282,7 @@ let Execute(p: Person) =
 
             Expect.On(dataService).Call(dataService.InsertValue(string.Empty, null, Guid.Empty, "myobjectmodel/myspecification/myrule", null as IBaseObjectType, null as IBaseObjectValue,  null as WebHttpHeaderInfo)).IgnoreArguments().Do(
                 new InsertValueDelegate(
-                    delegate(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue, WebHttpHeaderInfo journalInfo)
+                    delegate(string content, TimePoint timePoint, Guid id, string extId, IBaseObjectType type, IBaseObjectValue referenceObjectValue, IUserInfo userInfo)
                     {
                         BaseObjectValue value = new BaseObjectValue()
                         {

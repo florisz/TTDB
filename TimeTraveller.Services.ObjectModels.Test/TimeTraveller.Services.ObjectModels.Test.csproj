@@ -44,6 +44,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +52,10 @@
     <Compile Include="TestObjectModelService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TimeTraveller.Services.Data\TimeTraveller.Services.Data.EntityFramework.csproj">
+      <Project>{8f9324a9-1da9-416c-85ea-4e5901a7e8f0}</Project>
+      <Name>TimeTraveller.Services.Data.EntityFramework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TimeTraveller.Services.Impl\TimeTraveller.Services.Impl.csproj">
       <Project>{B850D242-E78E-4DA8-B6EF-E1A2567E03A2}</Project>
       <Name>TimeTraveller.Services.Impl</Name>

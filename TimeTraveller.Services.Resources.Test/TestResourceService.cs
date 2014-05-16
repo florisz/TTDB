@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Objects.DataClasses;
 using System.Linq;
 using System.Text;
 
@@ -9,7 +10,7 @@ using log4net;
 using log4net.Config;
 
 using Rhino.Mocks;
-
+using TimeTraveller.Services.Data.Impl;
 using TimeTraveller.Services.Representations.Impl;
 using TimeTraveller.Services.Resources.Impl;
 using TimeTraveller.General.Logging;
